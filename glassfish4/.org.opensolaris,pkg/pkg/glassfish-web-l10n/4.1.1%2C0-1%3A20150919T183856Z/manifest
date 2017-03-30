@@ -1,0 +1,17 @@
+set name=fmri value=pkg://release.glassfish.org/glassfish-web-l10n@4.1.1,0-1:20150919T183856Z
+set name=authority value=release.glassfish.org
+set name=info.classification value="Application Servers"
+set name=pkg.description value="Localization of GlassFish web container runtime module. GlassFish Server is a modular and lightweight Java EE 7 compliant application server. Key features include an OSGi runtime, fast startup time, maven support, and rapid iterative development with Active Redeploy.  GlassFish Server also offers feature-rich administration with the web console, command line, and RESTful API."
+set name=pkg.summary value="GlassFish Web Container Localization"
+depend fmri=pkg:/glassfish-web type=require
+license 8741fa556feea4ca58ec28abc47de0bf9d5b39a3 chash=28b7cfba8f297b99296afc231955dc90e8d76d47 license="CDDL and GPL v2 with classpath exception" pkg.csize=12394 pkg.size=38052
+dir group=sys mode=0755 owner=root path=glassfish
+dir group=sys mode=0755 owner=root path=glassfish/modules
+file dc406c9cf8b2036bf48a2ee6ef73e3b581bf623c chash=1817001fbdc5e40b90fe9b9ddcb0b11d59b1fe35 group=sys mode=0644 owner=root path=glassfish/modules/war-util-l10n.jar pkg.csize=10941 pkg.size=14684
+file b8f43ba6cae5375e70b15d209bb5d07b56f56ba7 chash=e821eeadeb7fa76ebdab93a239f433af9e66afae group=sys mode=0644 owner=root path=glassfish/modules/console-web-plugin-l10n.jar pkg.csize=1105421 pkg.size=1181430
+file e6f1826890ad7f670a843a097a05ffef32b6d655 chash=052ff7d0461498f4fd7ba971dede3de0b6a5390c group=sys mode=0644 owner=root path=glassfish/modules/web-glue-l10n.jar pkg.csize=62864 pkg.size=73114
+file 20d1e1297449ceb0f9b2d15a295ffea74692a07f chash=6d7c1b0ee5c2501694196030f67bccda07275366 group=sys mode=0644 owner=root path=glassfish/modules/web-cli-l10n.jar pkg.csize=279323 pkg.size=326276
+file 4c3547d85654ab41adcccdca89bef8623aa17599 chash=83b078080e69ea682b86bb3ac70a369e166c191f group=sys mode=0644 owner=root path=glassfish/modules/stats77-l10n.jar pkg.csize=11026 pkg.size=14546
+file 3847d12c4a889e6519516c8f5a5c7ec5467f35c1 chash=3aa02188b31407a1a7956471df16408910734fb8 group=sys mode=0644 owner=root path=glassfish/modules/web-gui-plugin-common-l10n.jar pkg.csize=106243 pkg.size=117960
+file 3776303d2785a3ce226d44d8568ec98e849caa8b chash=e7ecdb309367bf5ab31bed282ad559765907283c group=sys mode=0644 owner=root path=glassfish/modules/web-naming-l10n.jar pkg.csize=36007 pkg.size=39774
+file baa14ea9f7381d2f1e08555e5ad0b9a3d611bcbe chash=b4129460dec0efcae34aaca39d0ef2e4f7831ae4 group=sys mode=0644 owner=root path=glassfish/modules/web-core-l10n.jar pkg.csize=149509 pkg.size=228826

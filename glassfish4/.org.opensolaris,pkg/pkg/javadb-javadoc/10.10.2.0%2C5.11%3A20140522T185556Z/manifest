@@ -1,0 +1,178 @@
+set name=fmri value=pkg://release.glassfish.org/javadb-javadoc@10.10.2.0,5.11:20140522T185556Z
+set name=authority value=release.glassfish.org
+set name=pkg.summary value="Java DB JavaDoc"
+set name=pkg.description value="Java DB is Sun's supported distribution of the open source Apache Derby 100% Java technology database. It is fully transactional, secure, easy-to-use, standards-based (SQL, JDBC API, and Java EE) yet small, only 2MB. The Apache Derby project has a strong and growing community that includes developers from large companies such as Sun Microsystems and IBM as well as individual contributors."
+set name=info.classification value="Databases and Tools"
+license 2b8b815229aa8a61e483fb4ba0588b8b6c491890 chash=06741e61703647014fca12c4e203a0f3b6c06bf9 license="Apache License Version 2.0" pkg.csize=3968 pkg.size=11358
+depend fmri=javadb-common@10.10.2.0 type=require
+dir group=sys mode=0755 owner=root path=javadb/javadoc
+dir group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3
+dir group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4
+dir group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/resources
+dir group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org
+file 3c353a79b965de4b125c6d620c97cd6a22656162 chash=bb6d2a7015bae9205b5f0d1a2eeff5e7424dcdd1 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/serialized-form.html pkg.csize=3490 pkg.size=25411
+file 6c2f6291440e6eac1c88e70c0ba5f3b7a9d9af5d chash=bd9e9e6b6633a8d29de976b02e9a494ff2bccb60 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/overview-summary.html pkg.csize=2119 pkg.size=7813
+file c453b73a75304c132f96f6d8fc8e0e36047aa370 chash=5057afb92ceefec1ff7ce038fadc62cf4dd9038d group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/overview-tree.html pkg.csize=2289 pkg.size=13621
+file 773ddf9cf1db4b278ebb9cc36dd13d208d0722d9 chash=f332c57d6758a3100c070b733b7491ed09781fab group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/constant-values.html pkg.csize=2403 pkg.size=19879
+file 131fc3f54e2cda533993b0f0cbbb3b0e0538536a chash=6a0515193b23052b315f98e56fb7842fa0d25002 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/index-all.html pkg.csize=13191 pkg.size=133275
+file 6bbfe2b5b6de45b0dc020082202a78021fbe4e63 chash=dbd3c62f2e8836265da97da289700a2dc150e08a group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/index.html pkg.csize=1088 pkg.size=2936
+file 9e9c4ded537472f3ad9d635e0e81e3e4057139a7 chash=5a7af484b28fefe1a20b3d4d220c878c2825e6a4 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/allclasses-frame.html pkg.csize=1013 pkg.size=5723
+file 18e84c5f7400a80152e8542e6dc7ffbe6fec93b1 chash=f1075eec0d437867901892fe930a2312393f776e group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/package-list pkg.csize=102 pkg.size=255
+file 106e95d6b498666cfb0fbfa1de91b997c07f9ad2 chash=ee752513003a4e33e560916c9577302079ab09f7 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/allclasses-noframe.html pkg.csize=989 pkg.size=5063
+file de83574e573901c2e31f0155fe9e9014929c9eaa chash=10265c62c4ce61cfcfac9370cea767a46b2c3fac group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/overview-frame.html pkg.csize=623 pkg.size=1946
+file 7e46b89f2c0bfd7f5d502f9019b6f259ce7c912c chash=41c835e39a814a1a60855d2de256c58e5df7aaa5 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/help-doc.html pkg.csize=2644 pkg.size=8827
+file e39fa99ad9fd3f02a561d719b1726b04d6f6f5a6 chash=aba5c90b1d507dc48604b3e6780ce3148b7cacd3 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/stylesheet.css pkg.csize=2760 pkg.size=13382
+file 8bb718e84b9b1efff8d016475c42e735dcf003f0 chash=f1644b00eb1b298ddfcc4f2f3ce049df15c11c84 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/deprecated-list.html pkg.csize=1166 pkg.size=4008
+file d69d2be8b7b60557645bfa334a162ffa2f54e848 chash=32f75aee98f3f25fbebd40ea35983eee51928807 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/resources/derby_logo64.png pkg.csize=1864 pkg.size=1841
+dir group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache
+dir group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby
+dir group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/security
+dir group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/mbeans
+dir group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/drda
+dir group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/tools
+dir group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/vti
+dir group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/catalog
+dir group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/authentication
+dir group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/jdbc
+file cbcdce8b76bef2dd757188bf474179943fa0d6c8 chash=951042af64d961f002327ecc5cee2091589c8eb1 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/security/package-tree.html pkg.csize=1419 pkg.size=5360
+file 1a23bb76c57303dd0676a42f88d7cc884ef3c200 chash=4a48625ca6becafb792976b437c8d4551ade819e group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/security/package-summary.html pkg.csize=1495 pkg.size=5408
+file e6059577e9425d2d9a64a013fbb072b4d42b4b37 chash=60be89a601cc9823cea72219d2f98c160ecd1112 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/security/package-frame.html pkg.csize=510 pkg.size=903
+file 93e239fef068cc442f5061bef28c616ae2dcbd85 chash=546c23b32e7412cf69b7d7f8ec4f0fa19708078c group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/security/SystemPermission.html pkg.csize=3891 pkg.size=20373
+dir group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/mbeans/drda
+file 9e58ea024755306daac74eae477f0f385b6f84eb chash=00e9367a83aacf39c590e1df9dc0c60fe0fe85e7 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/mbeans/package-tree.html pkg.csize=1456 pkg.size=5972
+file d5f0c531b538e498164fcbe3f93a39b1a33263d6 chash=758eb462d95cc695d091ea834c5b4c5c621c7d60 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/mbeans/JDBCMBean.html pkg.csize=2559 pkg.size=11435
+file 3e16160ef98841162ef695aaf6d512716e632446 chash=a51748ab62ce3ba7fe22056f1912955cca9b2cd1 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/mbeans/package-frame.html pkg.csize=582 pkg.size=1420
+file 8099533f3377d07231c919330833f28d1c9bf53e chash=88eb7064097d6ee84e16ee7a53d4937217c07f9f group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/mbeans/ManagementMBean.html pkg.csize=2822 pkg.size=12461
+file 4bb1cbe32f2f85ec2f814952fcad73cdf1bcda03 chash=c06df6d3fa22d46477aa9ad3e5035a1809f0b065 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/mbeans/VersionMBean.html pkg.csize=2749 pkg.size=13119
+file c90b11f0ce9f2df6b4e1ca14f3f70e717630311e chash=6830d80f423662508ba735a29d73a242d4a3962b group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/mbeans/Management.html pkg.csize=2887 pkg.size=14848
+file e7582b54f34ad99a94eb5b2ac10570f93042712c chash=3f6985312c32ba328a66f3aa4601a7e0816c4d80 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/mbeans/package-summary.html pkg.csize=2676 pkg.size=9601
+file 0c5ab68bf2b253701e25df40d1ad4f15ac641c88 chash=7654b293d9b6215b008549bb2bcc001013b489c5 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/mbeans/drda/NetworkServerMBean.html pkg.csize=7281 pkg.size=40140
+file 33902aa22d1459a5d4111f56597e13d7bd548972 chash=4d7a594a12b18c6c8d1753b949cc120da44e6791 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/mbeans/drda/package-tree.html pkg.csize=1371 pkg.size=5178
+file 277ef7073263f79377dcad0c725c866478f5da8c chash=ad2dcdd9629f6f91e40fca44e9885c36fd75f643 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/mbeans/drda/package-summary.html pkg.csize=2413 pkg.size=8141
+file 1df97830d701588aea3b2b801c5d5763126b5771 chash=e8b595bc4d7166b9467d9b77052eb32e171bb0f6 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/mbeans/drda/package-frame.html pkg.csize=536 pkg.size=976
+file 0a3ab917b1803e62711fdbe0f3896a853d17f0e7 chash=da061e6bdb29979c22def1f942b1c9974e939dcf group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/drda/package-frame.html pkg.csize=522 pkg.size=1005
+file 1b0bf07c9a6fb7736abea71ec66b17c9985b0003 chash=dcc0e4c57d995f04e223f8d860a9bea52d1f97a8 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/drda/NetServlet.html pkg.csize=3111 pkg.size=14727
+file fb7c8b80bc9bc9e23cbadd7bc3d080a107eebe88 chash=2f8f30d041556e4fb1e614e5a47033e3e57362d5 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/drda/package-summary.html pkg.csize=1593 pkg.size=5799
+file 61d034ab6b48bfc86ea57d7c514160df2a32806b chash=0602c05d9fdacdd9a7f14a6ded85759ddbae3257 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/drda/NetworkServerControl.html pkg.csize=7271 pkg.size=40070
+file 7b3ef992cf6976eee781db24013b157d82693396 chash=1fdaaccf3ef8bbc8d5d024a83161b6a0ea972c4c group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/drda/package-tree.html pkg.csize=1447 pkg.size=5556
+file 7ec3552b1acb71543db3ef1a9b9c14fdda617fdc chash=b07cd2777172aea5748e26e93883e6b529d7ea91 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/tools/package-tree.html pkg.csize=1390 pkg.size=5456
+file cf213a007c2ca4b9bec8653523ad83daa168b600 chash=551c551ae893b3b684d47ac8faf3cbb5e3a25ee2 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/tools/package-summary.html pkg.csize=1535 pkg.size=5808
+file 2c6c6864b2b88ccfd8d79299b1c39db1e1388950 chash=aaa45070e8c32e16d67ee92113b0fbfa0fda51b1 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/tools/ij.html pkg.csize=3183 pkg.size=16031
+file cf53aa7dace48f8bd7352bd428ff113bda24e379 chash=9d9f8f33879b9a56cbfa833b64ea364df1bb947e group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/tools/package-frame.html pkg.csize=524 pkg.size=1071
+file a47c2d3fd1eea57964ca4160ba0537d980379144 chash=4645148cc71f4df74db18b436394b2886b4088df group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/tools/dblook.html pkg.csize=3125 pkg.size=19976
+file 56f5eed14ad4a67cb5cc8c1d54f59ad910658f94 chash=3574eaa9c0e6a42c1102021a5fc6dedad235a1eb group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/tools/sysinfo.html pkg.csize=3664 pkg.size=22470
+file 163b25a88c83fc2d26ef8335c78bd07c3f0da73e chash=c53274b3f256bd8a3821a4a1cff040477d130ba8 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/vti/RestrictedVTI.html pkg.csize=3694 pkg.size=13187
+file 0458bf5f8097ad177fa6ef27332c3a035d0e576b chash=de6dd73c0fa5e6ad625c8070d26e2906a14ecdc0 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/vti/package-tree.html pkg.csize=1560 pkg.size=7052
+file 6278e85b15d18d14dbc2d8ce296f2bd6fcd11ab1 chash=473c229ce543ed6fdb2e4158b603b8fc4bfe8fc0 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/vti/package-summary.html pkg.csize=3325 pkg.size=11867
+file 2c9929c1c4e593bfbdefaaf60affaaa015faa2fc chash=9d65ee435263713908ab317f02f33ce88725828f group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/vti/StringColumnVTI.html pkg.csize=9566 pkg.size=121692
+file 3785aac368928fb0df38683635e5a7d3ec8ca52f chash=6f38e761493890361476114892c12d9b13580f41 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/vti/VTIEnvironment.html pkg.csize=2759 pkg.size=12233
+file c3f32094a916177af11268adc19e4da2c36f8186 chash=e3987d7758de9e8c6a9e4568c414644babd44beb group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/vti/Restriction.ColumnQualifier.html pkg.csize=4021 pkg.size=25469
+file 52886ae506af9f61669f943df4120a55dc0a3eda chash=b01c7da9acba681594c1e938e9b4eea95eebdb50 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/vti/Restriction.OR.html pkg.csize=2998 pkg.size=16592
+file 2576c0d7fcdb896ededb8cff7b76da4210ed4d87 chash=c08b49608886d63a82168bafd435fa3c962cfccb group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/vti/package-frame.html pkg.csize=673 pkg.size=2131
+file aa7a828fcbf81374461cd03e5eca34347dc5f15e chash=5e81815819bfa8eeb421daca2f96fc241f8026f4 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/vti/VTITemplate.html pkg.csize=9683 pkg.size=131101
+file de9d788c5defe2beaedc3c056d5aaaf15483d02f chash=df04bf257fb8ca6efb68e7d67ba00541fd12ba70 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/vti/Restriction.AND.html pkg.csize=2987 pkg.size=16611
+file 8d4ac37a70cb40c93341520dead1ea69a3506851 chash=4ddcb29b5c12a9a39b3d92462fddb49c8be01c86 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/vti/VTICosting.html pkg.csize=3238 pkg.size=16712
+file c0ca971f6fc67974161f79cf758efcfe0f589cf4 chash=5b514a2b54b3822dae4a0032af0504df76f04d13 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/vti/Restriction.html pkg.csize=2893 pkg.size=13521
+file 15fdfa15c398e3c409215cab2432e99981b82858 chash=a2a96e696ec0f617534fcfcbc5641e145baba874 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/catalog/package-frame.html pkg.csize=532 pkg.size=955
+file 5ddd3597b0c9a055ccdc753be91b5f8fb48be321 chash=a890231f0efba1c8dcaafc86f3395096eaf3b93a group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/catalog/SequencePreallocator.html pkg.csize=2588 pkg.size=9235
+file dbed806effed240dcd4f7e99e2fad9fcc5f014d1 chash=639480ba20e771df878f11ea200bfd53af0a6eb4 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/catalog/package-summary.html pkg.csize=1509 pkg.size=5440
+file 7be0f65c811bccc4b342a812e3e93ee8a48b127f chash=c485fef80c990281f7b15cc56ee1c3b51366c294 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/catalog/package-tree.html pkg.csize=1370 pkg.size=5098
+file 7c61f27a12914ac91e6009bf0df0ac12148319a6 chash=d07f29fded3f12a17587da571754a837dbf0db29 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/authentication/UserAuthenticator.html pkg.csize=3136 pkg.size=11564
+file 35acff7ffc4a6b14ab205c1edd60ff293a8c6c28 chash=97385ada88e742680f2f8efb774cdfacef59dcf8 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/authentication/package-summary.html pkg.csize=1525 pkg.size=5536
+file 8ccad7c558cdd8b8b7d9c62c874e98b4644fa771 chash=d0cbab6eb7cca090703d7d4ea9b04e6f96a0e6dc group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/authentication/package-frame.html pkg.csize=527 pkg.size=977
+file 185af0883aaf0af31acfae2ffd72f530f0100e1b chash=329f42fbd013b38757e132a2ec6b610a9235c537 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/authentication/package-tree.html pkg.csize=1362 pkg.size=5132
+file 768697f6e60ba377bfb97e3b23f07c65b7ffd034 chash=def28a84c28abd64e12d94f94259f8b33c145351 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/jdbc/EmbeddedSimpleDataSource.html pkg.csize=5283 pkg.size=32513
+file bd97c8de234a82dc2269c43bfd9bb0e7b9c3f14d chash=d0f92664a26a378717f8f8ee654143ff955f897a group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/jdbc/package-tree.html pkg.csize=1620 pkg.size=7853
+file 1bcb4187ab36b47bcca25be1e90f0ff370267bf0 chash=d7561d0a625ba63956a91be0aa7fc0ffd539c7a6 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/jdbc/ClientDriver.html pkg.csize=3002 pkg.size=16124
+file bfd46279ad45576f1db95bc11ed5ae7d467a8316 chash=6a3f3e1c79dfbcc3925f687b7b3f6124f3c0e1ec group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/jdbc/ClientConnectionPoolDataSource.html pkg.csize=4105 pkg.size=21874
+file 4ac3be8684b6f00f6c16b278fb20df9b416a9d44 chash=b9e3407598248af8135019f94152926d7d3c6c49 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/jdbc/ClientXADataSource.html pkg.csize=3858 pkg.size=18885
+file fde79941d19d7c2262cded4ddffa9d85af8a5a72 chash=3b26249de4cda2655bd238945641da4daf1753fe group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/jdbc/EmbeddedDriver.html pkg.csize=3744 pkg.size=17915
+file 1793c3e7f567b1bb86d5056d84508fe2cce450ad chash=9e1c14a2a59f1108a61a9c89bc780f7a2b103b04 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/jdbc/ClientDataSource.html pkg.csize=4397 pkg.size=17498
+file 2342f43aaa9ad98a74a4ee2375ddce1cf8a38d06 chash=923cac32a185aaa3c987d31562e6dddc95ff3b0b group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/jdbc/EmbeddedDataSource.html pkg.csize=5216 pkg.size=21202
+file fda7a27ca2e1fbcf4bc30809b27c2cd65077dc21 chash=2ea42955e9bfd703ea009da901cc14362fce4a01 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/jdbc/package-summary.html pkg.csize=6621 pkg.size=30485
+file a72f2fc3082a55301cda19e79d5c5a5e2f9dc04b chash=410fefae341d15f0fd118bcc3c1d6ddb78e4e513 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/jdbc/EmbeddedXADataSource.html pkg.csize=3819 pkg.size=19118
+file cbabd0389440f1ae9a1aeaa73de21471f3876d49 chash=d80dbca2a989131555c7939673b14d8ef558dbae group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/jdbc/EmbeddedConnectionPoolDataSource.html pkg.csize=3529 pkg.size=18025
+file 2911de628f8c5b79ef15e8bd66588dbed50e03a0 chash=280804c2491c95e12478bcf1fcadbfa420e6687f group=sys mode=0755 owner=root path=javadb/javadoc/jdbc3/org/apache/derby/jdbc/package-frame.html pkg.csize=593 pkg.size=1943
+dir group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/resources
+dir group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org
+file 5f0e61d9523ccccbc9a378b03f0318de7011e0c5 chash=bf7e877da72ea4e289d670eb7272168853e10e17 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/overview-frame.html pkg.csize=623 pkg.size=1946
+file 80df907e5b0bbdedd1058f929c5188ea6d1cb5c2 chash=b303d985f4669dc032f33f33c43d80ae331b09bb group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/allclasses-frame.html pkg.csize=1051 pkg.size=6615
+file 51e1322733754f13d205a40dee32f29077bc268f chash=9aa94307d638d10fcc1286bc2748332834251fb6 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/serialized-form.html pkg.csize=3491 pkg.size=25625
+file 5c2caf0946911fa069b8a6a8ce3ee854c9f56d22 chash=25f445f91b90b3a2b3a94b75d6bd22ab75a6bce8 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/index.html pkg.csize=1088 pkg.size=2936
+file 5c443d010b12a5e30a4071fd239c9f050f06fe88 chash=ac26b9e3657c53326791737584697801afd8d854 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/help-doc.html pkg.csize=2645 pkg.size=8827
+file 18e84c5f7400a80152e8542e6dc7ffbe6fec93b1 chash=f1075eec0d437867901892fe930a2312393f776e group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/package-list pkg.csize=102 pkg.size=255
+file 54478e4d738c568fecb1aba6ee713b5635f0819a chash=ea3a9fad16907326f9b3fae9720991cbe32fe2ff group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/overview-summary.html pkg.csize=2120 pkg.size=7813
+file 529c0a2d9f6e74fac78866094433589a2e414aad chash=6e82ae44ac7d29e020f87af8aaddd4d19400ee8e group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/index-all.html pkg.csize=12610 pkg.size=128925
+file d15574a7878dd21cadbaf5158b61490e4929a19b chash=044aaaec3613fe585f7a98a0be82bb8f2821c9c8 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/constant-values.html pkg.csize=2413 pkg.size=19984
+file 7f73d4630fa8ad77de60a2f9be72b935c1d27d47 chash=3f4ce9e4154e695742c59e9960fdd037b600b6e4 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/overview-tree.html pkg.csize=2410 pkg.size=16013
+file ce2b6217642caf70cc890c510e89fd41d8f544d3 chash=0e928be5b05c5ac72818c4bcb09d0e6711710d59 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/allclasses-noframe.html pkg.csize=1026 pkg.size=5855
+file 06d310f84ef785e4734767c726eeb944b07e1f66 chash=cc53335ea638fef9e8e9379e901fe6dcec5a0a6e group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/deprecated-list.html pkg.csize=1167 pkg.size=4008
+file e39fa99ad9fd3f02a561d719b1726b04d6f6f5a6 chash=aba5c90b1d507dc48604b3e6780ce3148b7cacd3 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/stylesheet.css pkg.csize=2760 pkg.size=13382
+file d69d2be8b7b60557645bfa334a162ffa2f54e848 chash=32f75aee98f3f25fbebd40ea35983eee51928807 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/resources/derby_logo64.png pkg.csize=1864 pkg.size=1841
+dir group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache
+dir group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby
+dir group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/vti
+dir group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/catalog
+dir group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/tools
+dir group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/drda
+dir group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/mbeans
+dir group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/jdbc
+dir group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/security
+dir group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/authentication
+file a4e154ad4be9bfe1b3ba1f2e600a7e7c8bdd8257 chash=ca5c4361669c5460af86b0f38deba672e0084763 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/vti/Restriction.html pkg.csize=2894 pkg.size=13521
+file 94af5cb7123aa49e3d422f1abe83044052b6bab8 chash=65fdf232e5dc39ac866719e454379b24530e8c37 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/vti/VTICosting.html pkg.csize=3238 pkg.size=16712
+file 58ffd6536298241364ad2ac483c8bb299962dd99 chash=fa904c5f01ee79aff45c60325b9442d87bc2f79c group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/vti/StringColumnVTI.html pkg.csize=9711 pkg.size=122916
+file bf6b2218b29e62c35912dd67a6d4e1ceeb90d4d3 chash=64f902ab582035056fd5f8cc528adf24ac8e8bc1 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/vti/package-summary.html pkg.csize=3325 pkg.size=11867
+file 5ecb3b79e649a45b331e11c895f7818bcddd4f67 chash=781cad29386651d1bf38e8d921a1922ad95a9d94 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/vti/VTITemplate.html pkg.csize=9816 pkg.size=132325
+file ad3d247f9b2cfb921b6ef676fed625b0ef0869b6 chash=c4846c27864bb4a3c9ea04e1cb9816c3336ed021 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/vti/Restriction.ColumnQualifier.html pkg.csize=4021 pkg.size=25469
+file df574bd90ce45efc18ebebdb89e2d71f820faea4 chash=a90ba468fc97670054782a70fc5680dbf053e308 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/vti/RestrictedVTI.html pkg.csize=3694 pkg.size=13187
+file 42c7f744e1632a452b9d206323b20a4d15ac5e80 chash=fa2dd4e9f9e78cca8b2a10bb1170dd7047c8876d group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/vti/Restriction.AND.html pkg.csize=2987 pkg.size=16611
+file a0fa3d2658053593d91c1d2bd7251d33958c6c2a chash=be7dc706d5115e95c4df3c09d01b838fcf18aa98 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/vti/Restriction.OR.html pkg.csize=2998 pkg.size=16592
+file b3f538eaa19f5a4eae1e13eac6d5c957e07f1465 chash=b11231ed8fb9b69969d23eed8abd808850f4f9b3 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/vti/package-tree.html pkg.csize=1560 pkg.size=7052
+file fe747dcae38f750e9f2a983795e6172ed8cc41e9 chash=a9c933b7402cacb57dac4a63cb9d9d915687d8f9 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/vti/package-frame.html pkg.csize=673 pkg.size=2131
+file b62bc1835ccae904c601464b8495a03fa4dbdcc2 chash=522fe209e648fa11e8a5ffab0055166697aabacc group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/vti/VTIEnvironment.html pkg.csize=2759 pkg.size=12233
+file b8eb1a3570f267458e1f8bb2edeb02e1b2785431 chash=a44b3891a4b1ce31eef40934a8c929aea05164e1 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/catalog/package-summary.html pkg.csize=1509 pkg.size=5440
+file ca736d84ba1cd693583ab494725e62bac7a1de77 chash=a8408cc90418d58c127785d2d64ac8d11b0f6ebe group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/catalog/SequencePreallocator.html pkg.csize=2588 pkg.size=9235
+file ce6453149a03c6ff65ddf4a3460afc09ad3908bd chash=97b598dacbb3e722fd3a0b208f322a0a1cdda453 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/catalog/package-tree.html pkg.csize=1370 pkg.size=5098
+file ee66c71591f3550bbb95003dc75b055261d3e42b chash=4e89daaed6d18ae3ca514d7be8e24503354356d2 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/catalog/package-frame.html pkg.csize=532 pkg.size=955
+file 6eb3e95c73ee73e633c78e072b966bced6537ebc chash=63bfa77fb1161498f221da2d4de1c32b117419be group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/tools/package-summary.html pkg.csize=1535 pkg.size=5808
+file d9aa165ba6db20f8d351119dd2b06724bf58a58c chash=f0551891abdccfc36df3fb96523c0ce76413095a group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/tools/dblook.html pkg.csize=3126 pkg.size=19976
+file 419650b5032ef8a2be3365eac4d37a240fe8976a chash=c5695718b071bd23e0c1ee8391846869ff11c6a2 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/tools/ij.html pkg.csize=3183 pkg.size=16031
+file f7557c576963979a21a48e92e1086d21f33410de chash=704bbc9bc90b6dc115e75587d5e3d4bca344b7a2 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/tools/sysinfo.html pkg.csize=3663 pkg.size=22470
+file 9838b200d54ab142a00f537b8aaad0f4cde6cfab chash=108c84bbd4598b71c5154d44ebf5c145d1876766 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/tools/package-frame.html pkg.csize=524 pkg.size=1071
+file 45d63d708630744fdfd25a8edffcf53a2918a75a chash=573409479c21ca48315f7160261cb58efb91cf46 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/tools/package-tree.html pkg.csize=1391 pkg.size=5456
+file 6350a1f0634a0eecb24c92fe3f5181fe0f25d5cc chash=b684ad4c7dd1037bf3e627c2a10ee43736acd9ae group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/drda/package-frame.html pkg.csize=523 pkg.size=1005
+file e6b01d6bce9bff4906275ba936c7aec367c9f296 chash=535707a9ab4f348698ac1341d3fe18ee610c37b1 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/drda/package-summary.html pkg.csize=1594 pkg.size=5799
+file c752e585b7833e2e32d6dfa9ef997016656f22e0 chash=89b6a8a3bf2b1e652ba6b69f07c4a2aef9846832 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/drda/NetServlet.html pkg.csize=3111 pkg.size=14727
+file 20f9c3164232c00395f9f2b93974e32b7cfb3c05 chash=b14fd7c029305b965132a624e25104e1ad8be284 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/drda/NetworkServerControl.html pkg.csize=7271 pkg.size=40070
+file aa88d59bfa38f85e642fd3f1f0726c573c94fbe7 chash=3ba6f8629ca9d9780f55a44e3a94dea869511cf6 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/drda/package-tree.html pkg.csize=1447 pkg.size=5556
+dir group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/mbeans/drda
+file 2b977d93ab610c97b49436310788a1818329c266 chash=4e7ef0fab91cbfd097c9a26978d2e12f3f1c1e31 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/mbeans/package-summary.html pkg.csize=2677 pkg.size=9601
+file 0cb7bea6dd747d884758d11cb03b41ff19c03c16 chash=c0cf7ff418f8c3f290c47b5d890d23b0fc5c930c group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/mbeans/Management.html pkg.csize=2888 pkg.size=14848
+file bc36c5211010bfcbf700da924fccf098475852ba chash=e270ecd20a86c5dc935adb2a25d877db88fd9429 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/mbeans/package-tree.html pkg.csize=1456 pkg.size=5972
+file b0572e434ab575a59b2810d9cc24fa739347daca chash=602150f2a00c1afd7df3685675b374c4b7badbc9 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/mbeans/VersionMBean.html pkg.csize=2749 pkg.size=13119
+file a6d078b20f95f79fa0cd3507a7dc6f8d09b35e82 chash=2af2ece5b47f49e54146a97bea008ed9a5f784a1 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/mbeans/JDBCMBean.html pkg.csize=2560 pkg.size=11435
+file 7ec680555492aec354c0dab4f5371d865826ebb9 chash=f63369b8d63fe6863e5a32ea6a5f0cde7f6cd684 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/mbeans/package-frame.html pkg.csize=583 pkg.size=1420
+file 43ffa7ccff45e57ab0b96be6e26185499b3aa7bd chash=12c746003d656eae5f031a42ef2f8a0201713e30 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/mbeans/ManagementMBean.html pkg.csize=2823 pkg.size=12461
+file 3cd1276e41d5c31aa8df0ca633cad722ae83889a chash=221b1da3eec96bd6afbfebae492bddcb4f06a5e9 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/mbeans/drda/NetworkServerMBean.html pkg.csize=7281 pkg.size=40140
+file 8bb8b04b44f9d7867cbc4e47de3c4dd32c50745b chash=b2eaa87392373bcc1a92694dee41a245bd3f564f group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/mbeans/drda/package-tree.html pkg.csize=1371 pkg.size=5178
+file bb7541c59b1186bc6bcbdd9e3bd4d38dc1e99da4 chash=b846295dbd8e046ee3cf06780446ef547236f248 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/mbeans/drda/package-frame.html pkg.csize=536 pkg.size=976
+file 5446a7946c436753d2f0a9488a0378c748c28c61 chash=09b86683a488a7867e0621a51597a62e40dbd94a group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/mbeans/drda/package-summary.html pkg.csize=2413 pkg.size=8141
+file 3de4856e2cdd99c2a655e55286c4d44f460e764d chash=df2a5d570c81a644babcd79a5e466e3901840fec group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/jdbc/ClientConnectionPoolDataSource40.html pkg.csize=3659 pkg.size=17885
+file 71077488802f44b38d3436771d0d64954b5b2a3c chash=63bda0809928a6a6b964f1fce1e9eef6c8e5992f group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/jdbc/ClientDataSource40.html pkg.csize=4585 pkg.size=18761
+file 0a94f4a252dab57bb0f1e0d0f844093650cf959d chash=598e280be88e1ad49e82f48abd038dbdecb14ada group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/jdbc/EmbeddedConnectionPoolDataSource40.html pkg.csize=3275 pkg.size=16433
+file b7b92e5a4b093589fe11681c0947a424fd365ebf chash=879675c36aba239756f09cde383ebcb59251e26f group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/jdbc/EmbeddedDriver.html pkg.csize=3746 pkg.size=17915
+file aee4496f436d860eec904cd7506dcf6055ab105f chash=285e8d11bb3c8bbc39654addfcde1f394ac8b5b8 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/jdbc/package-summary.html pkg.csize=6739 pkg.size=32693
+file 3dd22e98d324287b238e9d80b7e3e4194b0b6f6e chash=4f9d464f1279b9f6cd59ea8928d7b88ed1a78a09 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/jdbc/package-tree.html pkg.csize=1754 pkg.size=10305
+file 4cd895a1979fd29da2802ea2bc3eac805689c29b chash=d4ca0da93c8416d449caa02abb3dbd2af3f4bd7d group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/jdbc/ClientXADataSource40.html pkg.csize=3696 pkg.size=17545
+file b314ea1d1f8635c28c7a4e421dc854a44bdc0d78 chash=f6c7d43cc50fe035681db54b8b5c32d5b82f364d group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/jdbc/EmbeddedDataSource40.html pkg.csize=4808 pkg.size=20662
+file 64e9f8c9d45617a63fce0fa1222173a32a1903b1 chash=9aa2f0afc46ee92d2ec3e33ea89784c0fbe533b5 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/jdbc/EmbeddedXADataSource40.html pkg.csize=3394 pkg.size=16119
+file cb00fd38bf3f9f7d578f24a6f0ef27e7f4dd8917 chash=1fe28afce7eae071c0de3115bdd28c73170d8f01 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/jdbc/package-frame.html pkg.csize=631 pkg.size=2725
+file 0aa9cb9da44d9f569293c85dc3549a1c12c14fc8 chash=4a56934befc669a55a5558a2edf49d5a09cb1bed group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/security/package-frame.html pkg.csize=510 pkg.size=903
+file c069ab6c01d5cf24dede08fc9262635f743db0b7 chash=862bff14ee084b7ca7e1fdabca84cbc973139184 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/security/package-summary.html pkg.csize=1495 pkg.size=5408
+file b2b27ed7287f20e96f2b3ea9da9bf66a3c9e66ee chash=51d3d578a8cb9d27b9544c2c05b1b1f1ba502e2d group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/security/package-tree.html pkg.csize=1420 pkg.size=5360
+file 2828f121945b1ddb2699669c4b064331da6b2074 chash=8428698344527bf76fd658637452ed7ad9d57a75 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/security/SystemPermission.html pkg.csize=3891 pkg.size=20373
+file 7db535f5e7951942c061d42485332ce0651a7701 chash=3e4fbe2ac33074f95d13ceea79c0cb276c86c377 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/authentication/package-tree.html pkg.csize=1362 pkg.size=5132
+file 56f24def7e78540246edd42a2eac6bf31132ac48 chash=0d9fbdee114092efe412120690b86f60afa34fd1 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/authentication/package-frame.html pkg.csize=528 pkg.size=977
+file 28f3075520f10963ef8d8ba952219fd3c6622274 chash=c684797bb399827bb6fc7d5cf41b0a2fedbb5ef6 group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/authentication/UserAuthenticator.html pkg.csize=3136 pkg.size=11564
+file 76c1a3a79fb705d3231bc271d310377211c9a576 chash=801635f19b7cbbf4f21b2881a2344bd38b6bb21e group=sys mode=0755 owner=root path=javadb/javadoc/jdbc4/org/apache/derby/authentication/package-summary.html pkg.csize=1525 pkg.size=5536

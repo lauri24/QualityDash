@@ -1,0 +1,71 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
+public class DBConnectionManager {
+	  
+	public DBConnectionManager(){
+		
+		
+		
+		
+		
+	}
+	public static Connection getRemoteConnection() {
+	  	  System.out.println("Here1");
+	      
+	          try {
+	        	  System.out.println("Here");
+	          Class.forName("org.postgresql.Driver");
+	          String dbName = "postgres";
+	          String userName = "postgres";
+	          String password ="postgres";
+	          String hostname = "ec2-52-56-206-102.eu-west-2.compute.amazonaws.com";
+	          String port = "5432";
+	          String jdbcUrl = "jdbc:postgresql://" + hostname + ":" + port + "/" + dbName + "?user=" + userName + "&password=" + password;
+	          System.out.println("Getting remote connection with connection string from environment variables.");
+	          Connection con = DriverManager.getConnection(jdbcUrl);
+	          System.out.println("Remote connection successful.");
+	          return con;
+	        }
+	        catch (ClassNotFoundException e) { System.out.println(e.toString());}
+	        catch (SQLException e) { System.out.println(e.toString());}
+	        
+	        return null;
+	      }
+	
+	public static String getMeasureText(Connection connection) throws SQLException{
+	    
+    	Statement stmt = null;
+    	String jsonInString="";
+    	stmt = connection.createStatement();
+    	Gson gson = new GsonBuilder().create();
+    	ResultSet rs = stmt.executeQuery( "SELECT * FROM mesa.PL_MEASURE_FACT_PRT LIMIT 1 OFFSET 100;" );
+    	while(rs.next()) {
+    	  //int numColumns = rs.getColumnCount();
+    
+    	 // for (int i=1; i<=numColumns; i++) {
+    	   // String column_name = rsmd.getColumnName(i);
+    	  
+    		CompletnessModel model=new CompletnessModel();
+    		model.setCompletness(rs.getInt("measure_text"));
+    		//String  name = rs.getString("measure_text");
+    		//System.out.println(name);
+    	  
+    	    jsonInString = gson.toJson(model);
+    	 // }
+
+    	}
+    	
+        rs.close();
+        stmt.close();
+        System.out.println(jsonInString);
+        return jsonInString;
+    	
+    }
+}

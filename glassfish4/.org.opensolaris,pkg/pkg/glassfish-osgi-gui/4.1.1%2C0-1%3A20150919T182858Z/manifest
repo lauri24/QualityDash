@@ -1,0 +1,13 @@
+set name=fmri value=pkg://release.glassfish.org/glassfish-osgi-gui@4.1.1,0-1:20150919T182858Z
+set name=authority value=release.glassfish.org
+set name=info.classification value="Application Servers"
+set name=pkg.description value="GlassFish OSGi Admin Console provides bundles required to run a web based administration console for the OSGi runtime. GlassFish Server is a modular and lightweight Java EE 7 compliant application server. Key features include an OSGi runtime, fast startup time, maven support, and rapid iterative development with Active Redeploy.  GlassFish Server also offers feature-rich administration with the web console, command line, and RESTful API."
+set name=pkg.summary value="GlassFish OSGi Admin Console"
+depend fmri=pkg:/glassfish-osgi-http type=require
+license 8741fa556feea4ca58ec28abc47de0bf9d5b39a3 chash=28b7cfba8f297b99296afc231955dc90e8d76d47 license="CDDL and GPL v2 with classpath exception" pkg.csize=12394 pkg.size=38052
+dir group=sys mode=0755 owner=root path=glassfish
+dir group=sys mode=0755 owner=root path=glassfish/modules
+file cd1c607108c519c3db3e0d255823397a10962488 chash=1c30ec430b0f480ab5afb4d001854384aa9e9115 group=sys mode=0644 owner=root path=glassfish/modules/glassfish-osgi-console-plugin.jar pkg.csize=15914 pkg.size=18757
+dir group=sys mode=0755 owner=root path=glassfish/modules/autostart
+file 7db01ba3f9c2daeee3e7c98479c23804e967c513 chash=f47f3bf8b38685c8c407b643749d6677cd3af7d3 group=sys mode=0644 owner=root path=glassfish/modules/autostart/org.apache.felix.webconsole.jar pkg.csize=574149 pkg.size=608910
+file 6ff9dae67583ba6ceddf121cfd7c99d55461d19a chash=3f76cfc667035e7ff6fa0ef5537da04de17b945d group=sys mode=0644 owner=root path=glassfish/modules/autostart/felix-webconsole-extension.jar pkg.csize=12421 pkg.size=14795

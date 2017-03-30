@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>AJAX in java web application using jQuery</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+This is a ajax test
+</head>
+<body>
+
+<h1>Hello: <span style="color:red" id="showMyName"></span></h1>
+<form method="post" action="/HelloServlet" id="myForm">
+    <input type="text" name="myName" />            
+</form>
+<button id="ajaxSubmit" type="submit">SEND</button>
+<script type="text/javascript">
+     $(document).ready(function() {
+        $('#ajaxSubmit').on('click', function() {
+        // To simplify things, wrap what you can in a form and serialize                      
+        // it to send to the server.
+            var myForm = $('#myForm');
+            $.get(myForm.attr('action'), myForm.serialize(), function(data) {
+                $('#showMyName').text(data);
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
+ 

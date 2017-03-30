@@ -1,0 +1,16 @@
+set name=fmri value=pkg://release.glassfish.org/glassfish-cmp-l10n@4.1.1,0-1:20150919T183247Z
+set name=authority value=release.glassfish.org
+set name=info.classification value="Application Servers"
+set name=pkg.description value="Localization of GlassFish cmp.  GlassFish Server is a modular and lightweight Java EE 7 compliant application server. Key features include an OSGi runtime, fast startup time, maven support, and rapid iterative development with Active Redeploy.  GlassFish Server also offers feature-rich administration with the web console, command line, and RESTful API."
+set name=pkg.summary value="GlassFish CMP Localization"
+depend fmri=pkg:/glassfish-cmp type=require
+license 8741fa556feea4ca58ec28abc47de0bf9d5b39a3 chash=28b7cfba8f297b99296afc231955dc90e8d76d47 license="CDDL and GPL v2 with classpath exception" pkg.csize=12394 pkg.size=38052
+dir group=sys mode=0755 owner=root path=glassfish
+dir group=sys mode=0755 owner=root path=glassfish/modules
+file 767eefcb7832e6d2166e829962446549f1bcbd51 chash=cd520afb453c75cd22210ccdabf757483cc19772 group=sys mode=0644 owner=root path=glassfish/modules/cmp-utility-l10n.jar pkg.csize=40859 pkg.size=48555
+file 3e6a7e9b65350f84c75b83881c81688dc0fd2303 chash=5d9e87ce058239402bae628b9be2a61c6d46ef96 group=sys mode=0644 owner=root path=glassfish/modules/cmp-support-ejb-l10n.jar pkg.csize=167754 pkg.size=178014
+file 9df3163a518cd78e2b839c5997bb55f13c42ea4c chash=6efe5e4b9191fdbbad8bde09a602178dfb435232 group=sys mode=0644 owner=root path=glassfish/modules/cmp-ejb-mapping-l10n.jar pkg.csize=35313 pkg.size=38115
+file 754386e40b71bb01a250693a91756d19ce1b8856 chash=22d3d3bb89fcdc9dbd022d23c4956d7d198f5e5e group=sys mode=0644 owner=root path=glassfish/modules/cmp-enhancer-l10n.jar pkg.csize=21877 pkg.size=24594
+file 53868919d3ad39102df48649c02702bf202a3156 chash=e54adf69dff956b205ca556408fd4f1907b7a0cd group=sys mode=0644 owner=root path=glassfish/modules/cmp-model-l10n.jar pkg.csize=64924 pkg.size=67425
+file 7ff1df8db6c7272aa280c993fc4e29f3358a538b chash=f7ae7627ca75ad24b4c3bf4da91ddac2747c001b group=sys mode=0644 owner=root path=glassfish/modules/cmp-generator-database-l10n.jar pkg.csize=21470 pkg.size=24602
+file 9e68894f9e4c11ac6a90e27b37900aa42682e396 chash=2228b73c8a00ede5b66be285191599af50bb63c0 group=sys mode=0644 owner=root path=glassfish/modules/cmp-support-sqlstore-l10n.jar pkg.csize=217956 pkg.size=231228

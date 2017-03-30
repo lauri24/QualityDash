@@ -1,0 +1,14 @@
+set name=fmri value=pkg://release.glassfish.org/glassfish-common-full-l10n@4.1.1,0-1:20150919T183313Z
+set name=authority value=release.glassfish.org
+set name=info.classification value="Application Servers"
+set name=pkg.description value="Localization of GlassFish Commons Full Profile description placeholder. GlassFish Server is a modular and lightweight Java EE 7 compliant application server. Key features include an OSGi runtime, fast startup time, maven support, and rapid iterative development with Active Redeploy.  GlassFish Server also offers feature-rich administration with the web console, command line, and RESTful API."
+set name=pkg.summary value="GlassFish Commons Full Profile Localization"
+depend fmri=pkg:/glassfish-common-full type=require
+license 8741fa556feea4ca58ec28abc47de0bf9d5b39a3 chash=28b7cfba8f297b99296afc231955dc90e8d76d47 license="CDDL and GPL v2 with classpath exception" pkg.csize=12394 pkg.size=38052
+dir group=sys mode=0755 owner=root path=glassfish
+dir group=sys mode=0755 owner=root path=glassfish/modules
+file 40272a3e6fcfc834b851a5a1e50b27468c6f7bbb chash=2998e2c9d30164586f4a57075015d0aac9b62e0d group=sys mode=0644 owner=root path=glassfish/modules/concurrent-impl-l10n.jar pkg.csize=19604 pkg.size=22149
+file 4930240ebb1b109128dc2449ce8b8f7f03509c27 chash=485b1e9f0a7f98badf05f0c5bed496e869531b14 group=sys mode=0644 owner=root path=glassfish/modules/console-concurrent-plugin-l10n.jar pkg.csize=408273 pkg.size=450073
+file 71228985da55ad1bbfc586456d0975f376675968 chash=408ea1f59d548a5cdede4a65d64985fa6b99cbda group=sys mode=0644 owner=root path=glassfish/modules/console-common-full-plugin-l10n.jar pkg.csize=413380 pkg.size=457514
+file 520f7e35b3ed37116eb3f99c366aa603ae1340f3 chash=4246ecfa68663c9ce85743055a8f78365c7abdef group=sys mode=0644 owner=root path=glassfish/modules/concurrent-connector-l10n.jar pkg.csize=12865 pkg.size=15596
+file e2c40cb0c407e64bc80f29a9154c3c7480cfcdeb chash=728827d8175e39df949ba8597177916c59881dbb group=sys mode=0644 owner=root path=glassfish/modules/deployment-javaee-full-l10n.jar pkg.csize=13707 pkg.size=16657

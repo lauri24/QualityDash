@@ -1,0 +1,10 @@
+set name=fmri value=pkg://release.glassfish.org/glassfish-ant-tasks@4.1.1,0-1:20150919T183102Z
+set name=authority value=release.glassfish.org
+set name=info.classification value="Application Servers"
+set name=pkg.description value="GlassFish Ant Tasks provide Ant tasks to manage the lifecycle and configuration of GlassFish in both regular and embedded modes. GlassFish Server is a modular and lightweight Java EE 7 compliant application server. Key features include an OSGi runtime, fast startup time, maven support, and rapid iterative development with Active Redeploy.  GlassFish Server also offers feature-rich administration with the web console, command line, and RESTful API."
+set name=pkg.summary value="GlassFish Ant Tasks"
+license 8741fa556feea4ca58ec28abc47de0bf9d5b39a3 chash=28b7cfba8f297b99296afc231955dc90e8d76d47 license="CDDL and GPL v2 with classpath exception" pkg.csize=12394 pkg.size=38052
+dir group=sys mode=0755 owner=root path=glassfish
+dir group=sys mode=0755 owner=root path=glassfish/lib
+dir group=sys mode=0755 owner=root path=glassfish/lib/ant
+file a4770c44e2f4560aed7895e92353551c2103731c chash=db8796f19a538900b3c6106f52776a363af84935 group=sys mode=0644 owner=root path=glassfish/lib/ant/ant-tasks.jar pkg.csize=22328 pkg.size=25989

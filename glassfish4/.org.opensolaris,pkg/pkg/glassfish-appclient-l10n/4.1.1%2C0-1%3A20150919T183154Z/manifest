@@ -1,0 +1,13 @@
+set name=fmri value=pkg://release.glassfish.org/glassfish-appclient-l10n@4.1.1,0-1:20150919T183154Z
+set name=authority value=release.glassfish.org
+set name=info.classification value="Application Servers"
+set name=pkg.description value="Localization of Java EE Application Client Container. GlassFish Server is a modular and lightweight Java EE 7 compliant application server. Key features include an OSGi runtime, fast startup time, maven support, and rapid iterative development with Active Redeploy.  GlassFish Server also offers feature-rich administration with the web console, command line, and RESTful API."
+set name=pkg.summary value="GlassFish Appclient Localization"
+depend fmri=pkg:/glassfish-appclient type=require
+license 8741fa556feea4ca58ec28abc47de0bf9d5b39a3 chash=28b7cfba8f297b99296afc231955dc90e8d76d47 license="CDDL and GPL v2 with classpath exception" pkg.csize=12394 pkg.size=38052
+dir group=sys mode=0755 owner=root path=glassfish
+dir group=sys mode=0755 owner=root path=glassfish/modules
+dir group=sys mode=0755 owner=root path=glassfish/lib
+file 71ae8335080ed7437be24ff2fb0f667e5abf8681 chash=193f22c2741a27b9d927256413465291d2a652d5 group=sys mode=0644 owner=root path=glassfish/modules/gf-client-module-l10n.jar pkg.csize=77967 pkg.size=88975
+file 6b9e4c8e8e5879b0199863bf7c715b0fc281bceb chash=886d498a0dd68d5610e720c834cba0e3729896a8 group=sys mode=0644 owner=root path=glassfish/modules/appclient-server-core-l10n.jar pkg.csize=47850 pkg.size=57574
+file 19bb121f3073de507b88e5fc3a9de64f41d77c43 chash=b8852caf26e622c233b2a6006d320e5e859fd586 group=sys mode=0644 owner=root path=glassfish/lib/gf-client-l10n.jar pkg.csize=25170 pkg.size=30482

@@ -1,0 +1,15 @@
+set name=fmri value=pkg://release.glassfish.org/glassfish-jms-l10n@4.1.1,0-1:20150919T183611Z
+set name=authority value=release.glassfish.org
+set name=info.classification value="Application Servers"
+set name=pkg.description value="Localization of The Java Message Service. GlassFish Server is a modular and lightweight Java EE 7 compliant application server. Key features include an OSGi runtime, fast startup time, maven support, and rapid iterative development with Active Redeploy.  GlassFish Server also offers feature-rich administration with the web console, command line, and RESTful API."
+set name=pkg.summary value="GlassFish JMS Localization"
+depend fmri=pkg:/glassfish-jms type=require
+license 8741fa556feea4ca58ec28abc47de0bf9d5b39a3 chash=28b7cfba8f297b99296afc231955dc90e8d76d47 license="CDDL and GPL v2 with classpath exception" pkg.csize=12394 pkg.size=38052
+dir group=sys mode=0755 owner=root path=glassfish
+dir group=sys mode=0755 owner=root path=glassfish/modules
+file 1a395210c45391b1f828cfb30d2b8f4264e8ff5e chash=5159d63ecf437f0491b3564878421c8f2567d47a group=sys mode=0644 owner=root path=glassfish/modules/console-jms-plugin-l10n.jar pkg.csize=587432 pkg.size=636503
+file 98f2d10a501dfcdd8c9237a450ba53a86a2fd64b chash=0431572c9d9e0f581b63aefe42acc74e6e9ca1fc group=sys mode=0644 owner=root path=glassfish/modules/gf-jms-connector-l10n.jar pkg.csize=12358 pkg.size=15354
+file b139b99a5603c35c2438f1e6cb44480777658d92 chash=8c09637ab720fff36df6f2d9f79f449a0aeabe74 group=sys mode=0644 owner=root path=glassfish/modules/gf-jms-injection-l10n.jar pkg.csize=17257 pkg.size=19783
+file 729cea7007ef466fb2370259d0443a41bdd1c469 chash=f4f710c9856e056ab92ee0c2e21b6dd25345aa46 group=sys mode=0644 owner=root path=glassfish/modules/jms-core-l10n.jar pkg.csize=19832 pkg.size=22672
+file 82e9491f4f0ff87f056159fb6ed71bfd8931dba6 chash=4dbd145491a32ec508f1d13018e3fde9bc1619f3 group=sys mode=0644 owner=root path=glassfish/modules/jms-admin-l10n.jar pkg.csize=184493 pkg.size=203125
+file 7e4cb39db4112040d591164d11b14844a9701cb3 chash=7b7cc845a1ec138844d27f6853b01e2352c97e89 group=sys mode=0644 owner=root path=glassfish/modules/connectors-inbound-runtime-l10n.jar pkg.csize=14955 pkg.size=17827

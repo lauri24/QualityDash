@@ -1,0 +1,14 @@
+set name=fmri value=pkg://release.glassfish.org/glassfish-common-l10n@4.1.1,0-1:20150919T183339Z
+set name=authority value=release.glassfish.org
+set name=info.classification value="Application Servers"
+set name=pkg.description value="Localization of GlassFish common utilities and components.  GlassFish Server is a modular and lightweight Java EE 7 compliant application server. Key features include an OSGi runtime, fast startup time, maven support, and rapid iterative development with Active Redeploy.  GlassFish Server also offers feature-rich administration with the web console, command line, and RESTful API."
+set name=pkg.summary value="GlassFish Common Components Localization"
+depend fmri=pkg:/glassfish-common type=require
+license 8741fa556feea4ca58ec28abc47de0bf9d5b39a3 chash=28b7cfba8f297b99296afc231955dc90e8d76d47 license="CDDL and GPL v2 with classpath exception" pkg.csize=12394 pkg.size=38052
+dir group=sys mode=0755 owner=root path=glassfish
+dir group=sys mode=0755 owner=root path=glassfish/modules
+file fcc0bccab4bce570a01853b362e1c227adfc843d chash=b9845c5801e7cedc137d9d1e8550f273c62dbff1 group=sys mode=0644 owner=root path=glassfish/modules/gms-bootstrap-l10n.jar pkg.csize=12585 pkg.size=15253
+file b7b5ffcf3ad3608b37e9e6308b8fe5c8e2347b04 chash=37ffd80238646e87f106210dd75e2b9c875abf94 group=sys mode=0644 owner=root path=glassfish/modules/glassfish-naming-l10n.jar pkg.csize=12813 pkg.size=15572
+file f77fb3c4f4f602189c3f8b5d4d53c3a0293db25b chash=a4a7b36937094e246afa4c9a82f6bc2ae11f1cc0 group=sys mode=0644 owner=root path=glassfish/modules/cluster-ssh-l10n.jar pkg.csize=26823 pkg.size=31655
+file c21c9a2eff78c5655343127fcf3e015a0818bd1a chash=b36873da38ff931db89d237e508ea19e52a75fe8 group=sys mode=0644 owner=root path=glassfish/modules/monitoring-core-l10n.jar pkg.csize=30539 pkg.size=38125
+file c4c54ca22f77966ad6dee782a60da9450ad72fd1 chash=51bbc309aa9c34f20a4d30252f9b9f2881a2281a group=sys mode=0644 owner=root path=glassfish/modules/security-l10n.jar pkg.csize=353221 pkg.size=409610

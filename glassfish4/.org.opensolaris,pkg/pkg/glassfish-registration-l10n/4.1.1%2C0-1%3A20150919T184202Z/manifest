@@ -1,0 +1,10 @@
+set name=fmri value=pkg://release.glassfish.org/glassfish-registration-l10n@4.1.1,0-1:20150919T184202Z
+set name=authority value=release.glassfish.org
+set name=info.classification value="Application Servers"
+set name=pkg.description value="Localization of GlassFish Registration.GlassFish Server is a modular and lightweight Java EE 7 compliant application server. Key features include an OSGi runtime, fast startup time, maven support, and rapid iterative development with Active Redeploy.  GlassFish Server also offers feature-rich administration with the web console, command line, and RESTful API."
+set name=pkg.summary value="GlassFish Registration Localization"
+depend fmri=pkg:/glassfish-registration type=require
+license 8741fa556feea4ca58ec28abc47de0bf9d5b39a3 chash=28b7cfba8f297b99296afc231955dc90e8d76d47 license="CDDL and GPL v2 with classpath exception" pkg.csize=12394 pkg.size=38052
+dir group=sys mode=0755 owner=root path=glassfish
+dir group=sys mode=0755 owner=root path=glassfish/modules
+file 34de0ae578c35f69123f1a8714c61e67f31aba4c chash=cf9e9443625c979ede6efa99a31a3a67c8d9f7a6 group=sys mode=0644 owner=root path=glassfish/modules/registration-impl-l10n.jar pkg.csize=52944 pkg.size=55558

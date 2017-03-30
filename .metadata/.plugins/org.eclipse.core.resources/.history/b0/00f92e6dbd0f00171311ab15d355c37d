@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>jQuery, Ajax and Servlet/JSP integration example</title>
+<style>
+	.state{
+		fill: none;
+		stroke: #a9a9a9;
+		stroke-width: 1;
+	}
+	.state:hover{
+		fill-opacity:0.5;
+	}
+	#tooltip {   
+		position: absolute;           
+		text-align: center;
+		padding: 20px;             
+		margin: 10px;
+		font: 12px sans-serif;        
+		background: lightsteelblue;   
+		border: 1px;      
+		border-radius: 2px;           
+		pointer-events: none;         
+	}
+	#tooltip h4{
+		margin:0;
+		font-size:14px;
+	}
+	#tooltip{
+		background:rgba(0,0,0,0.9);
+		border:1px solid grey;
+		border-radius:5px;
+		font-size:12px;
+		width:auto;
+		padding:4px;
+		color:white;
+		opacity:0;
+	}
+	#tooltip table{
+		table-layout:fixed;
+	}
+	#tooltip tr td{
+		padding:0;
+		margin:0;
+	}
+	#tooltip tr td:nth-child(1){
+		width:50px;
+	}
+	#tooltip tr td:nth-child(2){
+		text-align:center;
+	}
+</style>
+<script src="http://code.jquery.com/jquery-1.10.2.js"
+	type="text/javascript"></script>
+<script src="js/app-ajax.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://mbostock.github.com/d3/d3.js"></script>
+<script type="text/javascript" src="js/gauge.js"></script>
+<svg width="960" height="600" id="statesvg"></svg> 
+<script src="uStates.js"></script> <!-- creates uStates. -->
+		<!-- Gauge script-->
+	<script>
+						
+				
+			var gauges = [];
+			
+			function createGauge(name, label, min, max)
+			{
+				var config = 
+				{
+					size: 100,
+					label: label,
+					min: undefined != min ? min : 0,
+					max: undefined != max ? max : 100,
+					minorTicks: 5
+				}
+				
+				var range = config.max - config.min;
+				config.yellowZones = [{ from: config.min + range*0.75, to: config.min + range*0.9 }];
+				config.redZones = [{ from: config.min + range*0.9, to: config.max }];
+				
+				gauges[name] = new Gauge(name + "GaugeContainer", config);
+				gauges[name].render();
+			}
+			
+			function createGauges()
+			{
+				createGauge("memory", "Completness");
+
+			}
+			
+			function updateGauges()
+			{
+				for (var key in gauges)
+				{
+				    var completness =100;
+				    
+				    $.get('CompletnessController', {
+		                userName : name
+		        }, function(responseText) {
+		        	 var obj = jQuery.parseJSON(responseText);
+		        	 if (obj) {
+		                 //  var dd = JSON.parse(result);
+		                 
+					gauges[key].redraw(obj.completness);
+		        	 }else{
+		        		 alert('Wrong')
+		        	 }
+		        });
+				}
+			}
+			
+			function getRandomValue(gauge)
+			{
+				var overflow = 0; //10;
+				return gauge.config.min - overflow + (gauge.config.max - gauge.config.min + overflow*2) *  Math.random();
+			}
+			
+			function initialize()
+			{
+				createGauges();
+				setInterval(updateGauges, 5000);
+				uStates.draw("#statesvg", sampleData, tooltipHtml);
+				
+				d3.select(self.frameElement).style("height", "600px"); 
+			}
+			
+			<!-- Chart script-->
+			function tooltipHtml(n, d){	/* function to create html content string in tooltip div. */
+				return "<h4>"+n+"</h4><table>"+
+					"<tr><td>Low</td><td>"+(d.low)+"</td></tr>"+
+					"<tr><td>Average</td><td>"+(d.avg)+"</td></tr>"+
+					"<tr><td>High</td><td>"+(d.high)+"</td></tr>"+
+					"</table>";
+			}
+			
+			var sampleData ={};	/* Sample random data. */	
+			["HI", "AK", "FL", "SC", "GA", "AL", "NC", "TN", "RI", "CT", "MA",
+			"ME", "NH", "VT", "NY", "NJ", "PA", "DE", "MD", "WV", "KY", "OH", 
+			"MI", "WY", "MT", "ID", "WA", "DC", "TX", "CA", "AZ", "NV", "UT", 
+			"CO", "NM", "OR", "ND", "SD", "NE", "IA", "MS", "IN", "IL", "MN", 
+			"WI", "MO", "AR", "OK", "KS", "LS", "VA"]
+				.forEach(function(d){ 
+					var low=Math.round(100*Math.random()), 
+						mid=Math.round(100*Math.random()), 
+						high=Math.round(100*Math.random());
+					sampleData[d]={low:d3.min([low,mid,high]), high:d3.max([low,mid,high]), 
+							avg:Math.round((low+mid+high)/3), color:d3.interpolate("#ffffcc", "#800026")(low/100)}; 
+				});
+			
+			/* draw states on id #statesvg */	
+		
+		</script>
+		
+
+
+	
+
+
+</head>
+
+<body onload="initialize()">
+
+	<br>
+	<br>
+	<span id="memoryGaugeContainer"></span>
+	<div id="tooltip"></div>
+	
+	
+	
+</body>
+</html>

@@ -1,0 +1,18 @@
+set name=fmri value=pkg://release.native.glassfish.org/pkg-toolkit@2.3.6,0-57.2889:20140627T000319Z
+set name=authority value=release.native.glassfish.org
+set name=description value="Update Center Toolkit"
+set name=info.classification value=":System Tools"
+set name=pkg.detailed_url value=http://wikis.oracle.com/display/updatecenter/Release+Notes+for+Update+Center+2.3
+set name=pkg.summary value="Update Center Toolkit"
+set name=pkg.description value="The Update Center Toolkit is a multi-platform, network repository based toolkit that helps you create and  manage software installations layered on top of your existing operating system. The toolkit consists of the Image Packaging System, also known as pkg(5), from OpenSolaris.org, the Update Tool GUI to help manage software installations, a Java API for pkg(5), plus a set of extra tools to help you create software packages and installation images. For more information about using the toolkit go to http://ipshowto.org"
+set name=info.upstream_url value=http://java.net/projects/updatecenter2
+set name=info.maintainer_url value=http://java.net/projects/updatecenter2
+license 05d6bfb532fbc5527a58d40fdcdeabb0ce0f9304 chash=17f4d5f8079d912bf6b7e57c23533c5d012d9193 license=CDDLv1.0 pkg.csize=5906 pkg.size=18083
+license 64795a7f11c7341fdffe8bb8897deea329dcb596 chash=7a88b9398936ddfc269626f52b2eebacb6938164 license=PKG-3RD-PARTY pkg.csize=15778 pkg.size=53659
+depend fmri=pkg:/pkg-toolkit-incorporation@2.3.6-57 type=require
+depend fmri=pkg:/python2.4-minimal@2.4.6.0-57 type=require
+depend fmri=pkg:/pkg@1.122.2-57 type=require
+depend fmri=pkg:/pkg-java@1.122-57 type=require
+depend fmri=pkg:/pkg-extra-tools@0.2.0-57 type=require
+depend fmri=pkg:/wxpython2.8-minimal@2.8.10.1-57 type=require
+depend fmri=pkg:/updatetool@2.3.6-57 type=require

@@ -1,0 +1,601 @@
+set name=fmri value=pkg://release.glassfish.org/mq-docs@5.1.1,0-2.3:20150317T180547Z
+set name=authority value=release.glassfish.org
+set name=pkg.maintainer_url value=http://mq.java.net/
+set name=info.classification value=":Message-Oriented Middleware"
+set name=pkg.detailed_url value=http://mq.java.net/about.html
+set name=pkg.summary value="Message Queue Javadocs and Examples"
+set name=pkg.upstream_url value=http://mq.java.net/
+set name=pkg.description value="Javadocs and examples for the Message Queue product.  Message Queue (MQ) is an enterprise quality, production ready, scalable messaging server.  It provides a complete Java Message Service (JMS) implementation for message oriented system integration.  In addition, Message Queue provides the additional enterprise features that are necessary for enterprise deployments, large and small."
+set name=info.source_url value=http://mq.java.net/downloads.html
+depend fmri=pkg:/mq-core@5.1.1 type=require
+license 8741fa556feea4ca58ec28abc47de0bf9d5b39a3 chash=28b7cfba8f297b99296afc231955dc90e8d76d47 license=CDDL pkg.csize=12394 pkg.size=38052
+dir group=sys mode=0755 owner=root path=mq
+dir group=sys mode=0755 owner=root path=mq/javadoc
+dir group=sys mode=0755 owner=root path=mq/examples
+file b71c2508532956681f5e9cfe3a28d30ee7a14e19 chash=73164a65f6cf1c90152fb5329be8db8f951be13a group=sys mode=0644 owner=root path=mq/javadoc/package-list pkg.csize=104 pkg.size=196
+file 97ac2287d3a1353f382592b5ed4a89c58b9d0fc2 chash=e54a55348e3e1e2abbaedf067cbe56671cb47e61 group=sys mode=0644 owner=root path=mq/javadoc/help-doc.html pkg.csize=2574 pkg.size=8474
+file 70f223fc9c19cfc81243b5a0f664fe4f3d2dbd72 chash=0a06714473ce130abaed52c99ccde242357779ee group=sys mode=0644 owner=root path=mq/javadoc/deprecated-list.html pkg.csize=2577 pkg.size=20050
+file a6de51b6493394dbf7d589d6da6d0a2673ff0b54 chash=a06c0a0df046d0656a8fb89d7d1f80116e64a5f4 group=sys mode=0644 owner=root path=mq/javadoc/overview-frame.html pkg.csize=635 pkg.size=1740
+file 050d85a39e26791abb0a1e7f44076b9a0b0d67b8 chash=e1dc6a444e57b0326b2095837211e86c04ff7fac group=sys mode=0644 owner=root path=mq/javadoc/index.html pkg.csize=1099 pkg.size=2882
+file 96448ec0785d3e0eb34ded6e049571bb63f4f79f chash=446890d7aeb36515c70b8e442a9d56c58b667c61 group=sys mode=0644 owner=root path=mq/javadoc/stylesheet.css pkg.csize=2289 pkg.size=11139
+file 996f690018569a20069cc3e6e8bb508b43b0eb24 chash=4f28741008356afe6d217f83b61b28018656cdc7 group=sys mode=0644 owner=root path=mq/javadoc/index-all.html pkg.csize=54700 pkg.size=700851
+file 05f46afd285aca622c05e6f879bcedbe3eb56a55 chash=0af7c6b55069bd3cb601af606c278f5397000d62 group=sys mode=0644 owner=root path=mq/javadoc/constant-values.html pkg.csize=14185 pkg.size=285682
+file f63b2a6d4655438023df6c90ed7433085227bdca chash=57e508a8f7746fc9a217a4eca9bbd8a53736c61f group=sys mode=0644 owner=root path=mq/javadoc/serialized-form.html pkg.csize=5653 pkg.size=67502
+file dab399e7f343787275b5683c7ddb20a0c235bf8d chash=b4aa46c50c0ac08d006ecdff44535f108687a353 group=sys mode=0644 owner=root path=mq/javadoc/overview-summary.html pkg.csize=1734 pkg.size=6462
+file d165c75017f43c2918819dd01921407955e08536 chash=0886f2d1c53973c7c2427bb732c97f48163c320e group=sys mode=0644 owner=root path=mq/javadoc/allclasses-noframe.html pkg.csize=2477 pkg.size=25571
+file 18428c0b085604d29b13faf3bcbf8593de8a287d chash=704f78a1da5a1438a1407cf549f0be66f6d46813 group=sys mode=0644 owner=root path=mq/javadoc/overview-tree.html pkg.csize=4919 pkg.size=57887
+file b04dc9e0d6e4e99865ca431047c690bec1d785a8 chash=c06350187a69a1c6c75a99e8cdaa4a78ec3b1217 group=sys mode=0644 owner=root path=mq/javadoc/allclasses-frame.html pkg.csize=2529 pkg.size=29411
+dir group=sys mode=0755 owner=root path=mq/javadoc/com
+dir group=sys mode=0755 owner=root path=mq/javadoc/javax
+dir group=sys mode=0755 owner=root path=mq/javadoc/resources
+dir group=sys mode=0755 owner=root path=mq/javadoc/com/sun
+dir group=sys mode=0755 owner=root path=mq/javadoc/com/sun/messaging
+file 7e077a9bd130adec64ecd7872a1414b0eeddaedd chash=00a8713c89dd575850955e9780cfb3b9240329cf group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/XATopicConnectionFactory.html pkg.csize=3246 pkg.size=23560
+file 1a463da7220fd2fc428ef530819a1c8f31df1cc4 chash=3d57884e90e860a715d8a893062d9fc33b5adb43 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/PropertyOwner.html pkg.csize=2282 pkg.size=12404
+file 545be9b1cb3c220dff2f3d0edecdcf3e12109244 chash=7dfcb40eb6b4f140afcdee5c624491cb49640fd8 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/BasicTopic.html pkg.csize=3659 pkg.size=23207
+file 09726356690b582c2d9d27957b794a2583e028db chash=bce123da06d031ad5f1b36c70c962a885e56c5e0 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/Destination.html pkg.csize=3796 pkg.size=26272
+file 5f35d21b7c6ab71ce42357f47cbd8c14cce69ada chash=1091178eea7b21c5d226167f87cb2ea252dc2877 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/BasicQueue.html pkg.csize=3655 pkg.size=23190
+file 5b03ff0b0869d147f5ecf13ae4c08a3491a9a838 chash=dfa9714f8b87e4a6d1ee1ce1d3c9ceb0f8e2d752 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/XAConnectionFactory.html pkg.csize=4715 pkg.size=37693
+file 6c56ecb5fc5001b24678edfedba830497459fc5d chash=aaccfcb391dd85a825c12e1f7dc124690118efb6 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/Queue.html pkg.csize=3696 pkg.size=24255
+file 8200651ff6ad1b706a2618030980b83de5feb44d chash=5c4271d6e2640df5450e2b3ab25f19b784deae8b group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/ConnectionFactory.html pkg.csize=3809 pkg.size=29018
+file 62e16ab355f536a122c2354fb39c48ee87b6273e chash=d098138f451c3aeb59fc6c399c3f64a5d6df93be group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/Version.html pkg.csize=7425 pkg.size=61236
+file 9ddbc1c6311c7ccd0f41eccb0b25d5d68e40dbde chash=8b51e236f8bac4754dfbd224a248c3d9f3dcbfed group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/InvalidPropertyValueException.html pkg.csize=2704 pkg.size=15533
+file 3e546e9319452bb1366af2d5dba7b448f2431a6d chash=6dd7c12e9bf24c27e356d1f0cd432d31118a432a group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/DestinationConfiguration.html pkg.csize=2662 pkg.size=17453
+file c9bda6021db0ba4ac4aeae6dcfaf116c987f8443 chash=617af74581d0398fb78d079be7ad6234e7fa6573 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/XAQueueConnectionFactory.html pkg.csize=3246 pkg.size=23811
+file 72444df4e3684d9e7145408bf0bb124f0a400aad chash=357d887deaca23218712818e332dbce66bc91676 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/AdminConnectionFactory.html pkg.csize=4224 pkg.size=28559
+file 10713ab1eef6529c64b81e46b1aae4b653433731 chash=cda9b24b7491bbf119ee87367ca2bd1083261586 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/Topic.html pkg.csize=3694 pkg.size=24129
+file 690b2cc989d4a082d464bb1199f63dfb55c5b9a4 chash=c5623fd8ee88c48dd95b017080c5f193be9aeb12 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/BasicConnectionFactory.html pkg.csize=5896 pkg.size=49100
+file e9f4df944cec873a2880c480207833dcebf413e5 chash=3c44f46e481d44a7921a99fa5431475ef30668e7 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/package-tree.html pkg.csize=1881 pkg.size=11839
+file 1c4848658b7673e644ded9840cde996d4d01c85e chash=7727aad936841fecc2f839bd6589ce20d3c30f07 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/InvalidPropertyException.html pkg.csize=2639 pkg.size=14935
+file 929a4db4721c186752b637aba205cf15f28536e1 chash=d21cf1f981e70f6acf1066e7f8a28fd06216e23d group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/ConnectionConfiguration.html pkg.csize=16967 pkg.size=181662
+file 5690c19f03965c9ce8d86daf0df8a1b449d19d4f chash=dabc42f145f72a7fd6fdf1fe1297e1ca8ed46c76 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/package-summary.html pkg.csize=2477 pkg.size=13781
+file d28f4ab78e150c54c2396c7e10208806daddf028 chash=dc7c9e6b7b348a0873b14a84aab413947ace1c5b group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/AdministeredObject.html pkg.csize=7265 pkg.size=64544
+file 450d00712954d3b7a68b22984bc067dbbc108159 chash=899f7298e4c6dadba5a3c407c7b1d3495c479f8b group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/QueueConnectionFactory.html pkg.csize=3229 pkg.size=21727
+file 581262d968e1b3fd7ea9e34337afe431998bea3c chash=20e9c204c733b7c164a537c74135fd7082e1e7f8 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/TopicConnectionFactory.html pkg.csize=3222 pkg.size=21698
+file dced9c7c56df441a814aea711ef85affb7c035c3 chash=a7a0786f6eb5b4353c3f856f05bca826fe7899fc group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/package-frame.html pkg.csize=775 pkg.size=3525
+file 600d23cf27239fb06ebd53092c7dc7ab1cf7ee62 chash=1d47fd78711cb9ee2d99346a12c3f8d07f558f79 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/ReadOnlyPropertyException.html pkg.csize=2639 pkg.size=14884
+file fa109a23aa20fc90e63f78efdedb0d05f9a44b30 chash=9d541c12e10f7a54c401ef34e718b6cb1638360e group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/AdminConnectionConfiguration.html pkg.csize=3269 pkg.size=17252
+dir group=sys mode=0755 owner=root path=mq/javadoc/com/sun/messaging/bridge
+dir group=sys mode=0755 owner=root path=mq/javadoc/com/sun/messaging/xml
+dir group=sys mode=0755 owner=root path=mq/javadoc/com/sun/messaging/jms
+dir group=sys mode=0755 owner=root path=mq/javadoc/com/sun/messaging/bridge/api
+file 41e752b3cd1807437b944ed4ce02ce7fd2ed052a chash=e446ac397655357b2bf34ce5d7cf297983fbacb2 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/bridge/api/package-tree.html pkg.csize=1504 pkg.size=6209
+file db33b690dc1fa31e43334e9ae5a2c6690c7f31a9 chash=3bfc2d24b96d7e5e4ec8ebbe493c927b4809f439 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/bridge/api/package-summary.html pkg.csize=1507 pkg.size=5831
+file d3d104d1f1ebca6b17d0f325dd6a67a0a2f90abb chash=299066bdf355ba9b2b5c5f0fe7cc7f09011faf67 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/bridge/api/MessageTransformer.html pkg.csize=4513 pkg.size=33446
+file db1931ec4f1e29a7e33b2bc804a94d2c955f0b09 chash=05a1aa79bcef5ac723f3c4b96e34d721660442a2 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/bridge/api/MessageTransformer.JMSMessageType.html pkg.csize=3071 pkg.size=19574
+file 772862fbc542bb4215900d5f5236eda8acc11046 chash=ce450a93c4b6f10aafcc9c5f7fe329abe76be789 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/bridge/api/package-frame.html pkg.csize=552 pkg.size=1090
+file 1eb4adec4483972b9c21ca7371cbf1800592d046 chash=9b2a3dd1d2cdf9febc98b774a8f60f981220eb18 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/xml/MessageTransformer.html pkg.csize=2619 pkg.size=13906
+file 6e23e549d671808f3e5fc73076f21f677eadb23f chash=6ccb0777db547ba91be1fea7ba7aa1522dfd2a1c group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/xml/package-summary.html pkg.csize=1575 pkg.size=5682
+file fd7943ab68e9eaf681997719f78b60fc77937d19 chash=e08d10983c70dfe02a82f9c11f7ee9c5b348a19a group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/xml/package-tree.html pkg.csize=1379 pkg.size=4993
+file 8fe728f09184cb461c0b6781ec66407d1daaee79 chash=f869692ebae6702c9c2777c78738567ecfa3ab97 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/xml/package-frame.html pkg.csize=506 pkg.size=841
+file 23f869b2cd24045415f7dc5054c745206053b286 chash=0b87d29a5b6e41272249e4a956f2dc6e9640ac72 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/JMSException.html pkg.csize=3789 pkg.size=27526
+file 88deb6504378847b2c7f83d2e0a3b00903313fc6 chash=ab5d39d8728071bdfb302e982159ce7160e5986c group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/package-summary.html pkg.csize=3166 pkg.size=17780
+file 396dad5c0a3d933bfcdc0aa140f846ca86d41651 chash=dfb84a36b5797885bea170ec3680def7535fc765 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/MQSecurityRuntimeException.html pkg.csize=3154 pkg.size=22298
+file 1ec2aa57ad093ceaddbf62a54747247f2fdd4e6b chash=41b7a3081728aac74f42392d811e1a094aa6d603 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/JMSSecurityException.html pkg.csize=3684 pkg.size=27794
+file d8642ce21b85f732adc4ce6269ed45aa59902e86 chash=be0acb3f84c22492239c8944743719d8ebfc95e3 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/MessageNotWriteableException.html pkg.csize=3647 pkg.size=28230
+file 1743967c96a5a714d9550e5eeff27f9f2a391e04 chash=fffb7b5fb379da70a1bbc96def88316efcc1cba3 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/IllegalStateException.html pkg.csize=3787 pkg.size=28123
+file 42da0c380d0d722a602a89e08d83e425d972e8c1 chash=bb1953f589e6a08223e6ebe274b85f6f05dd26a0 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/InvalidDestinationException.html pkg.csize=3657 pkg.size=28178
+file 1fcf86fe4f4ad696362c9f075e34b6b1d6d32d63 chash=87d2d5f9ce173ec49f6eaf24b0f4f693abd6c95a group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/MQResourceAllocationRuntimeException.html pkg.csize=3171 pkg.size=22963
+file 4e4115f45d6decbf3a86f512a4475512067a89ed chash=46bf6ceebea9b21b7bf748112d36b8990a72f00b group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/MQInvalidDestinationRuntimeException.html pkg.csize=3165 pkg.size=22933
+file b2c1e40e065bb5617f9dace1851163c5e8a085b8 chash=25400d00d88ddb601681dbda32487b9ba33bb312 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/MessageEOFException.html pkg.csize=3656 pkg.size=27715
+file 0e8805f11164bcdf6973cf2c81eebf748d1096db chash=36789c9f26f3c0a7d92bb0a9ec3fc86797dda3eb group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/MQRuntimeException.html pkg.csize=3130 pkg.size=21643
+file 838baad3a0eb09947cafa5bac817ade41abb3784 chash=4bf4d8af9381fae115117828d8d126587e574c74 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/MQIllegalStateRuntimeException.html pkg.csize=3181 pkg.size=22568
+file 1b2f18ac5d681c318831aa1fde8441d52f3b4094 chash=749596336d3f56e1848ef1faefc591e31b377672 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/InvalidClientIDException.html pkg.csize=3665 pkg.size=28015
+file 0c24c4ec7880dcfb1222943833d943cddd09ce9a chash=5ca3ae3f57415764e2fec99de8b2bf65939eaf09 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/MessageFormatException.html pkg.csize=3876 pkg.size=28451
+file 10864febb73190f2b7242788f60c13f020686a74 chash=505f7f6947e5fa5cbf9eb2043e4add347fe117b7 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/Message.html pkg.csize=2491 pkg.size=11498
+file 9fadd9eb06598daf7b443454b4e8bb2732855d20 chash=fcc78a6222dd026fe06fe264d698a80eeeb3b6b8 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/ResourceAllocationException.html pkg.csize=3718 pkg.size=28300
+file 963e6f1d1227df0ac5cacdd5c26d8ad79b473164 chash=c14f7a2b81b6d71f98a026216cf772ae47fa21c8 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/Session.html pkg.csize=2572 pkg.size=12805
+file d9b3d67c2d265aab925f3e1719ef4a10e6c3062b chash=f65bf37be23b28f1f2d2e98efd814994abe6a58c group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/TransactionRolledBackException.html pkg.csize=3656 pkg.size=28092
+file f39073d1887862a0fc85f05ad5bf765b5ac87d18 chash=ba82b177bd954f6a08cdc2e961251cbf4cb0c857 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/QueueConnection.html pkg.csize=2647 pkg.size=12400
+file 70cbcc1a3b4a8411d0c991bd29e99929e89ab907 chash=5449fcaddeadb084bfe29262d2267016f7cf4d83 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/MQInvalidClientIDRuntimeException.html pkg.csize=3171 pkg.size=22746
+file 065565cfc4c9803bed14633d9a48e1469001f31f chash=8b3e0d24225475eca7c3c85e8a4b3b4eb34d7fa0 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/Connection.html pkg.csize=3263 pkg.size=18558
+file 584d76fccf73b621fff1bedad0474eb72ef3e5fa chash=1f9380cda83a8be28458f073d0a8b17d10bf938b group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/InvalidSelectorException.html pkg.csize=3649 pkg.size=27985
+file 7e89ff20f0162c466071ca4ed558db2b8909a6ea chash=181df32a7f50654080c9723a1adecbf93a0ed43a group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/package-tree.html pkg.csize=2231 pkg.size=19930
+file 1fe836d1fbcdab85b95e5b9628eb7e4446120925 chash=6701387cdf68e1ba5355408d95cdf07d83c263e2 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/MQMessageNotWriteableRuntimeException.html pkg.csize=3176 pkg.size=23028
+file fdad7e332bc8271142610a8ecc0b83819753dde6 chash=b9421004c68222f3186462cda1891218d5fce8f6 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/MQInvalidSelectorRuntimeException.html pkg.csize=3165 pkg.size=22743
+file ef06fbfe4602a73460c8c07a437243b32cdd0101 chash=e80e6ca693d649705a58d2600fcbf39c1ccf3b7e group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/MessageNotReadableException.html pkg.csize=3645 pkg.size=28153
+file 073ba4282a187ed785a0065468c67d9bcef94603 chash=353988143b8c3ab7b906e6d630036899aa4e0d74 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/MQMessageFormatRuntimeException.html pkg.csize=3166 pkg.size=22621
+file 787c65e84847a73efc9555272bddad6380f0f272 chash=cc967408d8c175575d05c807ef38f0b43cab6acf group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/TransactionInProgressException.html pkg.csize=3725 pkg.size=28524
+file 017c0cff7ff054ee588165dff2f93652b64ee90c chash=d58bf24588989f87fa6b45573adff859cfd4c782 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/MQTransactionInProgressRuntimeException.html pkg.csize=3173 pkg.size=23141
+file c3c38c1e6ead7120587c0ecaaee8f468ff0b381c chash=9e98c34715f7367ba1c31e7791389b1799289b58 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/TopicConnection.html pkg.csize=2625 pkg.size=12355
+file 441036a3985736dc1d67c4326e4d23ea571f78e2 chash=f31a2ae4bc42dd8e2e3863ac38676784ec7853c3 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/MQTransactionRolledBackRuntimeException.html pkg.csize=3168 pkg.size=23109
+file 99e5a1eaaff8f894f9a86c1d0f4631ce86ceb3d6 chash=41a5f095a5fcf09c927eae83fc8453668fffea79 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/package-frame.html pkg.csize=873 pkg.size=4876
+dir group=sys mode=0755 owner=root path=mq/javadoc/com/sun/messaging/jms/management
+dir group=sys mode=0755 owner=root path=mq/javadoc/com/sun/messaging/jms/notification
+dir group=sys mode=0755 owner=root path=mq/javadoc/com/sun/messaging/jms/management/server
+file c2d585bc6d0d839e65b1bf70bb123e14e01f41ff chash=1156718ecfdec4c55c6bbd0ff7cd11a8155a5e0c group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/management/server/DestinationNotification.html pkg.csize=3521 pkg.size=29868
+file 6a81cd166a760914d0a92b7bec8f883dc64c5f53 chash=fefd034a377004fcfda359063062ba5530a2eb11 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/management/server/MQObjectName.html pkg.csize=4367 pkg.size=47580
+file aac2f5b3aa84d7eec79d377c713ac107fdc93a83 chash=772768553253ef987269d4324e7fb1516a81f48e group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/management/server/BrokerOperations.html pkg.csize=2523 pkg.size=16750
+file 8c351f4f244fc4990ffc33a654b5a75cc92740be chash=b9e37f37499b38f59de52aa0d1108c896c3bfe5e group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/management/server/ClusterNotification.html pkg.csize=3410 pkg.size=26350
+file e310e11f5146715e3a7e314ac17749fb143f62b8 chash=6cea6574ea38e89f7bed105a7c251544894c60fa group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/management/server/DestinationState.html pkg.csize=2579 pkg.size=15240
+file 0683f8c2ffd6ac3491c58c7cb15a7552985eaf8d chash=cec9ae5dcff16738016c2d5aba16c1d72482db5e group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/management/server/ServiceState.html pkg.csize=2524 pkg.size=14182
+file 8270131f36782ec4320a2b641e3a1c80018c3d76 chash=d31e121e86fd3345c837cedf2cfb6c42e3d53e25 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/management/server/ConsumerInfo.html pkg.csize=3600 pkg.size=33936
+file f0f2ea0d0e3bf3621e13daed52881f81c886f079 chash=7343b243e900f08cf16bf0d02a9133860df472d4 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/management/server/ServiceNotification.html pkg.csize=3083 pkg.size=21301
+file 26fb93d18e34d665076f947981588d5c37a0bf54 chash=f26d78110566b0dc73eb4445ef6786f8311de409 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/management/server/ProducerAttributes.html pkg.csize=2269 pkg.size=11924
+file 96cf42ecd9ad84b061ddf50a91afe90146b87f6f chash=09cd3b89d1a12de32378a5941034c3985fe37072 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/management/server/TransactionAttributes.html pkg.csize=2346 pkg.size=13219
+file 8393d3c3030efee64e6246cdf127b0586ba3d0ba chash=46b21851635237288b9f397184fea6a1d13ee661 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/management/server/package-frame.html pkg.csize=904 pkg.size=6448
+file 1b427c26a20057fffd70e8851aacc2ce37ec3b58 chash=dbf40a8b39182b2b4ac4c5b57290469f4bc56fe0 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/management/server/BrokerState.html pkg.csize=3001 pkg.size=19612
+file e397e4dd815280effe9d214c0943dbd615e5a90e chash=8df7ecbd70a8968c0ab292561127b9015dd345bb group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/management/server/package-summary.html pkg.csize=3159 pkg.size=21824
+file 09d7117b35cddb09b0efb2c780d6375c9d973867 chash=e4f781c4498fba6370052c60611efed985a8a6d2 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/management/server/package-tree.html pkg.csize=1939 pkg.size=17187
+file 3d6896809075daf7667a783f82546c5be45b7aa1 chash=dd7d2a5e7c98b096df1327c83c2be1377f240898 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/management/server/DestinationAttributes.html pkg.csize=6152 pkg.size=78205
+file df3d5de49ca2de551da0d77b2bee852d78142e37 chash=59075cb144854fedad6c9b3a8f3260ba9d587e53 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/management/server/BrokerClusterInfo.html pkg.csize=2774 pkg.size=17712
+file 4a0e80bf50ed086d65386845d7d523149ce1fcf1 chash=e860d7803b4ca012b0486ca743cca96810130052 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/management/server/ConnectionOperations.html pkg.csize=2522 pkg.size=16200
+file 6d80aa278b9a5cec4cb521a9e2a93a0b23840999 chash=aa3f02cd2d58717c5a801ce4ac3775e33b108e6b group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/management/server/ClusterAttributes.html pkg.csize=2576 pkg.size=16289
+file 22409cc3cc45701d0239c430410d49b9cf72bd97 chash=8882f1cde8fa4df873b3ad5539eb765c0120cf6c group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/management/server/TransactionNotification.html pkg.csize=3169 pkg.size=22639
+file 9673a58cb4f9ee5e6b0b32bb86c3fc3e3c736ad6 chash=0f4f4974950b089a97dc3bcb8bc47e25fdd894fc group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/management/server/ConsumerOperations.html pkg.csize=2523 pkg.size=16252
+file 50d3ad6dff0dadea7e30eb5637a57ccbc7c8e316 chash=208457fbd6f0c40acffc4d78ff811b4aa1cd4fb4 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/management/server/ServiceAttributes.html pkg.csize=3233 pkg.size=32055
+file 5c69195d905158eadf4cd0b6e0e016f5007d8d82 chash=4fdcbbfb74c9590054123f1636e2b60b41367168 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/management/server/LogNotification.html pkg.csize=3340 pkg.size=25593
+file 2abf3fc57d966c07dd5e58afbb82cf7bc4f5d9b2 chash=d339dadf86af14abb4c0a38c5331ebb36f2472c1 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/management/server/DestinationPauseType.html pkg.csize=2331 pkg.size=12988
+file 1704b916a53442892579c6d3319cccb2d315e7a7 chash=96740ae1f8b9d740f085aff5a7da63f095ee4d87 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/management/server/DestinationType.html pkg.csize=2430 pkg.size=13724
+file 4ffd44fc5e6057e610ab9c7255db5e29836a4666 chash=3b30f00af0f16425eb39838bd27df005cf61684e group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/management/server/JVMAttributes.html pkg.csize=2354 pkg.size=13677
+file 907fc9bf512179874e036eff564f4e29117f63bd chash=883d99f3e79c98e2771476f16622317641370f05 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/management/server/ChangeMasterBrokerResultInfo.html pkg.csize=2524 pkg.size=14004
+file e205e64d35c5fe1a611b8e578fc29d3837d12189 chash=c8dd47756ccaaa289fc8fb4cf699984388db6dfc group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/management/server/ConnectionNotification.html pkg.csize=3366 pkg.size=27001
+file 7ffad57f5d7c36b4e54426254788ccfd09c95098 chash=ca95793dec652c14190ec1143096280f488c2641 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/management/server/BrokerAttributes.html pkg.csize=2536 pkg.size=16376
+file 631e316cfb865380c467aeba4ee4f1af4929a4a6 chash=20ebd1b3cb03f2ddbf04207beba0dc2eb06cbfd1 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/management/server/MQNotification.html pkg.csize=2933 pkg.size=18633
+file 4fa20664a32ef4be49fff216b3840da2b40f06f9 chash=8e2023bcbfb670980672cce20b5f4cf2c8a40e2a group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/management/server/LogAttributes.html pkg.csize=2423 pkg.size=14705
+file 092c3f22dcc82e0cb456b60027f7759eeb0a7ce3 chash=73434529241fe27b1e767161ddad03ef69395e8b group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/management/server/DestinationLimitBehavior.html pkg.csize=2704 pkg.size=15751
+file d204da739194c6ba5b5a0560f707f178e54a2a68 chash=c53807dc3a7460d71095a76472ca6b288d718c30 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/management/server/BrokerNotification.html pkg.csize=4701 pkg.size=37867
+file f5833c8a18d34aa24602ac45cfb6b809668eb62b chash=fe408796e593d67deab8501808a37667501090bf group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/management/server/LogLevel.html pkg.csize=2503 pkg.size=14950
+file 401212d07c3956cff008603288ddbf2032ec1d7a chash=0249c8c46e23d1a69f083ffc2dacbcae9255f4f1 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/management/server/ConsumerAttributes.html pkg.csize=2271 pkg.size=11940
+file 1167f6d9c6e6929a5d99ecb02822d75c1442eac8 chash=2e66db60ba293e07367a219d4603a50168def32a group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/management/server/ClusterOperations.html pkg.csize=2552 pkg.size=17449
+file 461537645531b10c80a2927034e240f2018714db chash=14b678c28710e6c9226c7874806b0acfbef1d02f group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/management/server/ServiceOperations.html pkg.csize=2488 pkg.size=15951
+file 84a5225e3cf5a38cc1f21d859371f85d7cf9ebb1 chash=f48c445a51986d126c8fbc13c085d527a4eb91a4 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/management/server/ConnectionAttributes.html pkg.csize=2847 pkg.size=23058
+file 62400b49e6257fea6fe46cb38e9860af1b4aad02 chash=e7da666df80f17c9c96f7c856a502740a3958f84 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/management/server/TransactionInfo.html pkg.csize=2832 pkg.size=20348
+file 76ba05cc833c250c5d1a6bf7e165fbb83a4a59a3 chash=a59bc841d43e9c29d59a5f70107f8cb8a3cb8ae7 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/management/server/DestinationOperations.html pkg.csize=3105 pkg.size=28079
+file cc35e7eb17061569904cd17e8e07b4d61059a2f3 chash=7f97f2139be5a75e69ea020347218ce7b6f0a221 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/management/server/TransactionState.html pkg.csize=2801 pkg.size=18294
+file 78918aac78dea37e6d692fe8832ce7257d6484fa chash=bebabf52ad5cca5e9002ab8edd3d6bfffe8f7553 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/management/server/ProducerOperations.html pkg.csize=2471 pkg.size=15282
+file 5072240db362c4f59e39fd54b371f514e1de31dc chash=584e430a55744e9a942daab4fe2880b47fad6ca2 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/management/server/ProducerInfo.html pkg.csize=2972 pkg.size=22364
+file b4d60ababe986aaba26a34a5c86182913146b29a chash=b0a0f2b70e21946515503f0444cd53783ff1fcbf group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/management/server/TransactionOperations.html pkg.csize=2445 pkg.size=15171
+file 66de4b8866da9e90cb626644511d62c6ef177007 chash=64da7a7323b56814b4e03bb1a342d1f8c00b468a group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/notification/package-summary.html pkg.csize=2264 pkg.size=10290
+file 725a5fbe3556bef5781f8829780e09c45205ee88 chash=8e8566cedcee6962b3cc8c7b52c120d1e9ed9f09 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/notification/ConsumerEvent.html pkg.csize=3308 pkg.size=22228
+file f94aefbb085b5bdc9c95626a566f6198a9b1baad chash=125c04d60df01cce225d7fe42a90dbeaf4cc6419 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/notification/ConnectionClosingEvent.html pkg.csize=3100 pkg.size=18916
+file 24caa0a3f8fcc0eae75b7b7aa9e44388144aa2f5 chash=f950641a22752df5aedec1d08e3e9e388b65c5bc group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/notification/ConnectionEvent.html pkg.csize=3337 pkg.size=20369
+file 995e1ebf8bfce74d13af4ba2e16ac17ecdcabfd5 chash=df0809c3153eeec52b7737d8f6e87e9d35a1d269 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/notification/ConnectionClosedEvent.html pkg.csize=3604 pkg.size=26199
+file eab402159daecb555461f69e153256e9d6522298 chash=4d0c8bbc842cbeea49eb5ee56b9ad8f7ecf257f6 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/notification/package-frame.html pkg.csize=627 pkg.size=1947
+file 2b4eb24d89f7971963ac6eeb2616da43d294d865 chash=36f717dcd996eccdf3aad168320f4dbc9029301c group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/notification/Event.html pkg.csize=2929 pkg.size=17566
+file 780e35fea0834ab8c1bdc418e406e77c8b8bae3f chash=17a655e8851133c6198ced456f274c61b41eea97 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/notification/ConnectionReconnectedEvent.html pkg.csize=2875 pkg.size=17422
+file faa5af9916c59d42cfde99a6abfc494a007ef061 chash=1f7f80ba2f8b0536c91e0b6fbce142965ad26c9a group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/notification/ConnectionReconnectFailedEvent.html pkg.csize=3181 pkg.size=19715
+file 9eb1270adfbbfa841804eecf8006e520ae525f40 chash=1236249d98500f6ee784f33a9bbe8618e3541880 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/notification/EventListener.html pkg.csize=2013 pkg.size=8027
+file a88f0565fa36af9160b4585da731b0c42383bf2b chash=4202ac3bb08d044265636835bb6dfe20a5826394 group=sys mode=0644 owner=root path=mq/javadoc/com/sun/messaging/jms/notification/package-tree.html pkg.csize=1576 pkg.size=7635
+dir group=sys mode=0755 owner=root path=mq/javadoc/javax/jms
+dir group=sys mode=0755 owner=root path=mq/javadoc/javax/xml
+file a5709a3c9bdd96ec48f971f6df78740b8cf4682f chash=2ed47150eaf31abceb52f9218e1df15dfb4a0281 group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/TemporaryQueue.html pkg.csize=2318 pkg.size=9061
+file 99aedf3e35d6622ff5165c0abe0d237abec23327 chash=fe7f0f143ff3f7127f0b9ebb546891163b11c324 group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/TransactionInProgressException.html pkg.csize=2825 pkg.size=16763
+file 8091497d4c499208cab0e0b56246aacb0ab03df9 chash=565312926b08ca91db2e3e02fac601ac3beb3828 group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/Connection.html pkg.csize=9974 pkg.size=68259
+file cccb3cd4d3d5991f5bd852a35cc791fc8f52e7cd chash=52f0222dd6c46de7adddbfb89130668f84d1447f group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/ResourceAllocationException.html pkg.csize=2827 pkg.size=16651
+file 49ff8a44dfb81ca1c609103e368b992770f0a153 chash=0a42acac024c350c8e39edaf0577dd9ff42903fa group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/TopicConnection.html pkg.csize=4446 pkg.size=25036
+file b102cbfe25cc7460d34186704714716fd065bad8 chash=1a5ac4cd12d166e9b45e0da5fa1aceee3f003d8e group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/Message.html pkg.csize=19176 pkg.size=132074
+file 66069059cd466c0abca36b2ef15b1f52097987f3 chash=27d543155e74fd907b2cdbe0ee55fdffed7e6cdf group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/InvalidSelectorException.html pkg.csize=2760 pkg.size=16438
+file 5184149d0cbe4810403c779f911a5bf1c487adbb chash=31a1a03a94c7ac51858236b435ac84e3b4028648 group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/ServerSession.html pkg.csize=2716 pkg.size=11255
+file f210fb1f943e4623de9679f810b5018593a6bd1f chash=deb029b7ace3bf7d8da7b33e17fcdcef05767fef group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/MessageFormatRuntimeException.html pkg.csize=3019 pkg.size=19378
+file 91d7f8b9eb7cbb1d8b65a6339106b1dcc4738cb6 chash=d01b571a3d9562c01d6bf3e7147152b03085565a group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/MapMessage.html pkg.csize=6820 pkg.size=62978
+file b8a13aa2986e88ed89ed5588a87637425a8fe9a2 chash=10a7e9cc14896163eb51a275e3fab2401a907fcc group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/Session.html pkg.csize=13556 pkg.size=125199
+file a5f077cda74858e047312afbca20ba29008cb321 chash=d221d6b0b8502b271b8f4e56f3146bc0550008d1 group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/IllegalStateException.html pkg.csize=2896 pkg.size=16634
+file fcab29f2a7bd5c560685b7db3996869d33b7c66d chash=9ad9aa92b53dde2d3a7c4e3777f6240fd6460dcc group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/ResourceAllocationRuntimeException.html pkg.csize=2891 pkg.size=18963
+file 91ae351b31af21ec444fbf97edc8f9dcdba01985 chash=e0f541ae39ab0a3a8440a6355f7288898c74082c group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/JMSProducer.html pkg.csize=13102 pkg.size=117554
+file 5d68ff91aaa933645dadd4c7052aa30729c7eb25 chash=3864bf0a03017b501491838e943e9b28b94edb8a group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/XATopicSession.html pkg.csize=2861 pkg.size=13898
+file b05bb9793fcd3d1b54d67dee4746b7c658694516 chash=d89c5b46e27b6538b9680f4d45c6b6056c2c52de group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/QueueRequestor.html pkg.csize=3197 pkg.size=15414
+file d291a9d1aac33b4aca84e5355cef9c2277bf4fd4 chash=5241072ddf5f612f65a4835d65260417e1663ecc group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/InvalidDestinationRuntimeException.html pkg.csize=2851 pkg.size=19114
+file 818f2f625974edf6d3d09ddd85acc198d2234ffd chash=9a01ad77443a971e6aa1258513acdab859518298 group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/TemporaryTopic.html pkg.csize=2325 pkg.size=9091
+file 28fd96f1423331bfa01fdd629fb63e319a0651e5 chash=cada01811c095146d30f44cdd7f4f183f556013f group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/XAQueueConnection.html pkg.csize=2847 pkg.size=14249
+file 9e2fc2a8451b19bd7824ae8d63e599de7c2bade3 chash=1d8d68330c944343588fbdc36d9ec9d7da917bd1 group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/ConnectionMetaData.html pkg.csize=2409 pkg.size=15781
+file 088f8f2501e80867dc01968e606e2191f9871692 chash=b69fc0c9bd59b5e6f371addb7f774f92ddb1d0e7 group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/MessageConsumer.html pkg.csize=3995 pkg.size=21312
+file 84a544de4977e602d50d6a998f7124ea887f9196 chash=eafa9b1c1f43139b90939cf98f6a41df24164eec group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/JMSContext.html pkg.csize=15705 pkg.size=125891
+file debaf394ca36dd9b9a1ae6ed8d51b932988a2b84 chash=1b16c02a4053f510ce30b5d1e097c49b8ff4370b group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/QueueBrowser.html pkg.csize=2961 pkg.size=13715
+file d95627fdaa0e6443b8ebae84235833909ec152b0 chash=d6df9403fdbcb3162eec098faf8954ace3d69aad group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/XAQueueSession.html pkg.csize=2858 pkg.size=14022
+file ff21947284d2de6178bc21cb22dc05e5f4a35d1c chash=bdfef43fdef22f633ed424a5e10d6a84ad17d7a3 group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/JMSConnectionFactoryDefinition.html pkg.csize=3387 pkg.size=19998
+file 124c165ab6c2122b6890402c940cdf77a9c396c2 chash=b2423c25e6e0048602f33ec2b619fc3d96fa351b group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/JMSSessionMode.html pkg.csize=2211 pkg.size=9168
+file c7153df04a314bccaab8450ff7f8cf54756816fe chash=43f50df0dc0e62fe40f2fb8d7d32420cdca73442 group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/QueueConnection.html pkg.csize=4387 pkg.size=20797
+file 8c5b626bf772e6a98a40aa4e04506ecf0d7c7e29 chash=6dbe908d796f9baeb28f62b3b966cd5599004839 group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/TopicSubscriber.html pkg.csize=3430 pkg.size=13831
+file ebacae5610e9209ac44fad8892931f126115ee8f chash=297906c0d16eca8c94c0718abc397f41c2e0127b group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/QueueReceiver.html pkg.csize=2665 pkg.size=10772
+file bfca5f0bd040164c13b2bbbab0e0d7c3d3fbbd36 chash=45a888a5537fa909764310ecc5487f5b4cfc1c22 group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/MessageFormatException.html pkg.csize=2980 pkg.size=16918
+file 448f3d742c2a6d920f6cf2842b0fbaaee24c9cad chash=b478821670e8901f44fd1de9b78ce86288f5eeeb group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/JMSDestinationDefinition.html pkg.csize=3022 pkg.size=15883
+file eeab02c49b3b4adbb567c6bbad804989031ebb08 chash=6b70f175b74325343d7a4c611af11c1c16cf6ff6 group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/MessageNotWriteableException.html pkg.csize=2744 pkg.size=16520
+file 77b814d51d556a754cbfc7e2bd399079dd68d89a chash=530c0ad1c7f85829172959557b51f9a0188ddfcb group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/JMSPasswordCredential.html pkg.csize=2225 pkg.size=10282
+file 7766bab1545b30f9d9ae08239f7a25cef44dd6ed chash=9a092674e47cbf7b3fa037ff9920a6ec9943f634 group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/ObjectMessage.html pkg.csize=3413 pkg.size=17276
+file 624d73a07513e03bb2060aa452618efbc36735b3 chash=56b65cf28d0aca405267b4c087ff556a1b8f5dfc group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/XATopicConnection.html pkg.csize=2822 pkg.size=14211
+file 60ed420948bcb5a1f1286687e8cb9c12da12c727 chash=f17da3b11cde13f46f6ff3e6b2166fbaa564ad7c group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/MessageEOFException.html pkg.csize=2765 pkg.size=16273
+file 393b746f8dd276fe663bc37e1a4d26fbba2b45cb chash=610a5af7e342f9c5a1d2f7cf862f4c9e495c7414 group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/InvalidDestinationException.html pkg.csize=2762 pkg.size=16527
+file b506b45bf8e525c7097aa02a423f8609088bd787 chash=40d78bf0a966b5894ded7dcd710a45e303282f20 group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/package-tree.html pkg.csize=2556 pkg.size=24129
+file 9ca5d0a9fa3a5b675fd66f13c082a890de07777f chash=32f02d669fb245b71083ac517ff48ef76cba9035 group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/CompletionListener.html pkg.csize=2397 pkg.size=10488
+file b75b28a3bcda8ad84a6c408cd0e183eb9ec69e97 chash=61c07c4da63fafe454cf2ea496f5005b7f7f61a3 group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/MessageNotWriteableRuntimeException.html pkg.csize=2863 pkg.size=19017
+file f6367342b398e07f86ec74a6f48425d83d9428aa chash=529f5a1c414f08733f734d1504bef5327a32d2d8 group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/XAConnectionFactory.html pkg.csize=3047 pkg.size=17041
+file 3c99c79ff0c0a2e6db0ae477edc2214098a68a99 chash=9a0bdff97dd16295fea7c0a32ebaed56b6b5b336 group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/Topic.html pkg.csize=2901 pkg.size=11484
+file d026892f6ba156643aeec7283c13e022541b18a4 chash=d44373c6d43a5dcef7f3c36f7f28d436c167c393 group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/JMSSecurityRuntimeException.html pkg.csize=2894 pkg.size=18844
+file c8f7efe3b965dcf6dffbaf455043fd72f7671213 chash=4b7726fa538dd1cd50fa13dc959ae19d9682fa1c group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/QueueSession.html pkg.csize=4151 pkg.size=27548
+file be2f05d127864e9a9cbbb16224ffd8437ae3b135 chash=2df0e41162b450bc5e35680fc09326da6fc3fb3b group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/IllegalStateRuntimeException.html pkg.csize=2930 pkg.size=19018
+file 3de308f5d1b3851c27c7c2c756f0c35656cda9c5 chash=d96c73eb14e6e7a8bee9ef7e73d9c18113af95a2 group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/XAConnection.html pkg.csize=2801 pkg.size=13442
+file 1bc96aad4167acd67831bde59c21a7ab413de058 chash=b01910a43285a8f872740bf690d0a5d60e0334ee group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/XAQueueConnectionFactory.html pkg.csize=2758 pkg.size=14726
+file 0808a951ea0073d17211cfbcaa2932802729f320 chash=a7e959ab4ca7d2a190f74ef05afb5d2b43a3bcc2 group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/JMSSecurityException.html pkg.csize=2793 pkg.size=16353
+file 06eb18bb23f9b19c1d0315014b232480df8883b8 chash=4c63ca4ed280766f84d85dbac69c9863d3d8066f group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/StreamMessage.html pkg.csize=7044 pkg.size=54968
+file a16b1468b16961fd15ff396c575b0a9bc2919ce1 chash=cc5e43565bd69ed4b07940e58ea1e0774e75d2cf group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/XASession.html pkg.csize=3825 pkg.size=20601
+file 9a5bc432b9b9c12d150047a60c2081323be52647 chash=36aab2c08fee67e6102651dd9d63f7d3289c1372 group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/TopicPublisher.html pkg.csize=3874 pkg.size=23682
+file 6a3b75c297fcdab853f3ab4fbfb50dd74e46d678 chash=96694930de38c002a50210f84347a20ef87506f7 group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/JMSConsumer.html pkg.csize=5964 pkg.size=38781
+file 5ab859381311539a2ffb425204332faa3bbf6a9d chash=87ca474538b91002122192013d83a70057f3bbf9 group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/MessageNotReadableException.html pkg.csize=2743 pkg.size=16456
+file f7e71d0d6a7900229db9c71772d84e4cb3bcfb94 chash=38f5a008329a687d09fe8cfe465ead9dccec9281 group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/JMSConnectionFactoryDefinitions.html pkg.csize=2009 pkg.size=8630
+file ea04b3ec570f5addf6a062b3c7492659cc8e6742 chash=bd6632ed612f13a58456194f7b64c6612862b9a0 group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/TopicConnectionFactory.html pkg.csize=2633 pkg.size=13133
+file 6e6275f439a12873690bd53b7bf61aedc4632370 chash=e37d4a2a4d116a4cba8daf902e0e605b0e4a5018 group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/TransactionRolledBackException.html pkg.csize=2769 pkg.size=16645
+file 442e961d243295aac82212a172ad0c2e62767dbc chash=0f769878353b276c767e27d624de7deb90193d3c group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/JMSDestinationDefinitions.html pkg.csize=1999 pkg.size=8508
+file fb88ae26dc92004c437b220a8e1b8f042b833e09 chash=c31a1a7bbcf9a3a3248d90403d655a10dc51c8a4 group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/TopicRequestor.html pkg.csize=3216 pkg.size=15442
+file 41e5b1094490663bcf7a9f5040cea2c934596105 chash=54efd9a6796105590f7255be9aefd9b7706e3067 group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/ConnectionFactory.html pkg.csize=5279 pkg.size=36407
+file 7c5eceba23916adf5010d04da0addd26e4626e4f chash=691b4f809cd7c484e76ab840f3d53bdc6d316b96 group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/MessageProducer.html pkg.csize=8709 pkg.size=86948
+file 1451646c177b86ceab116e190d77893f128083d8 chash=28d738237237d6aa986268d3dfb0f4f332e6c43d group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/XAJMSContext.html pkg.csize=3574 pkg.size=18484
+file f884332463cc1d233250adc63a33d4bdf941ee5b chash=10c21273843b8243c991415f88cdfa342dd7f62c group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/Queue.html pkg.csize=2603 pkg.size=10888
+file 03e6996f348f49f265240c4ee45c47867a1db606 chash=8d49de34a0e34d69bf6f17dfc9c424b47c6907e0 group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/TransactionRolledBackRuntimeException.html pkg.csize=2831 pkg.size=19152
+file af2f31a073425751905658978c83b32bfdcb516a chash=07864e7bdb3397b1a4401d04e7777e54d207e37d group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/BytesMessage.html pkg.csize=7263 pkg.size=57479
+file e91a48680339b3a59b667d67ea720862d0648c1d chash=db075d8e567ce994e06c6f7e99d4bfa189cda106 group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/ConnectionConsumer.html pkg.csize=2670 pkg.size=11446
+file d103c57dba3c63b838108ea667de0356a2c62a17 chash=8cbaf4578bd98c193c25eaf60a8116c5afd345cd group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/DeliveryMode.html pkg.csize=2577 pkg.size=9720
+file 5f7e1df216368b0cda89d9201255b23766dd1b5b chash=b63b432e568a5d95e53cdff8763d5b115095a21e group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/JMSRuntimeException.html pkg.csize=3109 pkg.size=20627
+file f15cf797bb168226edbf337951932d055ffe9300 chash=a41e2269da636ed25334774fd894f059db2abf5a group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/QueueSender.html pkg.csize=3781 pkg.size=23610
+file 787c084782bf554ae8608b1793dff70e78e7a418 chash=c35a7a1211d5bf026fb272e217ada943d567a5d3 group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/ServerSessionPool.html pkg.csize=2165 pkg.size=8684
+file d68eebc7f362eeef9f6452fe0854bfaf4f3aa395 chash=2bd5e3df16cc0702879d02142c02d6a94884020c group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/InvalidClientIDException.html pkg.csize=2766 pkg.size=16438
+file e74edd31aaf65d509817b5fa28ba03cf248dc617 chash=f70785de57f38c860a2e9e43d89315cc15afa304 group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/QueueConnectionFactory.html pkg.csize=2642 pkg.size=13141
+file 9c92c0e19dea24b7934cf7ff6f62ab0dcadc5289 chash=ad72d27b7a5a15cab5eee5b83743a115c70d5afb group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/MessageListener.html pkg.csize=2025 pkg.size=7736
+file 40d87af67958224437a72c953e8ec5fcd97d46e8 chash=77585bc49a3b6d89f0ee77ebfc62bfa9cc7b8501 group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/ExceptionListener.html pkg.csize=2172 pkg.size=8218
+file 5f75c2cc1dc0b2b7fc721eeccfe8e800038e30bb chash=0ad4949672ed4a728a0cebd7a67d8392ad3063d9 group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/package-frame.html pkg.csize=1343 pkg.size=10713
+file 113f5fb2f835316c46c408e7143b85bd7f46888d chash=c265c587ce7f8353b0798444d89009b576270350 group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/package-summary.html pkg.csize=7986 pkg.size=44251
+file 3a113b298c153ba172406241f0c0995cdf4b66e5 chash=7cb974416bdc811f11f4770d2c8f1a9ad717e886 group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/InvalidSelectorRuntimeException.html pkg.csize=2871 pkg.size=18983
+file 1fe921265ece7de72edfa73fd214bd3e37b78b3f chash=85d7c8acd2d647faf8396027cf3e217856d5c515 group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/TopicSession.html pkg.csize=6414 pkg.size=41006
+file 3b281f91b7110413cea9d285a973331660a7c98d chash=270c1440049e6347a6694ac1dddb3dbfbc578a39 group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/JMSException.html pkg.csize=3403 pkg.size=21023
+file 2d318ad58d3929a0218ebde3b04744601583084d chash=c5d3ad194e4f84e6dc76eb4aba379764c40fed1a group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/XATopicConnectionFactory.html pkg.csize=2754 pkg.size=14727
+file 1aa4a7b2775b50682de4e380fb4f50b733dc25ca chash=926f655dea10f27bc77eeda3a4c20cef6ea201a7 group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/JMSConnectionFactory.html pkg.csize=2122 pkg.size=9363
+file 0f6463f23df794dfac115117e29db777ab533690 chash=dd7cf60deecde17d58f6e98ed4bd0f686bab2920 group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/TextMessage.html pkg.csize=3220 pkg.size=16572
+file c91bb2c234baac37d4e1706753151b78f5f8b6bf chash=37e4c49d0d70524bcc52d29e79b9c535a16e7d3e group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/Destination.html pkg.csize=2665 pkg.size=9361
+file 9143d6e88ebef65c3b149c101017cff69c4d6cac chash=5cd0bc1cc73dcab4c8c9030b440bf0f2634cd1ff group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/TransactionInProgressRuntimeException.html pkg.csize=2891 pkg.size=19357
+file 1b311186c6a1825095baa6e9bc92f450b8d97275 chash=1fe6e20c8198e877725feda53ccc35dc83b661af group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/InvalidClientIDRuntimeException.html pkg.csize=2869 pkg.size=19000
+dir group=sys mode=0755 owner=root path=mq/javadoc/javax/jms/doc-files
+file 0d0e6ca52d23b92dfa0b3875cca2511b4f4c8cf0 chash=07c8d62ffa1ed6a3f1990c898d4f1f2c1d50b417 group=sys mode=0644 owner=root path=mq/javadoc/javax/jms/doc-files/speclicense.html pkg.csize=4129 pkg.size=10426
+dir group=sys mode=0755 owner=root path=mq/javadoc/javax/xml/messaging
+file ee41905e9564d1830569c2b7a167b8aa7a940e0a chash=007fa0e09b257303e30a3ee4a0dc086671ee6238 group=sys mode=0644 owner=root path=mq/javadoc/javax/xml/messaging/package-tree.html pkg.csize=1652 pkg.size=7579
+file 47d3ecd85d2caedfd9c5d7af893695c206545702 chash=d8519edcf93dbd8e8b1b0b413724f707bd0401c5 group=sys mode=0644 owner=root path=mq/javadoc/javax/xml/messaging/JAXMServlet.html pkg.csize=4041 pkg.size=22997
+file 5b3a6fca96a529dfb2f1055c0e48e58af56dc251 chash=25f1bd429e73069d9580de32f12f6fd7bce374af group=sys mode=0644 owner=root path=mq/javadoc/javax/xml/messaging/Endpoint.html pkg.csize=3272 pkg.size=15505
+file 8337c4a04b5b60f8c112c2e1cf02ccf7566a8d2b chash=452f21a5aa4b50223e0dca4246559b04ce11e72e group=sys mode=0644 owner=root path=mq/javadoc/javax/xml/messaging/package-summary.html pkg.csize=2865 pkg.size=10762
+file b66d2e111c8cb23c140034e47624e12a113ed480 chash=952470af2f1053fd292a974727fe2aad726aaa66 group=sys mode=0644 owner=root path=mq/javadoc/javax/xml/messaging/package-frame.html pkg.csize=663 pkg.size=1931
+file 360e298c09f489112f6aebeb3c3d66014895c3dc chash=bffde8cba5cb4e12b61941e6e03ed1877abda3d7 group=sys mode=0644 owner=root path=mq/javadoc/javax/xml/messaging/URLEndpoint.html pkg.csize=2630 pkg.size=13192
+file 544e7fac88e6247d47a9149b6f6702dd3e3e2dda chash=723ff7ae4773cd7a481373d097dbdbd77531768e group=sys mode=0644 owner=root path=mq/javadoc/javax/xml/messaging/ProviderConnection.html pkg.csize=4257 pkg.size=18838
+file daee5e7ba26e34d224144c327aa3a346a4a5b153 chash=c8ea9de6bc67f4c100e804076427f228e50722e8 group=sys mode=0644 owner=root path=mq/javadoc/javax/xml/messaging/ProviderConnectionFactory.html pkg.csize=3132 pkg.size=15777
+file 3e349f5b9e6d31a43758b3e4cbf5ae6b41063cf4 chash=8bdff2592c6f31dd78205afc5cc6b2d0bbe2819e group=sys mode=0644 owner=root path=mq/javadoc/javax/xml/messaging/ProviderMetaData.html pkg.csize=2865 pkg.size=13032
+file 8b23a36167dfb0279f0e002167086d093d4c9555 chash=5668e7c7f070a99a337f18f775ae2cc751778e21 group=sys mode=0644 owner=root path=mq/javadoc/javax/xml/messaging/OnewayListener.html pkg.csize=2351 pkg.size=9046
+file 3c61a45e0c1e28b71085710a37258e8c3feaff2c chash=1e6a06f8be0778fc519e1c5eb07cfa31d7884f76 group=sys mode=0644 owner=root path=mq/javadoc/javax/xml/messaging/JAXMException.html pkg.csize=2964 pkg.size=18796
+file 050a78b09b33dc132928c97c6ac5ef4af758285e chash=c007a25057361540e800f42484fe2d249d64744b group=sys mode=0644 owner=root path=mq/javadoc/javax/xml/messaging/ReqRespListener.html pkg.csize=2699 pkg.size=10467
+file 4344e3d18f768008c32614683fab589b3f4c6f50 chash=0e9e4e05a1f7f2d8f884b7fc58d36e2c0a141241 group=sys mode=0644 owner=root path=mq/javadoc/resources/tab.gif pkg.csize=246 pkg.size=291
+file 19ab0c0d7b0d3ce0b293453388a5faf8109da297 chash=a948a78f24981a1a0753165817d802c778a8c3f0 group=sys mode=0644 owner=root path=mq/javadoc/resources/background.gif pkg.csize=2336 pkg.size=2313
+file e04ec1e668a82eb1b6bfcfc13bef0e7e53811a84 chash=f73bdb8704b47d454d8be488f555b13cbce7e25c group=sys mode=0644 owner=root path=mq/javadoc/resources/titlebar.gif pkg.csize=10600 pkg.size=10701
+file 7d4db9c8511d81bda08ee1209a0105fdd81cad20 chash=241779884b61c50a757f95f29fd1cddfcb558e9c group=sys mode=0644 owner=root path=mq/javadoc/resources/titlebar_end.gif pkg.csize=764 pkg.size=849
+file 9234bcfba78a2b43f2ab386c6f976a2ccd2b4b37 chash=38a7d1cdacd4dd35a9f0a16e108c7cf08540ce6e group=sys mode=0444 owner=root path=mq/examples/README pkg.csize=1579 pkg.size=4559
+dir group=sys mode=0755 owner=root path=mq/examples/jmx
+dir group=sys mode=0755 owner=root path=mq/examples/stomp
+dir group=sys mode=0755 owner=root path=mq/examples/applications
+dir group=sys mode=0755 owner=root path=mq/examples/jmsbridge
+dir group=sys mode=0755 owner=root path=mq/examples/monitoring
+dir group=sys mode=0755 owner=root path=mq/examples/imqobjmgr
+dir group=sys mode=0755 owner=root path=mq/examples/helloworld
+dir group=sys mode=0755 owner=root path=mq/examples/jdbc
+dir group=sys mode=0755 owner=root path=mq/examples/jms20
+dir group=sys mode=0755 owner=root path=mq/examples/jaxm
+dir group=sys mode=0755 owner=root path=mq/examples/ums
+dir group=sys mode=0755 owner=root path=mq/examples/jms
+dir group=sys mode=0755 owner=root path=mq/examples/jaas
+file 006efc032979f9b1dbf4acdb1f6f09be9eaa0a78 chash=523577ef5c7798df8f9e21c91dd98a847ba9855c group=sys mode=0444 owner=root path=mq/examples/jmx/ListDestinations.class pkg.csize=1009 pkg.size=1919
+file 9b11f031725e35201ed70063ff56bc275cf97e85 chash=706a47126606c2ce73921783439c10cb0a456e57 group=sys mode=0444 owner=root path=mq/examples/jmx/MQClusterMonitor$2.class pkg.csize=337 pkg.size=460
+file 1eaba8d457289eeaf413afd18e3adec023e89673 chash=0eeec56c88ccaa416f8d297f2eb0788ab89746ff group=sys mode=0444 owner=root path=mq/examples/jmx/MQClusterMonitor.class pkg.csize=5084 pkg.size=10138
+file 3a026ee39c9479fbbbb0313f4d97cac4dda310b9 chash=cc58e7108d0eb6932a6a57151b744d2274936057 group=sys mode=0444 owner=root path=mq/examples/jmx/SimpleClient.class pkg.csize=813 pkg.size=1494
+file 15ed19ce9863928c04340963f9f1b5ee92962dfe chash=cccecf8fd0abcc361f25feaf4ff7fedf71469771 group=sys mode=0444 owner=root path=mq/examples/jmx/MQLogViewer.class pkg.csize=5444 pkg.size=11064
+file b1cae4285abe4ebb8e897ef8fb2ae8dc942865ce chash=c47c553453b6ea0e66257ee45fd27f69c906e3df group=sys mode=0444 owner=root path=mq/examples/jmx/MQClusterMonitor.java pkg.csize=4490 pkg.size=14762
+file b6408674162ee34bf67f6041f9bd626b299306dd chash=d02d85a366f1be4ebb73dc15dff3f00f41316c41 group=sys mode=0444 owner=root path=mq/examples/jmx/SimpleClient.java pkg.csize=1469 pkg.size=3307
+file 3d05a969f91f25bb2f9a9281bcb0a471504f611b chash=0ffbb7f68c5c7bc3ce97a4147c16c87d3fb672cd group=sys mode=0444 owner=root path=mq/examples/jmx/README pkg.csize=897 pkg.size=2237
+file 6f48f2d9a0bba05327db84758f4c3a1098a02963 chash=c8681840b8cc251dfd3fa3336a85bd45d14c37c6 group=sys mode=0444 owner=root path=mq/examples/jmx/MQClusterMonitor$1.class pkg.csize=690 pkg.size=1177
+file 504ea677e306a20cf71066836f5dee2142d15a60 chash=6c837a01a1ca3f953507eaba9185137d9900280b group=sys mode=0444 owner=root path=mq/examples/jmx/MQConnectDialog.java pkg.csize=1870 pkg.size=5116
+file 4260f9e355af78b4b675a5d1885b47d9c2f0bc47 chash=a84c3733f8eeb5e81879712da7b7696a59f96565 group=sys mode=0444 owner=root path=mq/examples/jmx/MQConnectDialog.class pkg.csize=1877 pkg.size=3593
+file 2d0a39cf1ffaf5c2cae1ea8e93f207c1959a2847 chash=aac08276c930b442a725c176c88001292c379ae7 group=sys mode=0444 owner=root path=mq/examples/jmx/MQLogViewer$1.class pkg.csize=335 pkg.size=445
+file 930b34da5ae593ce854a113776beb5d3f91d1650 chash=8bc697fe5d308587e70cd787861b7abf22914161 group=sys mode=0444 owner=root path=mq/examples/jmx/ListDestinations.java pkg.csize=1597 pkg.size=3780
+file 0bbbcacc85739eb21b723b0efe2e2fc4076bee77 chash=4fbac3f625cf7cf1ecda43b00917553e05ad82d5 group=sys mode=0444 owner=root path=mq/examples/jmx/MQLogViewer.java pkg.csize=3816 pkg.size=13110
+file cf5d7144b95f66f4364abab758ddcdc797891227 chash=f5320b98f510c6fad1b629d759be75ba5967ad0f group=sys mode=0444 owner=root path=mq/examples/jmx/ClusterTableModel.class pkg.csize=1478 pkg.size=2503
+file 4476ea146b9b599b3fe78d3fed43f30a169f1402 chash=b00b91740b32f7ad1cab534fe9d90752e820146b group=sys mode=0444 owner=root path=mq/examples/stomp/README pkg.csize=397 pkg.size=699
+dir group=sys mode=0755 owner=root path=mq/examples/stomp/ruby
+file 2e1e2b9eb4999c26daa472139a0d51685869b8bc chash=af87a8b98c60befec41c6dc2019ee5c888cdb200 group=sys mode=0444 owner=root path=mq/examples/stomp/ruby/README pkg.csize=417 pkg.size=842
+file 694d79e84fc46ce4b61d79d5ebf2e2fca0542b36 chash=075fc5ef6a406260628af34f0d0b2059dd37ea2b group=sys mode=0444 owner=root path=mq/examples/stomp/ruby/SendMsg.rb pkg.csize=2583 pkg.size=6996
+file 1eea581f40d614c4b90fa1288c727376bce26b7a chash=188f8866bd0762bc5379e82d224858d106be1fed group=sys mode=0444 owner=root path=mq/examples/stomp/ruby/ReceiveMsg.rb pkg.csize=2467 pkg.size=6521
+file e80f5a5932ba6316f6cc1bee77762c7654650326 chash=86550e6407d5bb5d0ced0fc1b44df2d155bf1f54 group=sys mode=0444 owner=root path=mq/examples/applications/README pkg.csize=674 pkg.size=1479
+dir group=sys mode=0755 owner=root path=mq/examples/applications/mqapplet
+dir group=sys mode=0755 owner=root path=mq/examples/applications/uclient
+dir group=sys mode=0755 owner=root path=mq/examples/applications/simplechat
+dir group=sys mode=0755 owner=root path=mq/examples/applications/qbrowser
+dir group=sys mode=0755 owner=root path=mq/examples/applications/mqping
+file f798aaa76074a3583b1b9918bcbff04ebbeed635 chash=9329af36671d054ab694aea3a70b9937d4571b09 group=sys mode=0444 owner=root path=mq/examples/applications/mqapplet/build.xml pkg.csize=1643 pkg.size=4527
+file 0a0911fa2a852af0172f5b435f28155e21f45248 chash=0586b39cd44076a49d4926ea31255886fa2731d2 group=sys mode=0444 owner=root path=mq/examples/applications/mqapplet/README pkg.csize=1576 pkg.size=3650
+file bd7bf6e3cdef3bd737d7a68b34e99e32039a2ae5 chash=c0831eef53131a48b045246bc8c2a6354078a592 group=sys mode=0444 owner=root path=mq/examples/applications/mqapplet/MQApplet.java pkg.csize=4044 pkg.size=17602
+file a1088c66f87c71b280dae0a190c810572747a9ca chash=05a770bd7b60cb49b93dfedfe640e3d7f467a62d group=sys mode=0444 owner=root path=mq/examples/applications/mqapplet/mqapplet.html pkg.csize=1166 pkg.size=2377
+file f8af43ebdb9274baef83ad7431b5da9007a5b966 chash=f720b117d533db98dc30a69616948e4a9d97251c group=sys mode=0444 owner=root path=mq/examples/applications/uclient/UniversalClient$4.class pkg.csize=310 pkg.size=414
+file 983a0ab37c240c3da730c5f05027a47f647e8030 chash=407be06b2a0004b5ca5b2d4d36c34a2328d4e9a6 group=sys mode=0444 owner=root path=mq/examples/applications/uclient/UniversalClient$MessageSenderThread.class pkg.csize=318 pkg.size=453
+file 388db3ad7043fab5c529607453509f30ecfebe9e chash=017da34b9aaade3c2c4b1bf2aeeef16b40224bfc group=sys mode=0444 owner=root path=mq/examples/applications/uclient/UniversalClient$5.class pkg.csize=437 pkg.size=654
+file af746c3c42ceafb92682a47114736e57942a5665 chash=6c27061f71d3868f165220e3c95c2e644ac512b1 group=sys mode=0444 owner=root path=mq/examples/applications/uclient/UniversalClient$MessageReceiverThread.class pkg.csize=319 pkg.size=457
+file 4ef3c18784fbfbc00bdf9c725f6346748f333987 chash=9b6053341cb7ee334ea7da0b063182d554d3d9d3 group=sys mode=0444 owner=root path=mq/examples/applications/uclient/FormattedDocument.class pkg.csize=1052 pkg.size=1863
+file 033bfc438c994c1eac6b9d958b977730a7d1a694 chash=842b6b6b4daec68fca6e7460fca31a14d9287b31 group=sys mode=0444 owner=root path=mq/examples/applications/uclient/IntegerField.class pkg.csize=853 pkg.size=1440
+file b17e0f15f429610d8b79a755c4f0f4f5986f049c chash=9c1755d98a03c3f9ab778e3437f97ff5cf8cb758 group=sys mode=0444 owner=root path=mq/examples/applications/uclient/UniversalClient$ReceiveMessageListener.class pkg.csize=367 pkg.size=542
+file 7c6e245c23659a357204ca3593465dec6dcc682b chash=65987a9cd02d3663f10f73a7e797e5202a5283ca group=sys mode=0444 owner=root path=mq/examples/applications/uclient/UniversalClientConstants.class pkg.csize=493 pkg.size=997
+file d7ffb5551829315ad8e922edd2b9ee0dfec8491d chash=2ad3c5191dd45289184b2a9fa91ffb53f3097da6 group=sys mode=0444 owner=root path=mq/examples/applications/uclient/UniversalClient$SendMessagePopUpListener.class pkg.csize=371 pkg.size=545
+file 85fa3ae452577450cb5cb64c5e80b435ab076957 chash=7d31798faec6084ec2f5dd9ba40c21080666888f group=sys mode=0444 owner=root path=mq/examples/applications/uclient/UniversalClient$DetailsListener.class pkg.csize=613 pkg.size=1011
+file 8240b5b70b60e52f6aaa365ef802136133f062c0 chash=4e87de4b6ceaae0ecfa8498169df585de38ed5b2 group=sys mode=0444 owner=root path=mq/examples/applications/uclient/UniversalClient$6.class pkg.csize=438 pkg.size=663
+file 3f6be33a583d4d25b699c8931186c66f729b40f6 chash=4db0ff1288d3baa871f5f9388e1a894376b0dc69 group=sys mode=0444 owner=root path=mq/examples/applications/uclient/UniversalClient$7.class pkg.csize=441 pkg.size=672
+file 24c436cda94d022bfd11ba68efb8bdc913aecdcf chash=7de60c62e7ae0d69460f4a036de17f70192f829b group=sys mode=0444 owner=root path=mq/examples/applications/uclient/UniversalClientUtility.class pkg.csize=3842 pkg.size=6927
+file aaa519e9f432dc4a934713f43899357d1b49c6b2 chash=916fa343336695f052b347379eb759c31c5e3bf4 group=sys mode=0444 owner=root path=mq/examples/applications/uclient/UniversalClient$SendMessageListener.class pkg.csize=365 pkg.size=536
+file d381c8c7ee4315a7cf5218517fcf3d0e61813c22 chash=f14e572cf947e42ea5d779fbcc26299f6aec6266 group=sys mode=0444 owner=root path=mq/examples/applications/uclient/UniversalClient$ConnectionEventListener.class pkg.csize=662 pkg.size=1129
+file d7a510337bca1e21fe0c49925b0c8042ab791b9d chash=44a59fece0b34870be7bfbe835744688adde4d0a group=sys mode=0444 owner=root path=mq/examples/applications/uclient/StatusArea.class pkg.csize=839 pkg.size=1347
+file 2029d2c60365a28983418ebb20eb9d1afc94f0c8 chash=e0d48e80f30c6adb63d3308e63fe620cd85850d5 group=sys mode=0444 owner=root path=mq/examples/applications/uclient/README pkg.csize=1296 pkg.size=3339
+file 7337ede18e401d3bea64a16410935a838d4a49c7 chash=37b9ac504a240a2a17df1be9adf4ce67e76ef3a4 group=sys mode=0444 owner=root path=mq/examples/applications/uclient/UniversalClient$1.class pkg.csize=422 pkg.size=591
+file 63d92564ac8f1a25f5d27035845d7ea96d477a4a chash=2d0153a910593ef8dcec9efb971d5c3096255a34 group=sys mode=0444 owner=root path=mq/examples/applications/uclient/PropertyPanel.class pkg.csize=1764 pkg.size=3052
+file 0ea2cd94d0f685440ee07686074f4b1f8834cb48 chash=5a5be59eaad890cff32ecac27cccd43a98f5c7c7 group=sys mode=0444 owner=root path=mq/examples/applications/uclient/UniversalClient$ConnectionListener.class pkg.csize=359 pkg.size=533
+file 7a275896e431d7db031ecee1acb903b41c252b9e chash=565885c0e1fba4b218fef2d6126cee5d16633f68 group=sys mode=0444 owner=root path=mq/examples/applications/uclient/ConnectionDialogBox.class pkg.csize=3837 pkg.size=7556
+file 9c34612c6ba40bceb1060da442b7764f760aefcc chash=a3e4d15fe199be2cba9b45cdaf7ee15c56622463 group=sys mode=0444 owner=root path=mq/examples/applications/uclient/UniversalClient$2.class pkg.csize=411 pkg.size=579
+file a982ed2cedcb786a56c300b79c2d2b59c6922c1e chash=5ef4a3216acb99f3cda70220c05d3b6e84c2cee4 group=sys mode=0444 owner=root path=mq/examples/applications/uclient/UniversalClient$DisConnectionListener.class pkg.csize=673 pkg.size=1085
+file 6d5a89f4359f03abdfbb21da27d3b0de84dad126 chash=6dbaa77726c4a164dc204dd0692823d765dd7842 group=sys mode=0444 owner=root path=mq/examples/applications/uclient/UniversalClient$ExitListener.class pkg.csize=355 pkg.size=521
+file dba0047f3b510cb8e3d1fa3a1e5d563d2332b2cd chash=8db2bd124dc7b313967e5813f632f4dcc5b20e4e group=sys mode=0444 owner=root path=mq/examples/applications/uclient/UniversalClient$ReceiveMessagePopUpListener.class pkg.csize=370 pkg.size=551
+file 604e5d6ee733dda43c42bc6305da21e7b6bba76f chash=1f391346851dff8fd511e478c979b98cac3ebb99 group=sys mode=0444 owner=root path=mq/examples/applications/uclient/UniversalClient$TableMouseListener.class pkg.csize=567 pkg.size=933
+file d58de575b50a34de8ba49cee3bb612c099909b47 chash=c8dd4bc57a010cece9c5fd2aea982e4e5629f90e group=sys mode=0444 owner=root path=mq/examples/applications/uclient/ReceiveMessageDialogBox.class pkg.csize=2913 pkg.size=5555
+file 897ab8b29ad38899339f6b1dd4eda7f96bfea465 chash=d909ae79267e6d6ef6af18d85ae806ceb6b7bbc4 group=sys mode=0444 owner=root path=mq/examples/applications/uclient/IntegerField$1.class pkg.csize=429 pkg.size=660
+file 2934ec612966ccf430af993cf60130575b09f6f6 chash=78618cbbc580a1d2855efd25ec757f453744f96d group=sys mode=0444 owner=root path=mq/examples/applications/uclient/UniversalClient$ConnectionPopUpListener.class pkg.csize=366 pkg.size=543
+file 28b3eb248ac9aa1c5ec03757eb36b569f8aced5e chash=b59fca0799445ad479c5134a7276531d26adcbe4 group=sys mode=0444 owner=root path=mq/examples/applications/uclient/UniversalClient$3.class pkg.csize=698 pkg.size=1093
+file 99eb433433191b6b3b2d7a0b88569ecdf30265b0 chash=60adf60f201dd7fdeb03b41f03e5b56e2bd4e020 group=sys mode=0444 owner=root path=mq/examples/applications/uclient/MsgTable.class pkg.csize=1972 pkg.size=3442
+file c6bb2c11cdcd482163954afb366d6f422118a0c7 chash=2b7ac54d0f6c944b7a11df1f6be18192386e97d8 group=sys mode=0444 owner=root path=mq/examples/applications/uclient/UniversalClient$ClearMessageListener.class pkg.csize=363 pkg.size=537
+file 7bbfc31bb571519efc8330896b371eca1aaf39b0 chash=04d93a92781965316982408be3efdc3d686712cb group=sys mode=0444 owner=root path=mq/examples/applications/uclient/UniversalClient$StatusReportingThread.class pkg.csize=485 pkg.size=695
+file 47d8ad6ba7ec211ac017538d5dc7510807efcf8c chash=50afa8b6a3c86b5a689a05ce0f83a9f0bbf207e7 group=sys mode=0444 owner=root path=mq/examples/applications/uclient/UniversalClient.class pkg.csize=14533 pkg.size=29947
+file 26635c7ad2debd5cd344f2511fb43f3f34cc917c chash=d30dde0edcbd6bb638aaf7ce5b67b89ec5086435 group=sys mode=0444 owner=root path=mq/examples/applications/uclient/SendMessageDialogBox.class pkg.csize=2515 pkg.size=5061
+file ddc243a4b49ab6dd7dee3cd04a2c54ab87eb4a8f chash=3833f0d082f6670a02791ef7b9fad1641aa467f7 group=sys mode=0444 owner=root path=mq/examples/applications/uclient/UniversalClient.java pkg.csize=20407 pkg.size=99571
+file a9cf13b202380626b7edf196ed332dacbcbfa238 chash=b3b20f7bc7506a8adf7700d60b3afe6474c1182e group=sys mode=0444 owner=root path=mq/examples/applications/simplechat/SimpleChatMapMessageCreator.class pkg.csize=1141 pkg.size=2362
+file 9370d58f770285969f8c8563f939014c08fc73fe chash=0a690413c871e3513d95f3ecc72c7b63b11feeab group=sys mode=0444 owner=root path=mq/examples/applications/simplechat/SimpleChatBytesMessageCreator.class pkg.csize=1266 pkg.size=2259
+file 2e9af1b9ffd69fc2a7d86183556b15070d405662 chash=9938cef42de9f0cf588b74e0b5ad93bda69b9c8b group=sys mode=0444 owner=root path=mq/examples/applications/simplechat/README pkg.csize=1247 pkg.size=2921
+file d8b6331a22046d38f27ee577c2b80a66782c0412 chash=ac0f91dd486237c2fe00e4e0dc3901d92c64d066 group=sys mode=0444 owner=root path=mq/examples/applications/simplechat/SimpleChatMessageCreator.class pkg.csize=245 pkg.size=423
+file 0a1a620ecc17ffe228bdb22580728f8ecd67fb38 chash=737fb03f9015b1ed185656a84dbd19f8a6930d97 group=sys mode=0444 owner=root path=mq/examples/applications/simplechat/ChatObjMessage.class pkg.csize=425 pkg.size=722
+file f5bfed37ddfbbcc506a5e2e1cafd6ea3621c6da6 chash=5541bd93e4f7634e69d9bf25c08a968e9bb39e37 group=sys mode=0444 owner=root path=mq/examples/applications/simplechat/SimpleChatMessageTypes.class pkg.csize=207 pkg.size=251
+file 0ff0a0aeb613cda8da9ab216283e9250ba00c2cf chash=5f9c89142dd714b44ff46d8dfdcdc59c24ca32ae group=sys mode=0444 owner=root path=mq/examples/applications/simplechat/SimpleChatTextMessageCreator.class pkg.csize=1143 pkg.size=2342
+file 0e623cfc4922265f34f66e4376bbf4602efb05ff chash=5eadb9a89d13f2a9deec874062c3a0965ee2e977 group=sys mode=0444 owner=root path=mq/examples/applications/simplechat/SimpleChatStreamMessageCreator.class pkg.csize=1010 pkg.size=2058
+file 3521836c45ac8d3de28efc9883b9409387db0f17 chash=674f5705c8cb0593203769438b8e3825818f9208 group=sys mode=0444 owner=root path=mq/examples/applications/simplechat/SimpleChat.class pkg.csize=4770 pkg.size=9995
+file 9d080633959b86b2084d819a620695f8512e136f chash=c6ae8fd85d62647aec02854ec05e9a3cece59bd9 group=sys mode=0444 owner=root path=mq/examples/applications/simplechat/SimpleChatObjMessageCreator.class pkg.csize=1199 pkg.size=2466
+file 4cad7dbeced9861db81bd10e84841d94e688ec16 chash=8a696dafafad77440f691d86f82f557f0a6d32a9 group=sys mode=0444 owner=root path=mq/examples/applications/simplechat/SimpleChatPanel.class pkg.csize=1528 pkg.size=2900
+file 165af3e88084cf0558485378eff22feadb08cab1 chash=bf9fc4afd51feff92f5c1c4db57a6c305741c1df group=sys mode=0444 owner=root path=mq/examples/applications/simplechat/SimpleChat.java pkg.csize=8668 pkg.size=38000
+file 82548ac1474ca4e0438e5cc3f972afaf8699995b chash=ab65ade5f5e0da8b15e394210355eae7ab5c8b98 group=sys mode=0444 owner=root path=mq/examples/applications/simplechat/SimpleChatDialog.class pkg.csize=1883 pkg.size=3470
+file d7d128305af6b3c71c59662996ab22d11ba7545f chash=4862d366fb0f662759df63119e1cadd80376ff0c group=sys mode=0444 owner=root path=mq/examples/applications/qbrowser/QBrowser$DetailsListener.class pkg.csize=616 pkg.size=967
+file c8b1f273295e35e97bcf326efa437795af6a9ccf chash=879db71f2b520a909e460c1fb9eef8546d0edcdd group=sys mode=0444 owner=root path=mq/examples/applications/qbrowser/QBrowser$OptionListener.class pkg.csize=411 pkg.size=611
+file e3ce4bbb5227d07ec2a441de1835cad5fda88683 chash=1cd1f3026ea4c87e4bc10785b364d740709b3036 group=sys mode=0444 owner=root path=mq/examples/applications/qbrowser/README pkg.csize=1153 pkg.size=2528
+file bc224377a2f93a871d242ab5b0104f92f59bc4c6 chash=4bef811220a0748ce7f5120507a88fa285c29268 group=sys mode=0444 owner=root path=mq/examples/applications/qbrowser/QBrowser$PropertyPanel.class pkg.csize=1710 pkg.size=3016
+file 475cdb8241a0f18e206208af54c059a643ae498b chash=58534c942f815ee29e86f1dc905ad3a556d44a0e group=sys mode=0444 owner=root path=mq/examples/applications/qbrowser/QBrowser$TableMouseListener.class pkg.csize=568 pkg.size=897
+file 6c068092dff45e608b548cab90b47c1bfbd76813 chash=530a0c4fa0915c15adbd2f2f7891a3e3bd5fa886 group=sys mode=0444 owner=root path=mq/examples/applications/qbrowser/QBrowser.class pkg.csize=8036 pkg.size=15158
+file 772d4a8fce0917002e92f3ce8338e3c84811508a chash=54732db61e35a508f0413b5182f67baa419dadf2 group=sys mode=0444 owner=root path=mq/examples/applications/qbrowser/QBrowser$MsgTable.class pkg.csize=1564 pkg.size=2664
+file b0b5af276f910d142abd67234243a48465b76f5e chash=3d91813a9bc58c5a242317f0305b5a5c94e1cf72 group=sys mode=0444 owner=root path=mq/examples/applications/qbrowser/QBrowser$ExitListener.class pkg.csize=385 pkg.size=540
+file 148bcd763e50ae37c8033bcb89e5e25594224a4c chash=29366fbdcb1d0d15d843848126f6191e5bc16c7f group=sys mode=0444 owner=root path=mq/examples/applications/qbrowser/QBrowser$BrowseListener.class pkg.csize=350 pkg.size=490
+file db977a861ecb15350954b51c84e267ba3d3fe18b chash=8b1cd712d32ca01b020daeed072b5575cf05436e group=sys mode=0444 owner=root path=mq/examples/applications/qbrowser/QBrowser.java pkg.csize=7494 pkg.size=27805
+file 809ea6cb965971cf191f264881f792c7ae52ec58 chash=5232b98b3b3f3ba1a862e0f1787f4782ab016e80 group=sys mode=0444 owner=root path=mq/examples/applications/mqping/mqping.java pkg.csize=3980 pkg.size=11546
+file d5a520eb4266c5871519f4070b3f6cc8a83826bf chash=dfc5c097e20bd6a3b326d6d6e0eb4ef2eff01a54 group=sys mode=0444 owner=root path=mq/examples/applications/mqping/mqping.class pkg.csize=3854 pkg.size=7072
+file 21bff81d7f263748a71a6391955491904c5b41e6 chash=abf41bc69c4dbf44119ebbee65c9a1bf47a59b39 group=sys mode=0444 owner=root path=mq/examples/applications/mqping/README pkg.csize=995 pkg.size=2129
+file 4fee76c92a334016dd2caeeaee2542c03256da5e chash=5c14f6663f5c8db29ebc35eb83a00eaa3aa0d778 group=sys mode=0444 owner=root path=mq/examples/applications/mqping/PingShutdownHook.class pkg.csize=1172 pkg.size=1961
+file 6de872ee381f027d12c99a17227b970861251565 chash=1fa502ef9e3898f630980af96b19c0e79c035d9e group=sys mode=0444 owner=root path=mq/examples/jmsbridge/README pkg.csize=116 pkg.size=158
+dir group=sys mode=0755 owner=root path=mq/examples/jmsbridge/mqtomq
+file 727f07dd42a783cb77360025b301a9534c5d1330 chash=b16fd47708348dd6369d7693fecd4636ca89f9e1 group=sys mode=0444 owner=root path=mq/examples/jmsbridge/mqtomq/passfile pkg.csize=48 pkg.size=32
+file 65dcfbf3e7e84180a6f93dcef89501dea59cbe83 chash=3fea6d4dde8dcf10a037428c18b454ae9594996d group=sys mode=0444 owner=root path=mq/examples/jmsbridge/mqtomq/logging.properties pkg.csize=1668 pkg.size=4282
+file 6b6cb78dc6147270164c38069cdf8814c7d827a8 chash=4f22136ff120fb5540c761225dcfd755ba074e11 group=sys mode=0444 owner=root path=mq/examples/jmsbridge/mqtomq/jmsbridge.xml pkg.csize=1342 pkg.size=2965
+file a0868a1d01f717e0e9c31c6f8fb2cf21633ee353 chash=5d2f16e6243ec2e62d687637be088baa13b3e550 group=sys mode=0444 owner=root path=mq/examples/jmsbridge/mqtomq/README pkg.csize=835 pkg.size=1990
+file a6d0fbcf4bb9b36ea9830e147bbdd1ddf4a5b20f chash=b6c901c3eb66e43ab109e600aa6c1d466b149254 group=sys mode=0444 owner=root path=mq/examples/monitoring/MetricsPrinter.class pkg.csize=354 pkg.size=591
+file b50931f99c76acfc7b474461e1db773dbab25d56 chash=68076b376c25a0228df680ad1a04be2eeccbd17a group=sys mode=0444 owner=root path=mq/examples/monitoring/MultiColumnPrinter.java pkg.csize=5195 pkg.size=19021
+file 891e6d72e65427a00d325b5f91bd9ee8f1988ca2 chash=7a6cc0f2794b2708fb057231fe17ac14f2f917b9 group=sys mode=0444 owner=root path=mq/examples/monitoring/BrokerMetrics.java pkg.csize=2978 pkg.size=9855
+file ffb8a7051525f886e13339822d4e1de14427bbf3 chash=756254255dd23283aebbd16ef2feeed8848382a1 group=sys mode=0444 owner=root path=mq/examples/monitoring/README pkg.csize=1629 pkg.size=4603
+file f4cc2204b991d01332870135c6b90992bf8c3efa chash=317720361cf641e2df38bd18ffafd8d40572412a group=sys mode=0444 owner=root path=mq/examples/monitoring/MetricsPrinter.java pkg.csize=1141 pkg.size=2506
+file d328ecfa69b3d1939dd054ce523e3e8d8f4b2c2d chash=b5e468960254f9a8b590c90ff50d0e44669f1431 group=sys mode=0444 owner=root path=mq/examples/monitoring/MultiColumnPrinter.class pkg.csize=3106 pkg.size=5514
+file bd7efe956ae16c9729f039eff51ce94955c476fb chash=256aef9f88b8ec91aa15a86db551121e50270c51 group=sys mode=0444 owner=root path=mq/examples/monitoring/DestMetrics.class pkg.csize=2555 pkg.size=4930
+file a10b42d7389d75471a1661037da39582450e8473 chash=41e76d0af3c73727e8e5248b6c72e6a32a355f8d group=sys mode=0444 owner=root path=mq/examples/monitoring/BrokerMetrics.class pkg.csize=2825 pkg.size=5479
+file bd33dffb3f94d019f7743698a45450c19c4bfb34 chash=45150ae362238343806767931ac95f4ca227ec5e group=sys mode=0444 owner=root path=mq/examples/monitoring/VMMetrics.java pkg.csize=2247 pkg.size=5686
+file 5d4eaada004f30e6583395524f4ab75ec4b904d7 chash=8e007f44486a5bb6a9b5623fde09ab9bc64cf8f3 group=sys mode=0444 owner=root path=mq/examples/monitoring/DestMetrics.java pkg.csize=2791 pkg.size=8398
+file a60c255786db10d6d1a160959999163a08bfbd54 chash=4e954663da3c407092dc2f5fea01006ff67a1276 group=sys mode=0444 owner=root path=mq/examples/monitoring/VMMetrics.class pkg.csize=1822 pkg.size=3431
+file 0ed697990a86a0d5c225b39db3b40e3341556d90 chash=4f8126b4685a15c96b1d3bbc9a39389285bfd784 group=sys mode=0444 owner=root path=mq/examples/monitoring/DestListMetrics.class pkg.csize=2001 pkg.size=3782
+file 74db115210e73a00b32839619c83e81c7fed246f chash=f86cb2a5ed91b4b2cc0f5844e66f72104a867bc2 group=sys mode=0444 owner=root path=mq/examples/monitoring/DestListMetrics.java pkg.csize=2370 pkg.size=6153
+file d17e3a7ce9e68e559fa0449ddc8d0fde42b62d10 chash=6cfcfd5f70cfa521ef21cd3ae76d00e432ea9c53 group=sys mode=0444 owner=root path=mq/examples/imqobjmgr/delete_topic.properties pkg.csize=1391 pkg.size=3543
+file ab986045777aae2da41321fc50e3a8a0167ce959 chash=0ec3a958efbe47dfe63fd7aedf8dc8e6ebf12dce group=sys mode=0444 owner=root path=mq/examples/imqobjmgr/update_qcf.properties pkg.csize=1424 pkg.size=3587
+file 5f5097adb70a072081e59257a62d966d4573e1e1 chash=9e2cdbfdc5ee350ef19ca6b4dfe321c7ec9ad021 group=sys mode=0444 owner=root path=mq/examples/imqobjmgr/add_qcf.properties pkg.csize=1429 pkg.size=3600
+file 4bdc97357409692fa4d356fdd2e9922045e2151b chash=1a547d989592c1cf8e0a770c7543fcb9ab542cd5 group=sys mode=0444 owner=root path=mq/examples/imqobjmgr/add_topic.properties pkg.csize=1415 pkg.size=3594
+file dc3cf1632f5bfcbb555d75bbaa03348f6bf6c20e chash=40c3950512208c9b2ba2246b865f4c6a24a99ee1 group=sys mode=0444 owner=root path=mq/examples/imqobjmgr/list.properties pkg.csize=1472 pkg.size=3646
+file b28177c26368f472fa51778789ffa2bf8bea88d4 chash=c66aeb1cb341428f00b16abcfb5e391caae9bf95 group=sys mode=0444 owner=root path=mq/examples/imqobjmgr/README pkg.csize=1259 pkg.size=3652
+file aebe82cfbd7283a31f7e689eca32a8a476b984c9 chash=e5510e860e8eaa61d60d51a3cce5be412b31c2ea group=sys mode=0444 owner=root path=mq/examples/imqobjmgr/query_qcf.properties pkg.csize=1392 pkg.size=3538
+file 5cc9d53456d767949dd9c4e51396a8b33e53a034 chash=e38e5debd37853dc9ffefc31d95054ac3d6c2037 group=sys mode=0444 owner=root path=mq/examples/imqobjmgr/query_topic.properties pkg.csize=1391 pkg.size=3542
+file e65eeb1451ccd9831a492568ca52e18b3fc1caf9 chash=ec98c9c89ff24c0956086ea3da0e1c8c29ed4a43 group=sys mode=0444 owner=root path=mq/examples/helloworld/README pkg.csize=499 pkg.size=1203
+dir group=sys mode=0755 owner=root path=mq/examples/helloworld/helloworldmessagejndi
+dir group=sys mode=0755 owner=root path=mq/examples/helloworld/helloworldmessage
+file 8993c6ad45ad462b15f6ca0cf7573adb9e99b897 chash=7a6a25b870fec4f3701bbcc716bb932948a67460 group=sys mode=0444 owner=root path=mq/examples/helloworld/helloworldmessagejndi/add_cf.props pkg.csize=1508 pkg.size=3349
+file f9f2f9b1cce634e9524755a19fbd073260b2f70c chash=bd8eb9c481dbd5de9bf26eddd8e471395265071a group=sys mode=0444 owner=root path=mq/examples/helloworld/helloworldmessagejndi/README pkg.csize=3578 pkg.size=10743
+file 97f402132f8ede496360e3db837d336cdddf7df1 chash=f44753d3c87a362760f29347e9d81f947760d8fa group=sys mode=0444 owner=root path=mq/examples/helloworld/helloworldmessagejndi/add_q.props pkg.csize=1410 pkg.size=3219
+file c25cbe9ab08fc3106d9dbbdb1f3986ad241103b1 chash=1854c399f16f0009847bd551a935ef984a7727dc group=sys mode=0444 owner=root path=mq/examples/helloworld/helloworldmessagejndi/HelloWorldMessageJNDI.java pkg.csize=3181 pkg.size=9761
+file e0011bdbb73f4293d778655741caa00b40bdcfdc chash=1094c230b880918033ac49e40c3ed2cf99f10945 group=sys mode=0444 owner=root path=mq/examples/helloworld/helloworldmessagejndi/delete_cf.props pkg.csize=1365 pkg.size=3093
+file e7c7795c44e5ee522be35c993a773bafd7a9aa94 chash=c440530ab9ddfd178ce7d0d32d8f77f2c032f0aa group=sys mode=0444 owner=root path=mq/examples/helloworld/helloworldmessagejndi/list.props pkg.csize=1310 pkg.size=2900
+file 14ad4c843f7a148573c1fea2b298cd58300959ce chash=25e4cbbc4dbdb56e1cbd3ff23a089b88a0fe554d group=sys mode=0444 owner=root path=mq/examples/helloworld/helloworldmessagejndi/HelloWorldMessageJNDI.class pkg.csize=2640 pkg.size=5238
+file 8271353ec98d3fab2e1e060dad5c9344f6be3d7e chash=8ec3df926727b08dbc93dd52295adf7fee39739b group=sys mode=0444 owner=root path=mq/examples/helloworld/helloworldmessagejndi/delete_q.props pkg.csize=1359 pkg.size=3042
+file 9f903fb8a4c642dcdd530c5b0a1c182084fd7799 chash=0ef2f73ff946604b478ce8cf4f4caefb59830da0 group=sys mode=0444 owner=root path=mq/examples/helloworld/helloworldmessage/HelloWorldMessage.java pkg.csize=2507 pkg.size=7167
+file f995b4b381ec70ed130d71b66cdc45195bb1c6cd chash=78a9be27bb76fa2b20945b298dc300a727c14c6d group=sys mode=0444 owner=root path=mq/examples/helloworld/helloworldmessage/HelloWorldMessage.class pkg.csize=1068 pkg.size=1941
+file fe021ff6d7f99739a286435c166468376009e0e5 chash=3aacfd89e69f460109dd680d32bc1a856f7fbd29 group=sys mode=0444 owner=root path=mq/examples/helloworld/helloworldmessage/README pkg.csize=649 pkg.size=1512
+file 77aea7b7b69d7c6e3de84d9620a73508f60d16c8 chash=8c0feb4ecbef51cc17c5ebb13beb1d5d1b43e18f group=sys mode=0444 owner=root path=mq/examples/jdbc/config.properties.db2 pkg.csize=1470 pkg.size=3321
+file 36f95e39208ca45a635e8233e41e6fda9563d4cb chash=bb2e91126429a9ad71b3b3d520d7d39083a2e13b group=sys mode=0444 owner=root path=mq/examples/jdbc/config.properties.derby pkg.csize=1703 pkg.size=4196
+file d20f575ea67717da342258f6f17edb0576324013 chash=b49445688c3354bce70de5682ef3d69770b3b93f group=sys mode=0444 owner=root path=mq/examples/jdbc/README pkg.csize=354 pkg.size=1040
+file 4e7f9b49d6c15d2ab0fdb71695545fddc93426b7 chash=1ded6cef064ca1312d7a672b00a16b2187ffbd32 group=sys mode=0444 owner=root path=mq/examples/jdbc/config.properties.pointbase pkg.csize=1662 pkg.size=4118
+file 56f8962980399e558c46440d1a3bd22feef0db7a chash=9df901f1701ee51389085a2c804a5a58ab8e9764 group=sys mode=0444 owner=root path=mq/examples/jdbc/config.properties.oracle pkg.csize=1492 pkg.size=3411
+file 97f45ec0ed54d879639047feb3faa5c093376cd7 chash=59aac2476c6458369703665d67850a43c8862e7b group=sys mode=0444 owner=root path=mq/examples/jdbc/config.properties.mysql pkg.csize=1493 pkg.size=3380
+file b28e3faff31f9ebb6dca7695a8255bd79a77e4c2 chash=216f6265e1fde8ef50e6ed178394e1faa7948b51 group=sys mode=0444 owner=root path=mq/examples/jms20/README pkg.csize=1329 pkg.size=3999
+dir group=sys mode=0755 owner=root path=mq/examples/jms20/deliverycount
+dir group=sys mode=0755 owner=root path=mq/examples/jms20/deliverydelay
+dir group=sys mode=0755 owner=root path=mq/examples/jms20/messageproperties
+dir group=sys mode=0755 owner=root path=mq/examples/jms20/asynctopicconsumer
+dir group=sys mode=0755 owner=root path=mq/examples/jms20/syncqueue
+dir group=sys mode=0755 owner=root path=mq/examples/jms20/messageheader
+dir group=sys mode=0755 owner=root path=mq/examples/jms20/asyncsend
+dir group=sys mode=0755 owner=root path=mq/examples/jms20/selector
+dir group=sys mode=0755 owner=root path=mq/examples/jms20/sharedsub
+dir group=sys mode=0755 owner=root path=mq/examples/jms20/messagegetbody
+file 0c9ecd5119ba375ef72a5b1eb8b25b1ca51c7393 chash=c8631c54f891e28a0ae9df60cbbeb9d928ae087d group=sys mode=0444 owner=root path=mq/examples/jms20/deliverycount/JMSXDeliveryCountExample2.java pkg.csize=2074 pkg.size=5701
+file 86500fec6728d01b32a840e98a4024eb199ecd0e chash=bd6da99ececa42e66b0bc380f5ef0bf8f81111ed group=sys mode=0444 owner=root path=mq/examples/jms20/deliverycount/README pkg.csize=1045 pkg.size=3308
+file c9b5622c7bf83a36bcdc2b14fb2c0a979ee9a5cb chash=584bb5d259aa2c7efd0b45637dfc3ed62ed21ace group=sys mode=0444 owner=root path=mq/examples/jms20/deliverycount/JMSXDeliveryCountExample1.java pkg.csize=2082 pkg.size=6122
+file 97d92e61549183f5fa23123f8bdc662148ac3e9b chash=aa3cdcea4a68e63c845633c42968d816f7811265 group=sys mode=0444 owner=root path=mq/examples/jms20/deliverycount/JMSXDeliveryCountExample1.class pkg.csize=1692 pkg.size=3178
+file b1af9cfba51818ee458269dcbda822bd70d7c261 chash=c2338c98f9550c069a7cfb1b2e6ad10c50f7801a group=sys mode=0444 owner=root path=mq/examples/jms20/deliverycount/JMSXDeliveryCountExample2.class pkg.csize=1640 pkg.size=3066
+file a562ba584883a9d52e72cf5a6e74c2d59c2fd502 chash=2dd867e3cb99e41b139105bd4619f1cde3597651 group=sys mode=0444 owner=root path=mq/examples/jms20/deliverydelay/DeliveryDelayProducer.class pkg.csize=1638 pkg.size=2826
+file ba549d056d8c3e22affb945704416c47970fc93e chash=48c5dfeb5794ce16b063dcfbee435e42d2ed60ad group=sys mode=0444 owner=root path=mq/examples/jms20/deliverydelay/DeliveryDelayConsumer.java pkg.csize=2462 pkg.size=6524
+file 784a00df6b121b27033e71d115e268658c7ab3bb chash=b5ffdd7c4571067f47298ba02053c8478063749d group=sys mode=0444 owner=root path=mq/examples/jms20/deliverydelay/DeliveryDelayProducer.java pkg.csize=2108 pkg.size=5158
+file 6e3f1735fb3b3e621c2f64bdf3b60dab37c6793f chash=2d6d542f1794ebe88ec91936ccf80dc61ae9314f group=sys mode=0444 owner=root path=mq/examples/jms20/deliverydelay/DeliveryDelayConsumer$MessageHandler.class pkg.csize=1039 pkg.size=1741
+file c9f943980ade0fc65850eb5c7d752840bd089bfd chash=2564cd6b46515e9afa3be2adbec59686a1aeb1d5 group=sys mode=0444 owner=root path=mq/examples/jms20/deliverydelay/README pkg.csize=1123 pkg.size=3243
+file 87d66c8743217a929966e2d02b670a75ab944e0d chash=6541f266754af1720bb30eca6239145dc8c7966b group=sys mode=0444 owner=root path=mq/examples/jms20/deliverydelay/DeliveryDelayConsumer.class pkg.csize=1464 pkg.size=2496
+file 47d7c3c685346d7760dde88a5417c7fe59559169 chash=399f7aa3f4fd35d651e221fe9487865db1d12da4 group=sys mode=0444 owner=root path=mq/examples/jms20/messageproperties/MessagePropertiesConsumer.class pkg.csize=1884 pkg.size=4470
+file 0b9aa9e84141f766dd5fee775e8b70f1332f5118 chash=d8d4c3c37f386ce2152931fa7a19b3e654e83452 group=sys mode=0444 owner=root path=mq/examples/jms20/messageproperties/MessagePropertiesConsumer.java pkg.csize=2067 pkg.size=6791
+file fe3851d2933ec61f8bfbe15748baa0eea3976ff1 chash=b62c06bfd19c1a039534c4f6d6adcfa007ab65bd group=sys mode=0444 owner=root path=mq/examples/jms20/messageproperties/README pkg.csize=1137 pkg.size=4153
+file d6f0cd95b453e4ed8ded2338d1c43649a1ea62b2 chash=3ebd7b849fe511586c5ec3d78c44f324e0570c9c group=sys mode=0444 owner=root path=mq/examples/jms20/messageproperties/MessagePropertiesProducer.class pkg.csize=2216 pkg.size=5488
+file 394a0775b2398fbb56bbab2bb2bf220c4dda3b29 chash=208e9d78147399b49f5d357ec945166d68facdd5 group=sys mode=0444 owner=root path=mq/examples/jms20/messageproperties/MessagePropertiesProducer.java pkg.csize=2295 pkg.size=7571
+file 5aba5981cf5c8b9bf35455f817c03193c93a7a3a chash=34eba4f32327d8fc24cfd6b7d779f63576f6aaca group=sys mode=0444 owner=root path=mq/examples/jms20/asynctopicconsumer/AsyncTopicConsumer.java pkg.csize=2416 pkg.size=6340
+file 2aa126489e2bea9e74087b7bd2b6f100c7f2c31e chash=008b791d0ed184a741fa916c821bc52a88b8931e group=sys mode=0444 owner=root path=mq/examples/jms20/asynctopicconsumer/SendMsgsToTopic.class pkg.csize=1491 pkg.size=2539
+file f3bce77878ca1782299fe8ec3ea3f82d591b3b90 chash=5e84319cf78496fbc4c5e1f6238a7f2aac08b15b group=sys mode=0444 owner=root path=mq/examples/jms20/asynctopicconsumer/SendMsgsToTopic.java pkg.csize=1981 pkg.size=4669
+file c98d7deeb3c63abc49a552f90e7d7387595abb11 chash=eeff70f32a3e86c61d93cd996dedd582fe592ef9 group=sys mode=0444 owner=root path=mq/examples/jms20/asynctopicconsumer/README pkg.csize=1012 pkg.size=2666
+file 350fc129e4aade13ae92e073b2581e8f44e21d95 chash=e64f23bb1292723df02bd3ebb77115412128a6f4 group=sys mode=0444 owner=root path=mq/examples/jms20/asynctopicconsumer/AsyncTopicConsumer$MessageHandler.class pkg.csize=923 pkg.size=1512
+file ea40ed8587fc0a84b3d2e5d0d2f6e258263b9941 chash=4bdeee178bbcfc997dea22f221a08a80ff0cada4 group=sys mode=0444 owner=root path=mq/examples/jms20/asynctopicconsumer/AsyncTopicConsumer.class pkg.csize=1460 pkg.size=2484
+file 81a7cdba9fb4740388ba905f718204af45054a18 chash=e4e4e6db31cef99b4d652cd06819aae68fcbccb8 group=sys mode=0444 owner=root path=mq/examples/jms20/syncqueue/SyncQueueConsumer.java pkg.csize=2081 pkg.size=4983
+file f338bffd4339b206b732b83258a1c335e9ad48f2 chash=f7e89e8c8d53f1005db9d00c8d119cb6f339ea2d group=sys mode=0444 owner=root path=mq/examples/jms20/syncqueue/SendObjectMsgsToQueue.class pkg.csize=1526 pkg.size=2594
+file 96c8e333ef4cc7a150ab6f3c012223e10ee74e25 chash=0ccca66477ade2cfc24156de32800eb400830019 group=sys mode=0444 owner=root path=mq/examples/jms20/syncqueue/MyObject.class pkg.csize=267 pkg.size=328
+file f9cf7c0d340a305e72d3ab7a0277a25a8d06e71e chash=12e77959d4a9ee351e627b790767264a2b3e0140 group=sys mode=0444 owner=root path=mq/examples/jms20/syncqueue/SyncQueueConsumer.class pkg.csize=1569 pkg.size=2628
+file 63fab7994a05b0e1928a1bb04fe2f22d2c12755d chash=01c7dd67ae733a5de7cd9c568a5cb3baec1b6436 group=sys mode=0444 owner=root path=mq/examples/jms20/syncqueue/README pkg.csize=1031 pkg.size=3081
+file e11f96e6ad98a7aaa8c77ad9d3caad0e6c691985 chash=cde76409b16d132f98fddbbcdcbd1816ff6462e6 group=sys mode=0444 owner=root path=mq/examples/jms20/syncqueue/SendObjectMsgsToQueue.java pkg.csize=2002 pkg.size=4735
+file 717d996758dbf3f2f10810b6eb65ff71919cd922 chash=b3b25a2a33c28bb9c9ca5d9135c8ef7bf4b496c5 group=sys mode=0444 owner=root path=mq/examples/jms20/syncqueue/MyObject.java pkg.csize=1088 pkg.size=2323
+file c96baae782f39798cd65a987ff10223e3f716db3 chash=d328a75d39a4bb20e59fd403441eda94c0fafc1e group=sys mode=0444 owner=root path=mq/examples/jms20/messageheader/README pkg.csize=1096 pkg.size=3155
+file ed7810740f47db05ddce9020047bcef4cfef40ea chash=736bc53f8a7b37baaeef868fcc992192aba3dee5 group=sys mode=0444 owner=root path=mq/examples/jms20/messageheader/MessageHeadersProducer.class pkg.csize=1476 pkg.size=2729
+file bb70e5d125764d356c3e21fd4ab0ae41509d3e65 chash=1c0b2e14fc2426115823484a5a1357e33ed0a62b group=sys mode=0444 owner=root path=mq/examples/jms20/messageheader/MessageHeadersProducer.java pkg.csize=1993 pkg.size=5151
+file e76e42b1970106a227e2e692b51e68a329d03039 chash=ef2ccd9c4f25270564fe54f3977b6bdea9e2793f group=sys mode=0444 owner=root path=mq/examples/jms20/messageheader/MessageHeadersConsumer.java pkg.csize=1910 pkg.size=5160
+file bbc91d45e4d034a42ad144e0e550890c184d0a3f chash=9e6903db896b24c970537848f2a403a2f1c8d052 group=sys mode=0444 owner=root path=mq/examples/jms20/messageheader/MessageHeadersConsumer.class pkg.csize=1439 pkg.size=2609
+file ca695cc5601d28aaaae9d679abb20a7d6422bec0 chash=285e96e43a3f1f396460e6016cfa14d2c0724683 group=sys mode=0444 owner=root path=mq/examples/jms20/asyncsend/AsyncTopicProducerExample.java pkg.csize=2595 pkg.size=7193
+file 95991a82bf3ecda00f5842558a2e80f4bf484432 chash=5770a2fce379f0c9e5bf201d8452c12f4452b53e group=sys mode=0444 owner=root path=mq/examples/jms20/asyncsend/AsyncTopicProducerExample.class pkg.csize=1690 pkg.size=2925
+file f6b3f62e8e26c5a17bfb7f10b2c55331682d078a chash=a87aa146a2daf1c9a1a895fecdb65bdeff339d90 group=sys mode=0444 owner=root path=mq/examples/jms20/asyncsend/AsyncTopicConsumerExample.class pkg.csize=1468 pkg.size=2512
+file 1b9d7bf6361d12866fd95ae769aaadbd69d21a98 chash=f799352c2e5d0310142a376d3a5818d7ce383705 group=sys mode=0444 owner=root path=mq/examples/jms20/asyncsend/AsyncTopicConsumerExample$MessageHandler.class pkg.csize=928 pkg.size=1533
+file 5002acc28a58327cc25ccf460676c6e0abca47ec chash=9f031b209a29c1bbc6b9a6e07282a16f1d790948 group=sys mode=0444 owner=root path=mq/examples/jms20/asyncsend/AsyncTopicConsumerExample.java pkg.csize=2424 pkg.size=6386
+file 3cf74a47b98bcbfb7d9e6154ba2fda66fa0d9320 chash=4411f23794f17c35b69bed4a2e9bcb9c780d47f8 group=sys mode=0444 owner=root path=mq/examples/jms20/asyncsend/README pkg.csize=1233 pkg.size=4923
+file c363e8679350c35176825a515eb21d3d462190d9 chash=d84f9b7120672b18fe457135821fbaea74118858 group=sys mode=0444 owner=root path=mq/examples/jms20/asyncsend/AsyncTopicProducerExample$MyCompletionListener.class pkg.csize=978 pkg.size=1662
+file ab7313a095acbd44b856df3a3b8afdd7ff326882 chash=056317799ee2aa342c12ce13b2ea2315a276624d group=sys mode=0444 owner=root path=mq/examples/jms20/selector/SelectorConsumerExample$Subscriber$MultipleListener.class pkg.csize=1123 pkg.size=2023
+file 5cd69a1e39123d3ee50e4d5f60b87ee3106b970c chash=117c3a9276b21d4efd9c0c84bdb297ee6a35a118 group=sys mode=0444 owner=root path=mq/examples/jms20/selector/SelectorConsumerExample$Subscriber.class pkg.csize=1396 pkg.size=2513
+file cc93255bdcc7910b6ce634f33b5cbd5a87a8d0fd chash=c24aa623269e633ad6181101e19432bedb1dc00f group=sys mode=0444 owner=root path=mq/examples/jms20/selector/SelectorProducerExample.java pkg.csize=2262 pkg.size=6222
+file d63548a50dfd0f734066fa9de13d65aa1e421dfc chash=c18b149952eeb2491cba5f8da0e5f6ac3e3695de group=sys mode=0444 owner=root path=mq/examples/jms20/selector/SelectorConsumerExample.java pkg.csize=3287 pkg.size=10262
+file 5c99be2f0e082ff3060732e93483fefd98c86990 chash=1a61e32d44b65004e43737acbd069d25ffb115dd group=sys mode=0444 owner=root path=mq/examples/jms20/selector/SelectorProducerExample.class pkg.csize=1882 pkg.size=3219
+file e15c2b62878cec7d4aeebd721465ba8adae1414f chash=619e9bb55b75eea369ef98f362a39c6b7716c83f group=sys mode=0444 owner=root path=mq/examples/jms20/selector/README pkg.csize=1219 pkg.size=5315
+file dbaed3e04739ac120f32d0dfa147a1d994b7584b chash=d2ef2930fdb15e44493f0a4068245b09b96802ca group=sys mode=0444 owner=root path=mq/examples/jms20/selector/SelectorConsumerExample.class pkg.csize=1262 pkg.size=2116
+file becc6ff29eccf4f26246e15ba19a72f4ddd84f8a chash=cd7d1def3be373319e85d8f0dcd2c1f8bd734a07 group=sys mode=0444 owner=root path=mq/examples/jms20/sharedsub/ProducerExample.java pkg.csize=1998 pkg.size=5131
+file df00ade049e4097cbea90ea3c39fa3bf664bc942 chash=fa56333319f935d1a0079c022f5681c1569b6271 group=sys mode=0444 owner=root path=mq/examples/jms20/sharedsub/ProducerExample.class pkg.csize=1491 pkg.size=2539
+file d16ae368c3f63a0916ecb7b20e2924f5a67a3664 chash=7249c76941dab4d4a9260f9388fbd509c3678e32 group=sys mode=0444 owner=root path=mq/examples/jms20/sharedsub/SharedNonDuraConsumerExample.class pkg.csize=1215 pkg.size=2118
+file c0c74883d68ec9ab188944bb0ce672c659e02252 chash=762f47949ad87cb0f015a4caa8bfbc4d0044086a group=sys mode=0444 owner=root path=mq/examples/jms20/sharedsub/SharedNonDuraConsumerExample.java pkg.csize=2826 pkg.size=8143
+file ce259cf55a5f2a73329f97c74ccddaf5edc20f43 chash=e8e257f167a8232e1ddaa443655b553f8f3ce340 group=sys mode=0444 owner=root path=mq/examples/jms20/sharedsub/SharedNonDuraConsumerExample$Subscriber.class pkg.csize=1146 pkg.size=2063
+file 9b68977eb618823e171fd59e699d07b658e0e416 chash=07dc45bd8f9df5a182d39397c4c453ccf1ae2271 group=sys mode=0444 owner=root path=mq/examples/jms20/sharedsub/README pkg.csize=1098 pkg.size=5724
+file be525bcbb00bd4afd1f85b74d59c415fb7631bd7 chash=ed4dcdcec029c51cca46caec40ab27f2572edd31 group=sys mode=0444 owner=root path=mq/examples/jms20/sharedsub/SharedDuraConsumerExample.class pkg.csize=1212 pkg.size=2094
+file e56399b2a2b71c78ba7c9a5fdb0b173fa74f94d1 chash=d987666be31987da6a92ac771daac20eba148ae7 group=sys mode=0444 owner=root path=mq/examples/jms20/sharedsub/SharedNonDuraConsumerExample$Subscriber$MultipleListener.class pkg.csize=863 pkg.size=1543
+file 86e130cd84af97e72bc2e46e8d82ac21e8f65da8 chash=28b793303ced1c3a7fde238a52ffb8806814e273 group=sys mode=0444 owner=root path=mq/examples/jms20/sharedsub/SharedDuraConsumerExample$Subscriber.class pkg.csize=1318 pkg.size=2304
+file d217627a12c4492edceb958d7ed6fa247cc740cc chash=6ce111e95b341d83d1e4856b84356248b2c77e62 group=sys mode=0444 owner=root path=mq/examples/jms20/sharedsub/SharedDuraConsumerExample.java pkg.csize=2639 pkg.size=7365
+file b244979c08937076d4a6919977bec5c6a32b7066 chash=69a0c91754b59be8376ed08d7ac87123647e0112 group=sys mode=0444 owner=root path=mq/examples/jms20/messagegetbody/MessageGetBodyExample.class pkg.csize=3030 pkg.size=6898
+file 1308e56b98ac348cc7db52c479ad63b840c620b2 chash=b0a4d6954f3a451a57592254199c8f4351d40599 group=sys mode=0444 owner=root path=mq/examples/jms20/messagegetbody/README pkg.csize=1102 pkg.size=3054
+file d38fd1a32f10e197becb445fb01bf13d0cd324e7 chash=30c93615b1fd26feb8ff5ccd8c336dbf69dfc5d3 group=sys mode=0444 owner=root path=mq/examples/jms20/messagegetbody/MessageGetBodyExample.java pkg.csize=2844 pkg.size=12522
+file aba602ea2aab8abc94ca69f9560cff69b92a1e76 chash=c3bd838c05fbc80f8dd7813686642da2a399c55f group=sys mode=0444 owner=root path=mq/examples/jms20/messagegetbody/MessageGetBodyExample$MyObject.class pkg.csize=381 pkg.size=547
+file 62cff1cc1b59d70c7b31d8cfb8805c1e520f23ba chash=0fa1bc0a54d49ff47b8ff7c981590f35cd9cc2e1 group=sys mode=0444 owner=root path=mq/examples/jaxm/SOAPtoJMSServlet.class pkg.csize=1421 pkg.size=2828
+file faa1117a25ed170d6e05f7d113dad91cacd58139 chash=f3a144e9172bc14bb82fdcc5d44f368ab4c63216 group=sys mode=0444 owner=root path=mq/examples/jaxm/SOAPEchoServlet.class pkg.csize=265 pkg.size=375
+file 814b432581ac31a6417b48b6ed63729977847503 chash=3ab212c291d8be0d560eb16c0da340209d1180c4 group=sys mode=0444 owner=root path=mq/examples/jaxm/README pkg.csize=3688 pkg.size=11513
+file db2066b0ce401cc9d99fd9a53c5d875ec3c5b275 chash=0e1161115924215c65b9bcac52973816a5a93fc2 group=sys mode=0444 owner=root path=mq/examples/jaxm/SendSOAPMessage.class pkg.csize=1183 pkg.size=2197
+file e2f800cfa64f8e9eb39053e68082e8b4dd7c720d chash=5f45bf36617ce03d127b3aabc6d284df32a7b537 group=sys mode=0444 owner=root path=mq/examples/jaxm/SendSOAPMessageWithJMS.class pkg.csize=1719 pkg.size=3357
+file 84f2f2735c24c58576fa6e19135c5a9f2c2ac542 chash=d51530cc7127a00eda5ceba20efa19b5f57f843d group=sys mode=0444 owner=root path=mq/examples/jaxm/SOAPtoJMSServlet.java pkg.csize=1992 pkg.size=5541
+file a67130a18c9d9cd123749eb4bc9c678f247e2049 chash=92b89166fc8e9933ff035210ff8558c7c4f719be group=sys mode=0444 owner=root path=mq/examples/jaxm/SendSOAPMessageWithJMS.java pkg.csize=2223 pkg.size=6444
+file d251de3bfdc323aac9d8a35d73be68150cf6da46 chash=208ab977a4cfd7a6968345bee7beef92a53af6db group=sys mode=0444 owner=root path=mq/examples/jaxm/SOAPEchoServlet.java pkg.csize=1151 pkg.size=2435
+file 307a27e9e48c45837e760c12306a62b59e749284 chash=6bf9f9086c173f887a9569ca2aef1a4f0251fd6e group=sys mode=0444 owner=root path=mq/examples/jaxm/ReceiveSOAPMessageWithJMS.java pkg.csize=2289 pkg.size=7327
+file 885407f4256ad848f5e4892c83fc0b7b44b0865b chash=62f8ba0024a912af1aa8fbe46aed48bd80d18f05 group=sys mode=0444 owner=root path=mq/examples/jaxm/ReceiveSOAPMessageWithJMS.class pkg.csize=1856 pkg.size=3560
+file da2d401796432e93973679d1cf8479dcefd78497 chash=b70b790b391a3ea796ac0740f81c2781b07cdd88 group=sys mode=0444 owner=root path=mq/examples/jaxm/SendSOAPMessage.java pkg.csize=1814 pkg.size=5153
+file 3a2b9a8e41a74c058f94e18676052431ddfdfb0f chash=e2e0cdf4b591a4d814b853e76f524aea28036811 group=sys mode=0444 owner=root path=mq/examples/ums/README.html pkg.csize=2405 pkg.size=9083
+file 71369e678c12d69bc799a7bdde4324cb1b592566 chash=a87ec03bbd208ac18c38bda4a62497c52e54cf5d group=sys mode=0444 owner=root path=mq/examples/ums/README pkg.csize=462 pkg.size=1253
+dir group=sys mode=0755 owner=root path=mq/examples/ums/get
+dir group=sys mode=0755 owner=root path=mq/examples/ums/ajax
+dir group=sys mode=0755 owner=root path=mq/examples/ums/ruby
+dir group=sys mode=0755 owner=root path=mq/examples/ums/csharp
+dir group=sys mode=0755 owner=root path=mq/examples/ums/python
+file ea20d8c99fe72bc42f730ba987f0c7d9c386d121 chash=68a9ad66c35759dfe3370665b7cd2cb946cce8dd group=sys mode=0444 owner=root path=mq/examples/ums/get/ReceiveUsingGet.html pkg.csize=2806 pkg.size=9212
+file 55fe23a4ee98396401b9e38230a56fa943d8a3ec chash=e46c39127137909e8bae5673a9fd651d10bac11f group=sys mode=0444 owner=root path=mq/examples/ums/get/README pkg.csize=326 pkg.size=540
+file 62dca83960e09c1aea76b18026815ab5ff8329f1 chash=5386d43f2dec739486a62284c28106ef780798d2 group=sys mode=0444 owner=root path=mq/examples/ums/get/UtilsUsingGet.html pkg.csize=3232 pkg.size=12158
+file fd3cb5d2574c8ddb6f4a6ddcd1cac81063430d0e chash=81bcd8851a099d2476446f286183034119d2ad02 group=sys mode=0444 owner=root path=mq/examples/ums/get/SendUsingGet.html pkg.csize=2890 pkg.size=9887
+file 488440676e704d521cfdb2d9f36fc47cff248f30 chash=d988fd56f1ba3fd594179e41d0262c0897e9b352 group=sys mode=0444 owner=root path=mq/examples/ums/ajax/README pkg.csize=327 pkg.size=574
+file 9b747ab4eabcfadbfe064c4f5f837d2e591cd58c chash=ea40a4fe27aed4f9991850f4243d91c7f7946781 group=sys mode=0444 owner=root path=mq/examples/ums/ajax/SendMsg.html pkg.csize=3739 pkg.size=12740
+file 1ed5afb2d3bac1adee85fc68834e42ba2a54c129 chash=450b0b8401c75813ae44729c5d23ca31cfcf365d group=sys mode=0444 owner=root path=mq/examples/ums/ajax/ReceiveMsg.html pkg.csize=3610 pkg.size=11675
+file c0e2caf7d977c2c3935accea832a3cfdcdee584f chash=610d6cfc9fd4139ad7d0a0a2cb066e6a5957ad56 group=sys mode=0444 owner=root path=mq/examples/ums/ruby/README pkg.csize=513 pkg.size=1012
+file 577f8878fdf5a8394ea0dbf6502ec63e1f934870 chash=e5ed3890a726b095628db142b7bad2538901c594 group=sys mode=0444 owner=root path=mq/examples/ums/ruby/SendMsg.rb pkg.csize=2362 pkg.size=6064
+file 0a7e52116435751c277ea85d3fc3cc45350e1367 chash=cd9e6fd2fd5b9d04fb13d6b7c7cd978b6e2e0f3a group=sys mode=0444 owner=root path=mq/examples/ums/ruby/ReceiveMsg.rb pkg.csize=2321 pkg.size=5773
+file 2c03cffc0c8c04cad44082c444bf6418c90b4a6a chash=60ac65d16a61bc0786b9dfd5fff9b49fa9ecbcde group=sys mode=0444 owner=root path=mq/examples/ums/csharp/ReceiveSOAPMsg.cs pkg.csize=4721 pkg.size=18746
+file 8b98957f71f3b9873e43e9d6d9f03cb134346fa8 chash=e45699fc10ad932a6e0d6e092fe2a902814e5cbf group=sys mode=0444 owner=root path=mq/examples/ums/csharp/SendSOAPMsg.exe pkg.csize=6366 pkg.size=14336
+file 232d412e3db553ad81e56806913f181ff4f0342f chash=e61d76e6625b02bca6c4b81af256e577015764d0 group=sys mode=0444 owner=root path=mq/examples/ums/csharp/ReceiveSOAPMsg.exe pkg.csize=6526 pkg.size=14336
+file bfd4483c66d2bc5d2025b4b74c2e275b36a91d1e chash=bffafc51752728f001d3735ff337ee20d82500f2 group=sys mode=0444 owner=root path=mq/examples/ums/csharp/SendSOAPMsg.cs pkg.csize=4457 pkg.size=17849
+file 6d0e96a4611b7f312a5a17bdeb31d79fd83bec14 chash=413d61a72cd281dc21b9d725b3a63c41c6be5588 group=sys mode=0444 owner=root path=mq/examples/ums/csharp/README pkg.csize=488 pkg.size=971
+file 4aa34718e92e912f1b989321df39ead753cbbd87 chash=f7905086c210e7107526b6d1973b727422bc30cc group=sys mode=0444 owner=root path=mq/examples/ums/python/SendMsg.py pkg.csize=2345 pkg.size=5850 timestamp=20150317T174028Z
+file bd566b7d18e11c89cd7d43473c5fc1ea88fa7718 chash=5ed51534380e082b9bc97b2d478daa33810af8ca group=sys mode=0444 owner=root path=mq/examples/ums/python/ReceiveSOAPMsg.py pkg.csize=3419 pkg.size=9698 timestamp=20150317T174028Z
+file a7e99c80f3a3cd420ca3f1c7bf705812844506f8 chash=62b6a023c3831af839b95263c2f7a027c802c955 group=sys mode=0444 owner=root path=mq/examples/ums/python/ReceiveMsg.py pkg.csize=2350 pkg.size=5781 timestamp=20150317T174028Z
+file 9dadf212c56efbf8c70b021fc600a33018b2cda1 chash=10b429edf00a437702d27d7e011eb952f1c54e04 group=sys mode=0444 owner=root path=mq/examples/ums/python/SendSOAPMsg.py pkg.csize=3418 pkg.size=9581 timestamp=20150317T174028Z
+file 1fa268c2877db99971f2b3ae2e4aacb0446ba01d chash=266c04befaa7f680c3db103671c21977972c07c4 group=sys mode=0444 owner=root path=mq/examples/ums/python/README pkg.csize=518 pkg.size=1228
+file 9bba2c23c45345e5f843323d0f67efb60d4cbba5 chash=b366155da14ffa52686abb3fc2393326c199e66b group=sys mode=0444 owner=root path=mq/examples/jms/DurableSubscriberExample$MultiplePublisher.class pkg.csize=1509 pkg.size=2770
+file 4bff4d3aeded73907d4700c2d9ba8499c4927c71 chash=e207fe5f26f92e35b708de19d153d1d24053cc02 group=sys mode=0444 owner=root path=mq/examples/jms/AsynchTopicExample$AsynchConsumer.class pkg.csize=1516 pkg.size=2819
+file 4ab91ac310450020b8c7ca5a7997c5150f10046e chash=84deadc1c8616e04a108d22a7ca94ac2a917b017 group=sys mode=0444 owner=root path=mq/examples/jms/TextListener.class pkg.csize=688 pkg.size=1115
+file 15a1edfa015c402cfc3499a39772d4276d590d09 chash=6c9dda97a6c5cdcbc75a158e6de806e27505b513 group=sys mode=0444 owner=root path=mq/examples/jms/AckEquivExample$AsynchSubscriber.class pkg.csize=1620 pkg.size=3000
+file 66865d697d567251a4db267ba47b4a7de9952478 chash=c1fcba9223b45a7e8564997d459fba737243363d group=sys mode=0444 owner=root path=mq/examples/jms/TransactedExample$Retailer.class pkg.csize=1855 pkg.size=3409
+file 84e9ea8194c0a4beac763c71e4a87f1dbfeca466 chash=ad5ed7ae168635a757d665407817e39b4088d8cb group=sys mode=0444 owner=root path=mq/examples/jms/AsynchTopicExample.java pkg.csize=3128 pkg.size=12095
+file f8d8437dc20e94442265ab9a8fb9ce56dee03959 chash=446a2f4fc75f30adef102ca7f5663ac7d6fd000d group=sys mode=0444 owner=root path=mq/examples/jms/XMLMessageExample.class pkg.csize=847 pkg.size=1368
+file fad8312f7f5ab331d42dcda34bf5b0f37b2badc1 chash=dbf3ccc7c5d30d232abda1546483bd540ac4d1ca group=sys mode=0444 owner=root path=mq/examples/jms/sample.dtd pkg.csize=1209 pkg.size=2596
+file d314a3417642395e63bbc2692e4d5238b37d8c03 chash=b33c3b4e0b6ed1e5c08571391acbcccf7012ae1c group=sys mode=0444 owner=root path=mq/examples/jms/RequestReplyQueue$Request.class pkg.csize=1657 pkg.size=3051
+file b20459bead07f2b254126cd64bfd8f68a2c3812a chash=795b3ae82dad94b70304e63d8beda5bf957771f6 group=sys mode=0444 owner=root path=mq/examples/jms/README pkg.csize=7009 pkg.size=27548
+file d10e6ce620a1011d6651ac5e0cb5e3a383331044 chash=eacdb5918cb997e55ea52ce3f01346ca043bf1d8 group=sys mode=0444 owner=root path=mq/examples/jms/TransactedExample$GenericSupplier.class pkg.csize=1995 pkg.size=3545
+file f05c38134f8e0be76abdc283d0ac6498aa79dbdd chash=ff9ec45ec64e484861a43e13db0679a94434b09c group=sys mode=0444 owner=root path=mq/examples/jms/Consumer.class pkg.csize=2004 pkg.size=3751
+file f44d9da96abc6a7d0484bab75299b0711b55f12d chash=9028dd52bf60e3015b5aae095072c53add9c4a64 group=sys mode=0444 owner=root path=mq/examples/jms/RequestReplyQueue.class pkg.csize=858 pkg.size=1374
+file f163bfc4ba9445952183f97d4e02c6818ad54d61 chash=af0d259558811d8a5dcf6594065b80d4064c8cf3 group=sys mode=0444 owner=root path=mq/examples/jms/MessageHeadersTopic$HeaderConsumer.class pkg.csize=1507 pkg.size=2798
+file 28cebfda608d082ec409c654c0a964388dd46cd1 chash=de661f658f3d4dd915f9226766481986e45229c1 group=sys mode=0444 owner=root path=mq/examples/jms/DurableSubscriberExample.java pkg.csize=3109 pkg.size=11977
+file 4ec643c8a1f006a54c6cfd7388ffd6aefc3930f3 chash=b20f8560fc0535727ed2edf88773786ead0ddca7 group=sys mode=0444 owner=root path=mq/examples/jms/AsynchTopicExample$MultipleProducer.class pkg.csize=1597 pkg.size=2925
+file 67ff4931e8e478668b4012866f52a87bd0d0e322 chash=d101899975c940d356af6554559c6f9c75b831b3 group=sys mode=0444 owner=root path=mq/examples/jms/AsynchTopicExample$AsynchConsumer$TextListener.class pkg.csize=850 pkg.size=1548
+file 2d93a04c73ce53946b4131b3131c280d87f1020a chash=8bb50d616794f3497b4adee5ee5ffe4669ff4ead group=sys mode=0444 owner=root path=mq/examples/jms/DurableSubscriberExample$1.class pkg.csize=180 pkg.size=223
+file 600cda406334dc72967016758f542a6d08c7ff67 chash=2425f8b871eacedaf15daa9e8925679c9981aa0d group=sys mode=0444 owner=root path=mq/examples/jms/AckEquivExample.class pkg.csize=1128 pkg.size=1890
+file 44bc3338f97f9ff24e0091049d9ee84bd5a2bddf chash=5e3fe46320a2155fdb01dd281f2117f365b246ee group=sys mode=0444 owner=root path=mq/examples/jms/AckEquivExample$MultiplePublisher.class pkg.csize=1625 pkg.size=2975
+file f2810deeb2a09290b47f5ae24b2335de754b3a08 chash=f42d15428d2be9bfff4ad14b8dfd1f7d91f4e38c group=sys mode=0444 owner=root path=mq/examples/jms/AsynchTopicExample.class pkg.csize=946 pkg.size=1539
+file 42d480d692dab1dcb425041f26ff988e4d571ba9 chash=736b81415ec542b272146c14b62dbab68e36d787 group=sys mode=0444 owner=root path=mq/examples/jms/ObjectMessages.class pkg.csize=1594 pkg.size=2905
+file 625161f9c767b0f6d607a8c67a6bac1bb3ef26bc chash=9b6e75d4b16bcbe83fb70a10b60530bae7153b4d group=sys mode=0444 owner=root path=mq/examples/jms/TransactedExample.class pkg.csize=1375 pkg.size=2354
+file 594927eef646dea74d8e71318a0c9b5d6aef7ed1 chash=2146b87fdf090b248c1d8c46f1f7d710202f452d group=sys mode=0444 owner=root path=mq/examples/jms/SynchQueueExample.class pkg.csize=1315 pkg.size=2301
+file 2b28da768acdaee17ca9cc11ed8eb613c98ed514 chash=616177c2211fdb682d7d68e58784061cb207a853 group=sys mode=0444 owner=root path=mq/examples/jms/TransactedExample$Order.class pkg.csize=1537 pkg.size=2852
+file 13deb2ea1faef0e497d3a87c76cf948ceda5072d chash=df87d42e6ac946379c1ef4699b7760fbfc1c09fd group=sys mode=0444 owner=root path=mq/examples/jms/TopicSelectors.class pkg.csize=1259 pkg.size=2025
+file c03e7a511508c104530cc3bc090a0255e647af31 chash=12c7f99d020171e47e642856a49bd99b70e8b158 group=sys mode=0444 owner=root path=mq/examples/jms/RequestReplyQueue$Reply.class pkg.csize=1688 pkg.size=3082
+file 870e2da226e23f1cb2bc2e1e1a725a1251495b16 chash=db093e816bcdec89cac992b04678de876e597d55 group=sys mode=0444 owner=root path=mq/examples/jms/MessageFormats.java pkg.csize=2596 pkg.size=7958
+file 9636b835e488c0a0f976769df0bd350a6715bf67 chash=0317c6f3f3e08edf298cfc433d397595f2121a43 group=sys mode=0444 owner=root path=mq/examples/jms/MessageHeadersTopic.class pkg.csize=2447 pkg.size=4823
+file e8176f576a5fb67fca8111db3b378c0ea4e7f1f1 chash=0ce4b75385c11e1a323e6bffa8422b36487f8849 group=sys mode=0444 owner=root path=mq/examples/jms/AckEquivExample$SynchConsumer.class pkg.csize=1381 pkg.size=2422
+file 9183c930737a7ade9938ef124e2e24998a6c702f chash=9444367741e072398b2e65681b8ed391f4417974 group=sys mode=0444 owner=root path=mq/examples/jms/SampleUtilities.java pkg.csize=3183 pkg.size=13975
+file c9b4573a923be103772598165517b9bce5c6669b chash=90255f51918a07c39ba80bfd819c2f740697eff7 group=sys mode=0444 owner=root path=mq/examples/jms/AckEquivExample$1.class pkg.csize=172 pkg.size=196
+file 187f603c4878a44ceff38688873948a7d6e25e5e chash=8b8a379284e5efec4d5ee4f48f990211da172709 group=sys mode=0444 owner=root path=mq/examples/jms/TransactedExample$VendorMessageListener.class pkg.csize=1600 pkg.size=2835
+file 046e40c9ace8c566d75b75c5af8d37abf96ee06f chash=1ab7a7cec8eeedac7d8197e37a60c6429830d305 group=sys mode=0444 owner=root path=mq/examples/jms/AsynchQueueExample.java pkg.csize=1838 pkg.size=4801
+file db944056820091aa2faec1922bad967e5a086688 chash=1667d65d66720a5a20135b2289dcc1448581cbf5 group=sys mode=0444 owner=root path=mq/examples/jms/RequestReplyQueue.java pkg.csize=2826 pkg.size=10784
+file c216efb61ffa9ae252e4ea32dfe68da5d8de3d59 chash=43b3902e1f2c1fc2cb5827577469229a0941683a group=sys mode=0444 owner=root path=mq/examples/jms/TopicSelectors$1.class pkg.csize=169 pkg.size=193
+file 078a2d6996089acfef200ae3b513791e9b3c7c56 chash=a398e4908e665ccf47b8eaa1d0fbc51a405ff57f group=sys mode=0444 owner=root path=mq/examples/jms/ObjectMessages.java pkg.csize=1995 pkg.size=5701
+file d843f0eff33ac6147effe06e1f8760a41021c433 chash=2d76613d61be83d6396a3d7261906597db0106e5 group=sys mode=0444 owner=root path=mq/examples/jms/SynchTopicExample.class pkg.csize=874 pkg.size=1404
+file 61b3cd460c511f483a619f07657066a4e250a1bd chash=c098bd637b3116d141160bf633dee06f84807484 group=sys mode=0444 owner=root path=mq/examples/jms/MessageConversion.java pkg.csize=2230 pkg.size=7147
+file bb12302120ea6659b8f22083ebdf056a74406f25 chash=aff40ce159842e227b925b59ffd8360caf938f5e group=sys mode=0444 owner=root path=mq/examples/jms/AckEquivExample$AsynchSubscriber$TextListener.class pkg.csize=864 pkg.size=1529
+file edbea09b0949efd37246d6ced33902ec8c813bdf chash=ba2b747aba8d99cdc7ab17149c945fc23ac7cf9d group=sys mode=0444 owner=root path=mq/examples/jms/SampleUtilities.class pkg.csize=2466 pkg.size=5306
+file 23e1481aebdb60cc2314d8ad0a2c51aed6e62bc9 chash=6fbe3927c8eba4a5b8d28072f3e0674be4077f2e group=sys mode=0444 owner=root path=mq/examples/jms/MessageHeadersTopic$HeaderProducer.class pkg.csize=2036 pkg.size=4100
+file b49cdcae14b283f875d7e062f5504e11fe2c43c4 chash=5feef5dd68eeb8285c5e0445d35075aea33b9729 group=sys mode=0444 owner=root path=mq/examples/jms/AckEquivExample.java pkg.csize=3813 pkg.size=18535
+file 4dfe07bce2e2a5f982995c94396db15ca89cdf87 chash=5fbb4f04394c650a7db6b63c918a4b9ebdf1cc8f group=sys mode=0444 owner=root path=mq/examples/jms/MessageFormats.class pkg.csize=2229 pkg.size=4199
+file 00e94a5562ca34333fd31578b1bb53fff90078d5 chash=a862456c789ef4e4c9bf4bdb4fa26fa39963bc4d group=sys mode=0444 owner=root path=mq/examples/jms/Producer.class pkg.csize=1267 pkg.size=2356
+file b494ecd0766c0794e9d698be85bdc498a815ee39 chash=fc6636c92db8ea63f94e73fef02dc865cbbefefb group=sys mode=0444 owner=root path=mq/examples/jms/DurableSubscriberExample.class pkg.csize=915 pkg.size=1594
+file 6f51ee17ae055deb3e3d4412e35b0bfff4ee7ce6 chash=48dd6543b0979a78bffc927454ff971c3f090846 group=sys mode=0444 owner=root path=mq/examples/jms/SynchTopicExample.java pkg.csize=2816 pkg.size=10634
+file 16d7cfcb1c5951c050f522d5a9224e596c95bcdb chash=1819984e5fd60e8a3743ffeb5138ff900b7c97e2 group=sys mode=0444 owner=root path=mq/examples/jms/SynchTopicExample$SynchConsumer.class pkg.csize=1438 pkg.size=2633
+file 8900be4382e5f1d4454b69478015c8eead6687df chash=1e178525a5276fc777c0bf80dd949adbab2018dd group=sys mode=0444 owner=root path=mq/examples/jms/TopicSelectors.java pkg.csize=4192 pkg.size=16372
+file 2c2c811afa0859156b06d8a610aa17a4bca6c10e chash=6c4916c72dd5d0f1dc410c188fa22ee0eb8bc9be group=sys mode=0444 owner=root path=mq/examples/jms/TopicSelectors$Publisher.class pkg.csize=1907 pkg.size=3387
+file e31c18047dc5c5d4f66ad5c52453da2417b73080 chash=8e0d5754dd95d37d0e775485021ed5efa9a5d897 group=sys mode=0444 owner=root path=mq/examples/jms/SampleUtilities$DoneLatch.class pkg.csize=519 pkg.size=725
+file 65afcc21ab80f999a845d2216fa079f4812a8364 chash=b19a055c140b94c996a67fb2ba572bbd055b18c8 group=sys mode=0444 owner=root path=mq/examples/jms/SynchTopicExample$SimpleProducer.class pkg.csize=1612 pkg.size=2926
+file 27235b62688d9bada8b133c9ef25eb1915c07f0e chash=6b2f67734d559ae8cf27f3d88346a6c3fbe882ff group=sys mode=0444 owner=root path=mq/examples/jms/TransactedExample.java pkg.csize=7643 pkg.size=38472
+file 09f294ef4ea9957d00c787d4103614a6357f6b34 chash=58e208a15ca6c3e4aa07f777a95ee7b581fc4271 group=sys mode=0444 owner=root path=mq/examples/jms/SynchQueueExample.java pkg.csize=1964 pkg.size=5156
+file 5b197e98df6605d0d58a745cf4f872da5a2ea7ee chash=57ef7f7b8c6c3d9153886cbbc4783609d1934444 group=sys mode=0444 owner=root path=mq/examples/jms/TopicSelectors$Subscriber$MultipleListener.class pkg.csize=1063 pkg.size=1915
+file 71d9a4005227af5e5be992c1d867e352f985c787 chash=3d33553d802d226250eaaf0af14af1780973e08d group=sys mode=0444 owner=root path=mq/examples/jms/MessageConversion.class pkg.csize=1816 pkg.size=3392
+file b2d71e7586234c6972b60cf1bf9b5c2189ced9e0 chash=3a96d66d7b93a7b7eb58779aafef83e18e3cceff group=sys mode=0444 owner=root path=mq/examples/jms/SenderToQueue.class pkg.csize=1514 pkg.size=2712
+file d5a688436b01dbeb2264a935a0357be16eeb8a2a chash=614a65ff7d96b6dd176bd04f547688bca189e25d group=sys mode=0444 owner=root path=mq/examples/jms/AsynchTopicExample$1.class pkg.csize=176 pkg.size=205
+file 9efb4ea825995d703c2759be0cd063f3617a36bf chash=a0ffff3542e878102111265baa1186ee1a9cf045 group=sys mode=0444 owner=root path=mq/examples/jms/BytesMessages.class pkg.csize=1586 pkg.size=2738
+file 6e7167b5ca70af495410745ddcdf70b6e927a04c chash=0d7bf69d19b215ca87cb77518fde19859b51ff7a group=sys mode=0444 owner=root path=mq/examples/jms/BytesMessages.java pkg.csize=2311 pkg.size=6516
+file 91703890a9034db3554ddf3f424cea1496c22e54 chash=99a47ffa9d9393d4522021d4e1c61d41b0e1d3c7 group=sys mode=0444 owner=root path=mq/examples/jms/TextListener.java pkg.csize=1420 pkg.size=3137
+file b0bd64634b7647cae55f732eaf57c4933dee27b9 chash=ebe626f75ac24241d052b680aa2e1899ef59a41e group=sys mode=0444 owner=root path=mq/examples/jms/SenderToQueue.java pkg.csize=1995 pkg.size=5353
+file 18c246459a2a123daaef1ee32d04e845c131a397 chash=f5644aa92e58ad0bade50c4c88223b9ef1e674c3 group=sys mode=0444 owner=root path=mq/examples/jms/XMLMessageExample.java pkg.csize=2913 pkg.size=9613
+file 9bfce2e596770650c4aaee1c67516750a7ccb2f8 chash=9ebf29b45ebc240587160c0decd24e5d9b1c086a group=sys mode=0444 owner=root path=mq/examples/jms/MessageHeadersTopic.java pkg.csize=4229 pkg.size=21037
+file 33867aef6cc9f1945ab70559b462c6d104ce27ab chash=0790d7e47550c64d3564b09cf9b9cafb7d5571e9 group=sys mode=0444 owner=root path=mq/examples/jms/DurableSubscriberExample$DurableSubscriber.class pkg.csize=1546 pkg.size=3133
+file 429a83dccd352d7b32df63387c3748d6ec3fe958 chash=53e98f751e7ffd255363e03923d0450684cbfe5c group=sys mode=0444 owner=root path=mq/examples/jms/AckEquivExample$SynchProducer.class pkg.csize=1390 pkg.size=2495
+file e17cb8e1defc230372bb4a4abb75994ecdadd0bc chash=d91f8686f434e7b97b6418f9760b00adddab93f9 group=sys mode=0444 owner=root path=mq/examples/jms/sample.xml pkg.csize=1343 pkg.size=2744
+file d79cbf4be3fa2b5520ce147ab49f93c8b3e90d12 chash=c20e79d20fe9859a0bc3134bcee7b8277e0989ab group=sys mode=0444 owner=root path=mq/examples/jms/TopicSelectors$Subscriber.class pkg.csize=1765 pkg.size=3250
+file 1a633dc4a36a9f9db8527a3817f317d0d01a120a chash=10efb3b2faf0e5f6201610f3dee24e7871a3b666 group=sys mode=0444 owner=root path=mq/examples/jms/AsynchQueueExample.class pkg.csize=1348 pkg.size=2384
+file fa906d98cacfbb1fe16846bf122ef98b7fa89ff6 chash=887d599674022194eb95fd6b49670df1b3bd1ef5 group=sys mode=0444 owner=root path=mq/examples/jms/TransactedExample$Vendor.class pkg.csize=2529 pkg.size=4715
+file 0d78756015ba32097a5e5f26095fa22d9c2df0ca chash=26553e2719af33e9a6ef058a5172292796f77246 group=sys mode=0444 owner=root path=mq/examples/jms/DurableSubscriberExample$DurableSubscriber$TextListener.class pkg.csize=845 pkg.size=1615
+file ec5c43df198b209c219754b75316957b08ba439c chash=f125b3e1073d2e29d3f417542fdd894f4b4edbb0 group=sys mode=0444 owner=root path=mq/examples/jaas/README pkg.csize=563 pkg.size=1115

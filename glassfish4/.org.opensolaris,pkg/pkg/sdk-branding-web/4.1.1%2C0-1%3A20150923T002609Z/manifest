@@ -1,0 +1,8 @@
+set name=fmri value=pkg://release.glassfish.org/sdk-branding-web@4.1.1,0-1:20150923T002609Z
+set name=authority value=release.glassfish.org
+set name=info.classification value="Application Servers"
+set name=pkg.description value="This package contains Java EE 7 SDK Web Profile extension files."
+set name=pkg.summary value="Java EE 7 SDK Web Profile Extensions"
+depend fmri=pkg:/glassfish-nucleus type=require
+file 1dd5e8c8c2c1823c67a762ca36cfb7de3fb4660a chash=8fca3d0a421dd4139b75ecc31c437e7d616bcc1e group=sys mode=0644 owner=root path=index-web.html pkg.csize=2937 pkg.size=8286
+license 295d95dbca362b6392155e01a4be7607e9b72110 chash=f7a5f98d6fd365e9d81d66f03b4f7812eba82838 license="OTN License" pkg.csize=4072 pkg.size=10710

@@ -1,0 +1,14 @@
+set name=fmri value=pkg://release.glassfish.org/glassfish-jca-l10n@4.1.1,0-1:20150919T183520Z
+set name=authority value=release.glassfish.org
+set name=info.classification value="Application Servers"
+set name=pkg.description value="Localization of GlassFish connector and connection pooling module.  GlassFish Server is a modular and lightweight Java EE 7 compliant application server. Key features include an OSGi runtime, fast startup time, maven support, and rapid iterative development with Active Redeploy.  GlassFish Server also offers feature-rich administration with the web console, command line, and RESTful API."
+set name=pkg.summary value="GlassFish JCA Localization"
+depend fmri=pkg:/glassfish-jca type=require
+license 8741fa556feea4ca58ec28abc47de0bf9d5b39a3 chash=28b7cfba8f297b99296afc231955dc90e8d76d47 license="CDDL and GPL v2 with classpath exception" pkg.csize=12394 pkg.size=38052
+dir group=sys mode=0755 owner=root path=glassfish
+dir group=sys mode=0755 owner=root path=glassfish/modules
+file ecc5840dceacedff2cf6fff568ebcbad7f246e1e chash=dfda49f7a3cc5ca07a6b88b7cf263d5cca280f7e group=sys mode=0644 owner=root path=glassfish/modules/work-management-l10n.jar pkg.csize=12770 pkg.size=15616
+file 00505cfcf16a63914c7bd1aef39756cc19e83220 chash=656d5d2150c6068e74c0968d18f68298fffe9cea group=sys mode=0644 owner=root path=glassfish/modules/connectors-runtime-l10n.jar pkg.csize=99077 pkg.size=112996
+file 97db79ec2149c93398508bd49393ab65d904185a chash=3adc6a3ac0f98f58554caea5dc1b9f6296356991 group=sys mode=0644 owner=root path=glassfish/modules/connectors-admin-l10n.jar pkg.csize=363930 pkg.size=413490
+file bba4beeda0e9ef9214cca3198ee894836310b28d chash=89e31b740d5ad3385d45a894976391df52402105 group=sys mode=0644 owner=root path=glassfish/modules/javamail-connector-l10n.jar pkg.csize=15425 pkg.size=18499
+file a0ee4faa3b4d7065dcb2beb56bf3b26507f65789 chash=f28a6e70bb60bd4a1e000959cece27740c129325 group=sys mode=0644 owner=root path=glassfish/modules/console-jca-plugin-l10n.jar pkg.csize=650630 pkg.size=717179
