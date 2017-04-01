@@ -27,7 +27,7 @@
 	<script>
 			<!-- Bar chart-->
 	
-			function barChart(){
+			function barChart(featureArray,dataArray,colorArray){
 				var trace1 = {
 						  x: ['Feature A', 'Feature B', 'Feature C', 'Feature D', 'Feature E'],
 						  y: [20, 14, 23, 25, 22],
@@ -280,9 +280,8 @@
     .chart rect {
   fill: steelblue;
 }
-.well{
-	width:100%;
-
+#drag_me{
+    -webkit-user-drag: element;
 }
 axis text {
   font: 10px sans-serif;
@@ -308,6 +307,17 @@ axis text {
     @media screen and (max-width: 767px) {
       .row.content {height: auto;} 
     }
+    
+    [draggable=true] {
+    cursor: move;
+}
+
+.resizable {
+    overflow: scroll;
+    resize: both;
+    max-width: 300px;
+    max-height: 460px;
+}
   </style>
 </head>
 <body onload="initialize()">
@@ -320,14 +330,11 @@ axis text {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">Logo</a>
+      <a class="navbar-brand" href="#">Dashboard</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Dashboard</a></li>
-        <li><a href="#">Age</a></li>
-        <li><a href="#">Gender</a></li>
-        <li><a href="#">Geo</a></li>
       </ul>
     </div>
   </div>
@@ -336,12 +343,9 @@ axis text {
 <div class="container-fluid">
   <div class="row content">
     <div class="col-sm-3 sidenav hidden-xs">
-      <h2>Logo</h2>
+      <h2>Swedbank dashboard</h2>
       <ul class="nav nav-pills nav-stacked">
         <li class="active"><a href="#section1">Dashboard</a></li>
-        <li><a href="#section2">Blank1</a></li>
-        <li><a href="#section3">Blank2</a></li>
-        <li><a href="#section3">Blank3</a></li>
       </ul><br>
     </div>
     <br>
@@ -349,46 +353,52 @@ axis text {
     <div class="col-sm-9">
       <div class="well">
         <h4>Dashboard</h4>
-        <p>Some text..</p>
+        <p>Generate new chart</p>
+        <select>
+			  <option value="Bar">Bar</option>
+			  <option value="Pie">Pie</option>
+			  <option value="Line">Line</option>
+			  <option value="HeatMap">Heat map</option>
+		</select>
+        
+        
       </div>
       <div class="row">
-        <div class="col-sm-3">
+        <div class="col-sm-3" draggable="true" class="resizable" id="drag_me">
           <div class="well">
             <h4>Completness</h4>
             <span id="memoryGaugeContainer"></span>
           </div>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3" draggable="true" class="resizable" id="drag_me">
           <div class="well">
             <h4>Errorness</h4>
               <div id="errorness1"></div>
           </div>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3" draggable="true" class="resizable" id="drag_me">
           <div class="well">
             <h4>Sessions</h4>
-             <div id="myBar"><!-- Plotly chart will be drawn inside this DIV --></div>
-         <!-- <div><svg class="chart"></svg></div>-->
+         
+          <div><svg class="chart"></svg></div>
           </div>
         </div>
         
-      <div class="row">
-        <div class="col-sm-4">
+      <div class="row" >
+        <div class="col-sm-4" draggable="true" class="resizable" id="drag_me">
           <div class="well">
           <div id="myDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
           </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4" draggable="true" class="resizable" id="drag_me">
           <div class="well">
            <div id="timeSeries"><!-- Plotly chart will be drawn inside this DIV --></div>
     
           </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4" draggable="true" class="resizable" id="drag_me">
           <div class="well">
-            <p>Text</p> 
-            <p>Text</p> 
-            <p>Text</p> 
+              <div id="myBar"><!-- Plotly chart will be drawn inside this DIV --></div>
           </div>
         </div>
       </div>
