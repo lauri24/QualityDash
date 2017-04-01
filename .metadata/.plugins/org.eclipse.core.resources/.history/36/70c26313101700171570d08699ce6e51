@@ -366,19 +366,19 @@ axis text {
       <div class="row">
         <div class="col-sm-3" draggable="true" class="resizable" id="drag_me">
           <div class="well">
-            <h4>Char1</h4>
+            <h4>Completness</h4>
             <span id="memoryGaugeContainer"></span>
           </div>
         </div>
         <div class="col-sm-3" draggable="true" class="resizable" id="drag_me">
           <div class="well">
-            <h4>Char2</h4>
+            <h4>Errorness</h4>
               <div id="errorness1"></div>
           </div>
         </div>
         <div class="col-sm-3" draggable="true" class="resizable" id="drag_me">
           <div class="well">
-            <h4>Char3</h4>
+            <h4>Sessions</h4>
          
           <div><svg class="chart"></svg></div>
           </div>
