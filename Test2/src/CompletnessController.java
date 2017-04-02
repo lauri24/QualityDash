@@ -43,17 +43,53 @@ public class CompletnessController extends HttpServlet {
 		MesaResource resource=new MesaResource(conn);
 		String jsonResponse="";
 		try {
-			jsonResponse=resource.getCompletness("", "");
+			jsonResponse=resource.getKPI("","");
 			conn.close();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-				
+	   
 		response.setContentType("text/plain");
 		response.getWriter().write(jsonResponse);
 		
 	}
+	   if (Integer.valueOf(request.getParameter("option"))==2) {
+			
+			DBConnectionManager dbConnection=new DBConnectionManager();
+			Connection conn=dbConnection.getRemoteConnection();
+			MesaResource resource=new MesaResource(conn);
+			String jsonResponse="";
+			try {
+				jsonResponse=resource.getAllMeasuresCnt("","");
+				conn.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		    System.out.println(jsonResponse);
+			response.setContentType("text/plain");
+			response.getWriter().write(jsonResponse);
+			
+		}
+	   if (Integer.valueOf(request.getParameter("option"))==3) {
+			
+			DBConnectionManager dbConnection=new DBConnectionManager();
+			Connection conn=dbConnection.getRemoteConnection();
+			MesaResource resource=new MesaResource(conn);
+			String jsonResponse="";
+			try {
+				jsonResponse=resource.getCompletness("","");
+				conn.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		    System.out.println(jsonResponse);
+			response.setContentType("text/plain");
+			response.getWriter().write(jsonResponse);
+			
+		}
    }
 
 }

@@ -8692,3 +8692,28 @@ org.eclipse.core.runtime.CoreException: Variable references non-existent resourc
 !MESSAGE File not found: /Users/lauriroomere/Desktop/SwedDasher/Swedbank/target/m2e-wtp/web-resources/META-INF/maven/com.swed/Dashboard/pom.properties.
 !SUBENTRY 1 org.eclipse.core.resources 4 368 2017-04-01 17:19:40.539
 !MESSAGE File not found: /Users/lauriroomere/Desktop/SwedDasher/Swedbank/target/m2e-wtp/web-resources/META-INF/maven/com.swed/Dashboard/pom.xml.
+!SESSION 2017-04-02 15:33:25.685 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/lauriroomere/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/lauriroomere/.eclipse_keyring
+
+!ENTRY org.eclipse.jface.text 2 0 2017-04-02 16:23:19.871
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-04-02 16:23:19.881
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-04-02 16:24:57.173
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-04-02 16:24:57.176
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-04-02 17:29:02.116
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-04-02 17:29:02.117
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'

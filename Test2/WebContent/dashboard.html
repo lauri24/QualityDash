@@ -27,10 +27,10 @@
 	<script>
 			<!-- Bar chart-->
 	
-			function barChart(featureArray,dataArray,colorArray){
+			function barChart(dataX,dataY,colorArray){
 				var trace1 = {
-						  x: ['Feature A', 'Feature B', 'Feature C', 'Feature D', 'Feature E'],
-						  y: [20, 14, 23, 25, 22],
+						  x:dataX,
+						  y: dataY,
 						  marker:{
 						    color: ['rgba(204,204,204,1)', 'rgba(222,45,38,0.8)', 'rgba(204,204,204,1)', 'rgba(204,204,204,1)', 'rgba(204,204,204,1)']
 						  },
@@ -48,11 +48,11 @@
 				
 			}
 			<!-- Line chart-->
-			function lineChart(){		
+			function lineChart(dataX,dataY){		
 				var data = [
 					  {
-					    x: ['2013-10-04 22:23:00', '2013-11-04 22:23:00', '2013-12-04 22:23:00'],
-					    y: [1, 3, 6],
+					    x: dataX,
+					    y: dataY,
 					    type: 'scatter'
 					  }
 					];
@@ -103,7 +103,7 @@
 			
 			function createGauges()
 			{
-				createGauge("memory", "Completness");
+				createGauge("memory", "KPI");
 				
 			}
 			
@@ -119,13 +119,60 @@
 		        	 var obj = jQuery.parseJSON(responseText);
 		        	 if (obj) {
 		                 //  var dd = JSON.parse(result);
-		                 
-					gauges[key].redraw(obj.completness);
+		              
+						gauges[key].redraw(obj.kpi);
+					
 		        	 }else{
 		        		 alert('Wrong')
 		        	 }
 		        });
 				}
+				
+				var dataX=[];
+				var dataXLine=[];
+				var dataY=[];
+				var dataYLine=[];
+				  $.get('CompletnessController', {
+		               option: '2'
+		        }, function(responseText) {
+		        	 var json = jQuery.parseJSON(responseText);
+		        	 if (json) {
+		                 //  var dd = JSON.parse(result);
+		               for(var i = 0; i < json.length; i++) {
+							    var obj = json[i];
+								dataX.push(obj.qualityMetricTypeName);
+								dataY.push(obj.measure_amt);
+								
+								
+					  }
+		            
+		        	 	barChart(dataX,dataY);
+		        	 }else{
+		        		 alert('Wrong')
+		        	 }
+		        });
+				  
+				  $.get('CompletnessController', {
+		               option: '3'
+		        }, function(responseText) {
+		        	 var json = jQuery.parseJSON(responseText);
+		        	 if (json) {
+		                 //  var dd = JSON.parse(result);
+		               for(var i = 0; i < json.length; i++) {
+							    var obj = json[i];
+								
+								dataYLine.push(obj.measure_amt);
+								dataXLine.push(obj.run_sttd);
+								
+					  }
+		           		lineChart(dataXLine,dataYLine);
+		        	 }else{
+		        		 alert('Wrong')
+		        	 }
+		        });
+				  
+			
+				
 			}
 			
 		
@@ -158,112 +205,15 @@
 			function initialize()
 			{
 				heatMap();
-				barChart();
+				barChart([1,2,3],['A','B','C']);
 				createGauges();
-				lineChart();
+				lineChart([1,2,3],['A','B','C']);
 				setInterval(updateGauges, 5000);
-				var svg = d3.select("#errorness1").append("svg");
 				
-				svg.append("g").attr("id","salespie");
-				svg.append("g").attr("id","quotespie");
-			
-				var div = d3.select("#errorness1").append("div").attr("class", "toolTip");
-				div.data(randomData());
-				
-			
-			    	gradPie.draw("quotespie", randomData(), 70, 70, 70);
-			    	
-					 svg.on("mouseover", function(d) {		
-						 div.style("left", d3.event.pageX+10+"px");
-			                div.style("top", d3.event.pageY-25+"px");
-			                div.style("display", "inline-block");
-			                div.html("<br>"+d+"%");
-				            });					
-				        svg.on("mouseout", function(d) {		
-				        	   div.style("display", "none");
-				        });
 				        
-				        
-				   var data3 = [
-				        	  {name: "Acc",    value:  4},
-				        	  {name: "Comp",   value:  8},
-				        	  {name: "DQ",     value: 15},
-				        	  {name: "Diff",   value: 16},
-				        	  {name: "-",      value: 23},
-				        	  {name: "-",      value: 42}
-				        	];
 				
-				    var width = 500,height =200;
-
-				  //  var x = d3.scale.linear()
-				   //     .domain([0, d3.max(data3, function(d){return d.value;})])
-				   //     .range([0, width]);
-				  
-				  var margin = {top: 20, right: 30, bottom: 30, left: 40},
-				    width =width - margin.left - margin.right,
-				    height = height - margin.top - margin.bottom;
-
-				  
-				  var x = d3.scale.ordinal()
-   						 .rangeRoundBands([0, width], .1)
-				         .domain(data3.map(function(d) { return d.name; }));
-					     
-				  var y = d3.scale.linear()
-				   	  .domain([0, d3.max(data3, function(d){return d.value;})])
-   					 .range([height, 0]);
-				  	 
-				  var xAxis = d3.svg.axis()
-				    .scale(x)
-				    .orient("bottom");
-
-				  var yAxis = d3.svg.axis()
-				      .scale(y)
-				      .orient("left");
-				  
-				  
-				    var chart = d3.select(".chart")
-				         .attr("width", width + margin.left + margin.right)
-					     .attr("height", height + margin.top + margin.bottom)
-					     .append("g")
-   						 .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-				  
-				   
 				
-				    var bar = chart.selectAll("g")
-				        .data(data3)
-				        .enter().append("g")
-				        .attr("transform", function(d) { return "translate(" + x(d.name) + ",0)";});
-					
-				    chart.append("g")
-				    .attr("class", "x axis")
-				    .attr("transform", "translate(0," + height + ")")
-				    .call(xAxis);
-				    
-				    chart.append("g")
-				      .attr("class", "y axis")
-				      .call(yAxis);
-
-				    
-				    bar.append("rect")
-				    	.attr("y",function(d) {return y(d.value);})
-				        .attr("width",x.rangeBand()/2)
-				        .attr("height",  function(d){return height-y(d.value);});
-
-				    bar.append("text")
-				        .attr("x",x.rangeBand()/2)
-				        .attr("y", function(d) { return y(d.value)+3; })
-				        .attr("dy", ".75em")
-				        .text(function(d) { return ""; });
-				    
-				    hart.selectAll(".bar")
-				      .data(data)
-				    .enter().append("rect")
-				      .attr("class", "bar")
-				      .attr("x", function(d) { return x(d.name); })
-				      .attr("y", function(d) { return y(d.value); })
-				      .attr("height", function(d) { return height - y(d.value); })
-				      .attr("width", x.rangeBand());
-				//gradPie.draw("salespie", randomData(), 100, 100, 160);
+				
 				       
 			}
 			
@@ -366,7 +316,7 @@ axis text {
       <div class="row">
         <div class="col-sm-3" draggable="true" class="resizable" id="drag_me">
           <div class="well">
-            <h4>Char1</h4>
+            <h4>BB Data Warehouse</h4>
             <span id="memoryGaugeContainer"></span>
           </div>
         </div>
