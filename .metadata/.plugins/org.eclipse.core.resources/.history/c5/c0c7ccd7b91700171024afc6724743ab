@@ -40,7 +40,7 @@
 						var data = [trace1];
 		
 						var layout = {
-						  title: 'Least Used Feature'
+						  title: 'EE BB Data Warehouse'
 						};
 		
 						Plotly.newPlot('myBar', data, layout);
@@ -284,7 +284,7 @@ axis text {
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">EE Dashboard</a></li>
+        <li class="active"><a href="#">EE BB Data Warehouse</a></li>
       </ul>
     </div>
   </div>
@@ -295,7 +295,7 @@ axis text {
     <div class="col-sm-3 sidenav hidden-xs">
       <h2>Swedbank dashboard</h2>
       <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href="#section1">EE Dashboard</a></li>
+        <li class="active"><a href="#section1">EE BB Data Warehouse</a></li>
       </ul><br>
     </div>
     <br>
@@ -316,7 +316,7 @@ axis text {
       <div class="row">
         <div class="col-sm-3" draggable="true" class="resizable" id="drag_me">
           <div class="well">
-            <h4>BB Data Warehouse</h4>
+            <h4>BB Data Warehouse KPI</h4>
             <span id="memoryGaugeContainer"></span>
           </div>
         </div>
