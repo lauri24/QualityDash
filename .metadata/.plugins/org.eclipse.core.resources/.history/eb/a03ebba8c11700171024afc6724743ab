@@ -40,7 +40,7 @@
 						var data = [trace1];
 		
 						var layout = {
-						  title: 'BB Data Warehouse'
+						  title: 'Least Used Feature'
 						};
 		
 						Plotly.newPlot('myBar', data, layout);
