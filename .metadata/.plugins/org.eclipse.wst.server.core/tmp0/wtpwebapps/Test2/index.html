@@ -17,17 +17,92 @@
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script type="text/javascript" src="js/gauge.js"></script>
 <script type="text/javascript" src="js/d3.geomap.min.js"></script>
+<script type="text/javascript" src="js/draggable.js"></script>
 <script type="text/javascript" src="js/gradientPie.js"></script>
  <script type="text/javascript" src="js/world.js"></script>
    <script src="http://d3js.org/topojson.v1.min.js"></script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
  <script src="http://datamaps.github.io/scripts/datamaps.world.min.js?v=1"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
+<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
 <!--http://blocks.org/mccannf/1629644-->
 	
 	<script>
 			<!-- Bar chart-->
-	
-			function barChart(){
+	         
+			
+			function mapChart(divTag){
+				
+				
+				var data = [{
+				    type: 'scattergeo',
+				    mode: 'markers',
+				    locations: ['EST', 'LVA', 'LTU','GRC'],
+				    marker: {
+				        size: [10, 30, 15, 10],
+				        color: [10, 20, 40, 50],
+				        cmin: 0,
+				        cmax: 100,
+				        colorscale: 'Greens',
+				        colorbar: {
+				            title: 'Completeness',
+				            ticksuffix: '%',
+				            showticksuffix: 'first'
+				        },
+				        line: {
+				            color: 'black'
+				        }
+				    },
+				 
+				}];
+
+				var layout = {
+				    'geo': {
+				        'scope': 'europe',
+				        'resolution': 1000
+				    }
+				};
+
+			
+
+
+			      Plotly.plot(divTag, data, layout, {showLink: false});
+				
+				
+			}
+			
+			
+			
+			function circleChart(divTag,value,serviceName,country){
+				
+				
+				var data = [{
+					  values: [100-value,value],
+					  labels: ['BAD','FORMAT CONFORMACY'],
+					  marker:{  colors:['rgb(215, 56, 24)']},
+					  domain: {
+					    x: [0, .55]
+					  },
+					  name: 'KPI',
+					  hoverinfo: 'label+percent+name',
+					  hole: .4,
+					  type: 'pie'
+					}];
+
+					var layout = {
+					  title: serviceName+" "+country,
+					  height: 500,
+					  width: 500
+					};
+
+					Plotly.newPlot(divTag, data, layout);
+				
+				
+			}
+			
+			
+			
+			function barChart(divTag){
 				var trace1 = {
 						  x: ['Feature A', 'Feature B', 'Feature C', 'Feature D', 'Feature E'],
 						  y: [20, 14, 23, 25, 22],
@@ -43,7 +118,7 @@
 						  title: 'Least Used Feature'
 						};
 		
-						Plotly.newPlot('myBar', data, layout);
+						Plotly.newPlot(divTag, data, layout);
 				
 				
 			}
@@ -155,6 +230,8 @@
 				}
 
 			<!-- Init all charts-->
+			
+		
 			function initialize()
 			{
 				heatMap();
@@ -267,146 +344,140 @@
 				       
 			}
 			
-			
-			
-		
+			var app = angular.module('app', []);
+
+			app.directive("addDiv", function($compile){   
+			      return{
+			        restrict: 'AE',
+			        link: function(scope , element,attr){        
+			           element.bind("click", function(e){ 
+			           var e = document.getElementById("ChartSelect");
+			           var strUser = e.options[e.selectedIndex].text;	   
+			           var ecountry = document.getElementById("CountrySelect");
+			           var country = ecountry.options[ecountry.selectedIndex].text;
+			           var eMetricType = document.getElementById("MetricType");
+			           var MetricType =eMetricType.options[eMetricType.selectedIndex].text;
+			           
+			           var colNo = document.getElementById("col_no").value;
+			          
+			           var rowNo = document.getElementById("row_no").value;
+			    
+			      
+			           var container;
+			           var childNode;
+			           if(strUser=="Map"){
+			        	   var divTag = "divMap_" + new Date().getTime().toString();
+			        	   container =   angular.element(document.querySelector("#container"));
+				           childNode = $compile('<div class="box"  ng-draggable="dragOptions"  style = "float:left; width: 25%;"><div id="'+divTag+'""></div></div>')(container);
+				           container.append(childNode);
+			        	   mapChart(divTag);
+			        	   
+			           
+			           }
+			           if(strUser=="Bar"){
+			        	   
+			        	   var divTag = "divBar_" + new Date().getTime().toString();
+			        	   container =   angular.element(document.querySelector("#container"));
+				           childNode = $compile('<div class="box"  ng-draggable="dragOptions"  style = "float:left; width: 25%;"><div id="'+divTag+'""></div></div>')(container);
+				           container.append(childNode);
+				       	   barChart(divTag);    
+			           }
+			           if(strUser=="Circle"){
+				        	   
+				        	 $.get('CompletnessController', {
+					               option:'1',parameter1:country,parameter2:MetricType,parameter3:rowNo,parameter4:colNo
+					        }, function(responseText) {
+					        	 var obj = jQuery.parseJSON(responseText);
+					        	 if (obj) {
+					                 //  var dd = JSON.parse(result);
+					                 
+									//	gauges[key].redraw(obj.completness);
+										
+									
+					        		   var divTag = "divDonut_" + new Date().getTime().toString();
+						        	   container =   angular.element(document.querySelector("#container"));
+							           childNode = $compile('<div class="box"  ng-draggable="dragOptions" ><button onclick="removeChart("'+childNode+'")">X</button><div id="'+divTag+'"" ></div></div>')(container);
+							           container.append(childNode);
+							           circleChart(divTag,obj.kpi,obj.serviceName,country);   
+									
+					        	 }else{
+					        		 alert('Wrong')
+					        	 }
+					        });
+				        	   
+			        	   
+			        	   
+			        	 
+			           }
+			           
+			        	
+
+			           });
+			        }
+			    };
+			   });
+
+			app.controller('firstCtrl', function($scope){
+			 
+			   
+			});
+	function removeChart(divTag){
+				document.getElementsByClassName(divTag).remove();
+				document.getElementById(divTag).remove();
+			}
 			
 			</script>
-  <style>
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 550px}
-    
-    /* Set gray background color and 100% height */
-    .chart rect {
-  fill: steelblue;
+			<style>
+			.box {
+    border: 1px solid black;
+    height: 500px;
+    float:left;
+    width:500px;
 }
-.well{
-	width:100%;
-
-}
-axis text {
-  font: 10px sans-serif;
-}
-
-.axis path,
-.axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
-}
-.chart text {
-  fill: black;
-  font: 10px sans-serif;
-  text-anchor: middle;
-}
-    .sidenav {
-      background-color: #f1f1f1;
-      height: 100%;
-    }
-
-    /* On small screens, set height to 'auto' for the grid */
-    @media screen and (max-width: 767px) {
-      .row.content {height: auto;} 
-    }
-  </style>
-</head>
-<body onload="initialize()">
-
-<nav class="navbar navbar-inverse visible-xs">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Logo</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Dashboard</a></li>
-        <li><a href="#">Age</a></li>
-        <li><a href="#">Gender</a></li>
-        <li><a href="#">Geo</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<div class="container-fluid">
-  <div class="row content">
-    <div class="col-sm-3 sidenav hidden-xs">
-      <h2>Logo</h2>
-      <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href="#section1">Dashboard</a></li>
-        <li><a href="#section2">Blank1</a></li>
-        <li><a href="#section3">Blank2</a></li>
-        <li><a href="#section3">Blank3</a></li>
-      </ul><br>
-    </div>
-    <br>
-    
-    <div class="col-sm-9">
-      <div class="well">
-        <h4>Dashboard</h4>
-        <p>Some text..</p>
-      </div>
-      <div class="row">
-        <div class="col-sm-3">
-          <div class="well">
-            <h4>Completness</h4>
-            <span id="memoryGaugeContainer"></span>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="well">
-            <h4>Errorness</h4>
-              <div id="errorness1"></div>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="well">
-            <h4>Sessions</h4>
-             <div id="myBar"><!-- Plotly chart will be drawn inside this DIV --></div>
-         <!-- <div><svg class="chart"></svg></div>-->
-          </div>
-        </div>
-        
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="well">
-          <div id="myDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="well">
-           <div id="timeSeries"><!-- Plotly chart will be drawn inside this DIV --></div>
-    
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="well">
-            <p>Text</p> 
-            <p>Text</p> 
-            <p>Text</p> 
-          </div>
+			</style>
+<body ng-app="app">
+	
+  <div ng-controller="firstCtrl" >
+     Chart:  <select id="ChartSelect">
+			  <option value="ChartType">Bar</option>
+			  <option value="ChartType">Pie</option>
+			  <option value="ChartType">Line</option>
+			  <option value="ChartType">Heat map</option>
+			  <option value="ChartType">Map</option>
+			  <option value="ChartType">Circle</option>
+		</select>
+   	Country:<select id="CountrySelect">
+			  <option value="CountryType">EE</option>
+			  <option value="CountryType">LT</option>
+			  <option value="CountryType">LI</option>
+			  <option value="CountryType">GR</option>
+	
+		</select>
+	Service rule
+	    <select>
+			  <option value="Rule1">1</option>
+			  <option value="Rule2">2</option>
+			  <option value="Rule3">3</option>
+	
+	
+		</select>
+	Metric type
+	    <select id="MetricType">
+			  <option value="Rule1">DQKPI</option>
+			  <option value="Rule2">DQERR</option>
+			  <option value="Rule3">3</option>
+	
+	
+		</select>
+    Col no: <input type="text" name="col_no" value="5" id="col_no"><br>
+    Row no: <input type="text" name="row_no" value="10" id="row_no"><br>	
+    <button add-div>Click Me</button>
+  	   <div ng-app="test" ng-controller="testCtrl">
+        <div id="container"></div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-sm-8">
-          <div class="well">
-            <p>Text</p> 
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="well">
-            <p>Text</p> 
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+
+
 
 </body>
 </html>

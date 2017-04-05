@@ -591,3 +591,81 @@ org.eclipse.core.runtime.CoreException: Variable references non-existent resourc
 2017-04-01 17:20:08,270 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/SwedDasher/Swedbank/src/main/resources
 2017-04-01 17:20:08,272 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2017-04-01 17:20:08,274 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/SwedDasher/Swedbank/src/test/resources
+2017-04-02 19:42:51,627 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-02 19:42:51,638 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/SwedDasher/Swedbank/src/main/resources
+2017-04-02 19:42:51,641 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-02 19:42:51,641 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/SwedDasher/Swedbank/src/test/resources
+2017-04-02 19:46:12,008 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-02 19:46:12,013 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/SwedDasher/Swedbank/src/main/resources
+2017-04-02 19:46:12,015 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-02 19:46:12,016 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/SwedDasher/Swedbank/src/test/resources
+2017-04-02 19:48:11,930 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-02 19:48:11,930 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/SwedDasher/Swedbank/src/main/resources
+2017-04-02 19:48:11,932 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-02 19:48:11,932 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/SwedDasher/Swedbank/src/test/resources
+2017-04-02 19:48:16,407 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-02 19:48:16,408 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/SwedDasher/Swedbank/src/main/resources
+2017-04-02 19:48:16,410 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-02 19:48:16,410 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/SwedDasher/Swedbank/src/test/resources
+2017-04-02 19:49:19,901 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-02 19:49:19,901 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/SwedDasher/Swedbank/src/main/resources
+2017-04-02 19:49:19,903 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-02 19:49:19,903 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/SwedDasher/Swedbank/src/test/resources
+2017-04-02 19:52:54,134 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-02 19:52:54,134 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/SwedDasher/Swedbank/src/main/resources
+2017-04-02 19:52:54,137 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-02 19:52:54,137 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/SwedDasher/Swedbank/src/test/resources
+2017-04-02 21:14:35,589 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-02 21:14:35,591 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/SwedDasher/Swedbank/src/main/resources
+2017-04-02 21:14:35,597 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-02 21:14:35,597 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/SwedDasher/Swedbank/src/test/resources
+2017-04-02 23:01:36,091 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-02 23:01:36,102 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/SwedDasher/Swedbank/src/main/resources
+2017-04-02 23:01:36,105 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-02 23:01:36,105 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/SwedDasher/Swedbank/src/test/resources
+2017-04-02 23:02:27,263 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-02 23:02:27,265 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/SwedDasher/Swedbank/src/main/resources
+2017-04-02 23:02:27,267 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-02 23:02:27,268 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/SwedDasher/Swedbank/src/test/resources
+2017-04-02 23:02:32,267 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-02 23:02:32,268 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/SwedDasher/Swedbank/src/main/resources
+2017-04-02 23:02:32,270 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-02 23:02:32,270 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/SwedDasher/Swedbank/src/test/resources
+2017-04-02 23:05:28,484 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-02 23:05:28,485 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/SwedDasher/Swedbank/src/main/resources
+2017-04-02 23:05:28,487 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-02 23:05:28,487 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/SwedDasher/Swedbank/src/test/resources
+2017-04-03 15:57:40,327 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-03 15:57:40,338 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/SwedDasher/Swedbank/src/main/resources
+2017-04-03 15:57:40,340 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-03 15:57:40,341 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/SwedDasher/Swedbank/src/test/resources
+2017-04-03 23:31:19,190 [Worker-87] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.swed:Dashboard:1.0-SNAPSHOT @ /Users/lauriroomere/Desktop/SwedDasher/Swedbank/pom.xml.
+2017-04-03 23:31:20,883 [Worker-87] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.3/gson-2.3.pom
+2017-04-03 23:31:20,938 [Worker-87] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.3/gson-2.3.pom
+2017-04-03 23:31:21,009 [Worker-87] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/sonatype/oss/oss-parent/9/oss-parent-9.pom
+2017-04-03 23:31:21,078 [Worker-87] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/sonatype/oss/oss-parent/9/oss-parent-9.pom
+2017-04-03 23:31:21,134 [Worker-87] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/log4j/log4j/1.2.17/log4j-1.2.17.pom
+2017-04-03 23:31:21,250 [Worker-87] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/log4j/log4j/1.2.17/log4j-1.2.17.pom
+2017-04-03 23:31:21,309 [Worker-87] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.3/gson-2.3.jar
+2017-04-03 23:31:21,554 [Worker-87] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.3/gson-2.3.jar
+2017-04-03 23:31:21,615 [Worker-87] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/log4j/log4j/1.2.17/log4j-1.2.17.jar
+2017-04-03 23:31:22,077 [Worker-87] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/log4j/log4j/1.2.17/log4j-1.2.17.jar
+2017-04-03 23:31:24,030 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-03 23:31:24,031 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/SwedDasher/Swedbank/src/main/resources
+2017-04-03 23:31:24,034 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-03 23:31:24,034 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/SwedDasher/Swedbank/src/test/resources
+2017-04-03 23:31:24,039 [Worker-87] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Dashboard
+2017-04-03 23:31:24,040 [Worker-87] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Dashboard
+2017-04-03 23:31:24,050 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-03 23:31:25,766 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-03 23:31:25,767 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/SwedDasher/Swedbank/src/main/resources
+2017-04-03 23:31:25,769 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-03 23:31:25,769 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/SwedDasher/Swedbank/src/test/resources
+2017-04-05 09:43:29,046 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-05 09:43:29,053 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/SwedDasher/Swedbank/src/main/resources
+2017-04-05 09:43:29,058 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-05 09:43:29,058 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/SwedDasher/Swedbank/src/test/resources
+2017-04-05 16:31:16,681 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-05 16:31:16,693 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/SwedDasher/Swedbank/src/main/resources
+2017-04-05 16:31:16,698 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-05 16:31:16,699 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/SwedDasher/Swedbank/src/test/resources

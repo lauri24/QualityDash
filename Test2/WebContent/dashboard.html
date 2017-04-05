@@ -26,7 +26,11 @@
 	
 	<script>
 			<!-- Bar chart-->
-	
+			$(document).ready(function(){
+			    $("#flip").click(function(){
+			        $("#panel").slideDown("slow");
+			    });
+			});
 			function barChart(dataX,dataY,colorArray){
 				var trace1 = {
 						  x:dataX,
@@ -223,6 +227,7 @@
 			
 			</script>
   <style>
+
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
     .row.content {height: 550px}
     
@@ -243,11 +248,11 @@ axis text {
   stroke: #000;
   shape-rendering: crispEdges;
 }
-.chart text {
-  fill: black;
-  font: 10px sans-serif;
-  text-anchor: middle;
-}
+	.chart text {
+ 		 fill: black;
+  		 font: 10px sans-serif;
+         text-anchor: middle;
+   }
     .sidenav {
       background-color: #f1f1f1;
       height: 100%;
@@ -268,10 +273,22 @@ axis text {
     max-width: 300px;
     max-height: 460px;
 }
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
   </style>
 </head>
 <body onload="initialize()">
-
+    <div id="flip">Click to slide down panel</div>
+	  <div id="panel">Hello world!</div>
 <nav class="navbar navbar-inverse visible-xs">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -310,9 +327,10 @@ axis text {
 			  <option value="Line">Line</option>
 			  <option value="HeatMap">Heat map</option>
 		</select>
-        
+      
         
       </div>
+  
       <div class="row">
         <div class="col-sm-3" draggable="true" class="resizable" id="drag_me">
           <div class="well">
