@@ -7,4 +7,3 @@ INDEX VERSION 1.3+/Users/lauriroomere/Desktop/QualityDash/.metadata/.plugins/org
 1053619272.index
 2814205398.index
 1253667816.index
-1053619272.index

@@ -25,15 +25,23 @@
  <script src="http://datamaps.github.io/scripts/datamaps.world.min.js?v=1"></script>
  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
 <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
 <!--http://blocks.org/mccannf/1629644-->
 	
 	<script>
 			<!-- Bar chart-->
 	         
-			
+			$( function() {
+			    $( "#date1" ).datepicker();
+			  } );
+			$( function() {
+			    $( "#date2" ).datepicker();
+			 } )
 			function mapChart(divTag){
 				
-				
+			
 				var data = [{
 				    type: 'scattergeo',
 				    mode: 'markers',
@@ -102,10 +110,10 @@
 			
 			
 			
-			function barChart(divTag){
+			function barChart(divTag,dataX,dataY,serviceName){
 				var trace1 = {
-						  x: ['Feature A', 'Feature B', 'Feature C', 'Feature D', 'Feature E'],
-						  y: [20, 14, 23, 25, 22],
+						  x:dataX,
+						  y: dataY,
 						  marker:{
 						    color: ['rgba(204,204,204,1)', 'rgba(222,45,38,0.8)', 'rgba(204,204,204,1)', 'rgba(204,204,204,1)', 'rgba(204,204,204,1)']
 						  },
@@ -115,7 +123,7 @@
 						var data = [trace1];
 		
 						var layout = {
-						  title: 'Least Used Feature'
+						  title:serviceName
 						};
 		
 						Plotly.newPlot(divTag, data, layout);
@@ -353,15 +361,20 @@
 			           element.bind("click", function(e){ 
 			           var e = document.getElementById("ChartSelect");
 			           var strUser = e.options[e.selectedIndex].text;	   
+			           
 			           var ecountry = document.getElementById("CountrySelect");
 			           var country = ecountry.options[ecountry.selectedIndex].text;
+			           
 			           var eMetricType = document.getElementById("MetricType");
 			           var MetricType =eMetricType.options[eMetricType.selectedIndex].text;
 			           
-			           var colNo = document.getElementById("col_no").value;
+			           var eserviceGroupName = document.getElementById("service_main_group_name");
+			           var serviceGroupName =eserviceGroupName.options[eserviceGroupName.selectedIndex].text;
 			          
+			     
+			           
 			           var rowNo = document.getElementById("row_no").value;
-			    
+			           var colNo = document.getElementById("col_no").value;
 			      
 			           var container;
 			           var childNode;
@@ -376,11 +389,42 @@
 			           }
 			           if(strUser=="Bar"){
 			        	   
-			        	   var divTag = "divBar_" + new Date().getTime().toString();
-			        	   container =   angular.element(document.querySelector("#container"));
-				           childNode = $compile('<div class="box"  ng-draggable="dragOptions"  style = "float:left; width: 25%;"><div id="'+divTag+'""></div></div>')(container);
-				           container.append(childNode);
-				       	   barChart(divTag);    
+			        	   $.get('CompletnessController', {
+				               option:'2',country:country,service:serviceGroupName,rowno:rowNo,parameter4:colNo
+				        }, function(responseText) {
+				        	 var obj = jQuery.parseJSON(responseText);
+				        	 if (obj) {
+				                 //  var dd = JSON.parse(result);
+				                 var dataX=[];
+				                 var dataY=[];
+		
+
+								//	gauges[key].redraw(obj.completness);
+									
+								 var json = jQuery.parseJSON(responseText);
+					        	 if (json.isEmpty({})) {
+		                 //  var dd = JSON.parse(result);
+							               for(var i = 0; i < json.length; i++) {
+												    var obj = json[i];
+													dataX.push(obj.qualityMetricTypeName);
+													dataY.push(obj.measure_amt);
+													
+													
+										  }
+							            
+		        
+				        		   var divTag = "divBar_" + new Date().getTime().toString();
+					        	   container =   angular.element(document.querySelector("#container"));
+						           childNode = $compile('<div class="box"  ng-draggable="dragOptions"  style = "float:left; width: 25%;"><div id="'+divTag+'""></div></div>')(container);
+						           container.append(childNode);
+						       	   barChart(divTag,dataX,dataY,serviceGroupName);   
+								
+				        	 }else{
+				        		 alert('Wrong')
+				        	 }
+			        	   
+			           }
+				        });
 			           }
 			           if(strUser=="Circle"){
 				        	   
@@ -436,7 +480,8 @@
 }
 			</style>
 <body ng-app="app">
-	
+	<p>Date: <input type="text" id="date1"></p>
+	<p>Between: <input type="text" id="date2"></p>
   <div ng-controller="firstCtrl" >
      Chart:  <select id="ChartSelect">
 			  <option value="ChartType">Bar</option>
@@ -459,6 +504,26 @@
 			  <option value="Rule2">2</option>
 			  <option value="Rule3">3</option>
 	
+	
+		</select>
+   Service group name
+	    <select id="service_main_group_name">
+	    
+			  <option value="Service">Regulatory Reporting </option>
+			  <option value="Service">Supporting Service</option>
+			  <option value="Service">Data in - Internal systems by AM areas</option>
+			  <option value="Service">Performance Management </option>
+			  <option value="Service">Customer Management</option>
+			  <option value="Service">Data in - External companies</option>
+			  <option value="Service">DW Application </option>
+			  <option value="Service">BB Data Warehouse</option>
+			  <option value="Service">BI Infrastructure</option>
+			  <option value="Service">Data in - Manual preparation </option>
+			  <option value="Service">BI Common Analytical Services</option>
+			  <option value="Service">Business Line / Product System</option>
+			  <option value="Service">Risk Management </option>
+			  <option value="Service">Data Warehouse Service</option>
+		
 	
 		</select>
 	Metric type
