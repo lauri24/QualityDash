@@ -392,15 +392,18 @@
 			        	   $.get('CompletnessController', {
 				               option:'2',country:country,service:serviceGroupName,rowno:rowNo,parameter4:colNo
 				        }, function(responseText) {
-				        
+				        	 var obj = jQuery.parseJSON(responseText);
+				        	 if (obj) {
 				                 //  var dd = JSON.parse(result);
 				                 var dataX=[];
 				                 var dataY=[];
 		
 
+								//	gauges[key].redraw(obj.completness);
+									
 								 var json = jQuery.parseJSON(responseText);
-					        	 if (json.length>0) {
-		              
+					        	 if (json.isEmpty({})) {
+		                 //  var dd = JSON.parse(result);
 							               for(var i = 0; i < json.length; i++) {
 												    var obj = json[i];
 													dataX.push(obj.qualityMetricTypeName);
@@ -417,10 +420,10 @@
 						       	   barChart(divTag,dataX,dataY,serviceGroupName);   
 								
 				        	 }else{
-				        		 alert('No results found for query');
+				        		 alert('Wrong')
 				        	 }
 			        	   
-			           
+			           }
 				        });
 			           }
 			           if(strUser=="Circle"){
@@ -429,7 +432,7 @@
 					               option:'1',parameter1:country,parameter2:MetricType,parameter3:rowNo,parameter4:colNo
 					        }, function(responseText) {
 					        	 var obj = jQuery.parseJSON(responseText);
-					        	 if (obj.length>0) {
+					        	 if (obj) {
 					                 //  var dd = JSON.parse(result);
 					                 
 									//	gauges[key].redraw(obj.completness);
@@ -442,7 +445,7 @@
 							           circleChart(divTag,obj.kpi,obj.serviceName,country);   
 									
 					        	 }else{
-					        		 alert('No results found for query');
+					        		 alert('Wrong')
 					        	 }
 					        });
 				        	   
