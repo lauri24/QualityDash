@@ -65,7 +65,7 @@ public class CompletnessController extends HttpServlet {
 			MesaResource resource=new MesaResource(conn);
 			String jsonResponse="";
 			try {
-				jsonResponse=resource.getAllMeasuresCnt(String.valueOf(request.getParameter("country")),String.valueOf(request.getParameter("service")),String.valueOf(request.getParameter("rowno")),"");
+				jsonResponse=resource.getAllMeasuresCnt(String.valueOf(request.getParameter("country")),String.valueOf(request.getParameter("service")),String.valueOf(request.getParameter("rowno")),"",String.valueOf(request.getParameter("date1")),String.valueOf(request.getParameter("date2")));
 				conn.close();
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block

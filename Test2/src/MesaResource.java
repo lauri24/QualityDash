@@ -74,19 +74,21 @@ public class MesaResource {
     }
 
 
-public String getAllMeasuresCnt(String country, String service, String factrow, String factcol) throws SQLException{
+public String getAllMeasuresCnt(String country, String service, String factrow, String factcol, String date1, String date2) throws SQLException{
 	    
  	Statement stmt = null;
  	String jsonInString="";
  	stmt = this.connection.createStatement();
  	Gson gson = new GsonBuilder().create();
  	ArrayList responseArray = new ArrayList();
+ 	date1="2017-02-03 01:32:27";
+ 	date2="2017-02-03 01:32:27";
  	String queryString="SELECT DISTINCT f.validation_rule_id,dim2.validation_rule_comment,dim2.quality_metric_type_name,f.fact_row_no,dim1.service_main_group_name,"
 		+ "f.fact_col_no,dim2.expected_result_amt,f.measure_amt,dim1.service_domain_name, dim2.expected_result_cnt,f.run_dttm "
 		+ "FROM mesa.PL_MEASURE_FACT_PRT f INNER JOIN mesa.PL_SERVICE_PRT dim1 ON (f.validation_service_shortname = dim1.Service_Component_ShortName)"
 		+ " INNER JOIN mesa.PL_VALIDATION_RULE_EXT dim2 ON (f.Validation_Rule_Id = dim2.Validation_Rule_Id) "
 		+ "WHERE f.country_shortname='"+country+"' AND dim1.service_main_group_name='"+service+"' and f.fact_row_no='"+factrow+"' "
-		+ "AND f.validation_rule_id IN ('2803','2260','2300','101') AND f.run_dttm='2017-02-03 01:32:27';";
+		+ "AND f.validation_rule_id IN ('2803','2260','2300','101') AND  f.run_dttm between '"+date1+"' and '"+date2+"';";
  	ResultSet rs = stmt.executeQuery(queryString);
  	while(rs.next()) {
  	  //int numColumns = rs.getColumnCount();

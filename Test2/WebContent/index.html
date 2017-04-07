@@ -34,10 +34,12 @@
 			<!-- Bar chart-->
 	         
 			$( function() {
-			    $( "#date1" ).datepicker();
+			
+
+			 $( "#date1" ).datepicker({ dateFormat: "yy-mm-dd",timeFormat:"hh:mm:ss"});
 			  } );
 			$( function() {
-			    $( "#date2" ).datepicker();
+			    $( "#date2" ).datepicker({ dateFormat: "yy-mm-dd",timeFormat:"hh:mm:ss"});
 			 } )
 			function mapChart(divTag){
 				
@@ -368,6 +370,12 @@
 			           var eMetricType = document.getElementById("MetricType");
 			           var MetricType =eMetricType.options[eMetricType.selectedIndex].text;
 			           
+			        
+			           var date1 = $("#date1").val();
+			           
+			       
+			           var date2 =$("#date2").val();
+			           
 			           var eserviceGroupName = document.getElementById("service_main_group_name");
 			           var serviceGroupName =eserviceGroupName.options[eserviceGroupName.selectedIndex].text;
 			          
@@ -390,7 +398,7 @@
 			           if(strUser=="Bar"){
 			        	   
 			        	   $.get('CompletnessController', {
-				               option:'2',country:country,service:serviceGroupName,rowno:rowNo,parameter4:colNo
+				               option:'2',country:country,service:serviceGroupName,rowno:rowNo,parameter4:colNo,date1:date1,date2:date2
 				        }, function(responseText) {
 				        
 				                 //  var dd = JSON.parse(result);
@@ -477,9 +485,10 @@
 }
 			</style>
 <body ng-app="app">
-	<p>Date: <input type="text" id="date1"></p>
-	<p>Between: <input type="text" id="date2"></p>
+
   <div ng-controller="firstCtrl" >
+  	<p>Date: <input type="text" id="date1"></p>
+	<p>Between: <input type="text" id="date2"></p>
      Chart:  <select id="ChartSelect">
 			  <option value="ChartType">Bar</option>
 			  <option value="ChartType">Pie</option>
