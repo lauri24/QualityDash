@@ -112,7 +112,7 @@
 			
 			
 			
-			function barChart(divTag,dataX,dataY,serviceName){
+			function barChart(divTag,dataX,dataY,serviceName,extraInfo){
 				var trace1 = {
 						  x:dataX,
 						  y: dataY,
@@ -126,6 +126,7 @@
 		
 						var layout = {
 						  title:serviceName
+						  
 						};
 		
 						Plotly.newPlot(divTag, data, layout);
@@ -383,7 +384,7 @@
 			           
 			           var rowNo = document.getElementById("row_no").value;
 			           var colNo = document.getElementById("col_no").value;
-			      
+			           
 			           var container;
 			           var childNode;
 			           if(strUser=="Map"){
@@ -404,7 +405,7 @@
 				                 //  var dd = JSON.parse(result);
 				                 var dataX=[];
 				                 var dataY=[];
-		
+								 var extraInfo=[];
 
 								 var json = jQuery.parseJSON(responseText);
 					        	 if (json.length>0) {
@@ -413,6 +414,7 @@
 												    var obj = json[i];
 													dataX.push(obj.qualityMetricTypeName);
 													dataY.push(obj.measure_amt);
+													extraInfo.push(obj.validationQualityRuleComment);
 													
 													
 										  }
@@ -422,7 +424,7 @@
 					        	   container =   angular.element(document.querySelector("#container"));
 						           childNode = $compile('<div class="box"  ng-draggable="dragOptions"  style = "float:left; width: 25%;"><div id="'+divTag+'""></div></div>')(container);
 						           container.append(childNode);
-						       	   barChart(divTag,dataX,dataY,serviceGroupName);   
+						       	   barChart(divTag,dataX,dataY,serviceGroupName,extraInfo);   
 								
 				        	 }else{
 				        		 alert('No results found for query');
@@ -437,7 +439,7 @@
 					               option:'1',parameter1:country,parameter2:MetricType,parameter3:rowNo,parameter4:colNo
 					        }, function(responseText) {
 					        	 var obj = jQuery.parseJSON(responseText);
-					        	 if (obj.length>0) {
+					        	
 					                 //  var dd = JSON.parse(result);
 					                 
 									//	gauges[key].redraw(obj.completness);
@@ -448,10 +450,7 @@
 							           childNode = $compile('<div class="box"  ng-draggable="dragOptions" ><button onclick="removeChart("'+childNode+'")">X</button><div id="'+divTag+'"" ></div></div>')(container);
 							           container.append(childNode);
 							           circleChart(divTag,obj.kpi,obj.serviceName,country);   
-									
-					        	 }else{
-					        		 alert('No results found for query');
-					        	 }
+								
 					        });
 				        	   
 			        	   

@@ -4,7 +4,6 @@ public class CompletenessModel {
 		private int measure_amt;
 		private String run_sttd;
 		private String qualityMetricTypeName;
-		private String validationQualityRuleComment;
 		
 		public void setDate(String value){
 			
@@ -23,16 +22,6 @@ public class CompletenessModel {
 		public int getMeasureAmt(){
 			
 			return this.measure_amt;
-		}
-		
-	    public void setValidationRuleComment(String value){
-			
-			 this.validationQualityRuleComment=value;
-		}
-		
-		public String getValidationRuleComment(){
-			
-			return this.validationQualityRuleComment;
 		}
 		public void setQualityMetricType(String value){
 			this.qualityMetricTypeName=value;

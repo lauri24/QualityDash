@@ -1128,3 +1128,31 @@ org.eclipse.core.runtime.CoreException: Variable references non-existent resourc
 2017-04-07 15:33:07,737 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/QualityDash/Test2/src/main/resources
 2017-04-07 15:33:07,740 [Worker-58] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 2017-04-07 15:33:07,741 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/QualityDash/Test2/src/test/resources
+2017-04-07 15:41:53,090 [Worker-56] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-07 15:41:53,092 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/QualityDash/Test2/src/main/resources
+2017-04-07 15:41:53,093 [Worker-56] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-07 15:41:53,095 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/QualityDash/Test2/src/test/resources
+2017-04-07 15:42:40,667 [Worker-59] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-07 15:42:40,668 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/QualityDash/Test2/src/main/resources
+2017-04-07 15:42:40,670 [Worker-59] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-07 15:42:40,670 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/QualityDash/Test2/src/test/resources
+2017-04-07 15:46:57,858 [Worker-56] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-07 15:46:57,862 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/QualityDash/Test2/src/main/resources
+2017-04-07 15:46:57,863 [Worker-56] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-07 15:46:57,864 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/QualityDash/Test2/src/test/resources
+2017-04-10 15:48:45,901 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-10 15:48:45,941 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/QualityDash/Test2/src/main/resources
+2017-04-10 15:48:45,944 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-10 15:48:45,945 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/QualityDash/Test2/src/test/resources
+2017-04-10 16:15:40,262 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-10 16:15:40,282 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/QualityDash/Test2/src/main/resources
+2017-04-10 16:15:40,285 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-10 16:15:40,286 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/QualityDash/Test2/src/test/resources
+2017-04-10 16:16:41,367 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-10 16:16:41,375 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/QualityDash/Test2/src/main/resources
+2017-04-10 16:16:41,378 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-10 16:16:41,379 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/QualityDash/Test2/src/test/resources
+2017-04-10 16:17:21,316 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-10 16:17:21,319 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/QualityDash/Test2/src/main/resources
+2017-04-10 16:17:21,335 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-10 16:17:21,336 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/QualityDash/Test2/src/test/resources

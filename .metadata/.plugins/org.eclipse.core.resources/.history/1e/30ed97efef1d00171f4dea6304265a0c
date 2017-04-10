@@ -439,7 +439,7 @@
 					               option:'1',parameter1:country,parameter2:MetricType,parameter3:rowNo,parameter4:colNo
 					        }, function(responseText) {
 					        	 var obj = jQuery.parseJSON(responseText);
-					        	
+					        	 
 					                 //  var dd = JSON.parse(result);
 					                 
 									//	gauges[key].redraw(obj.completness);
@@ -450,7 +450,8 @@
 							           childNode = $compile('<div class="box"  ng-draggable="dragOptions" ><button onclick="removeChart("'+childNode+'")">X</button><div id="'+divTag+'"" ></div></div>')(container);
 							           container.append(childNode);
 							           circleChart(divTag,obj.kpi,obj.serviceName,country);   
-								
+									
+					        	
 					        });
 				        	   
 			        	   

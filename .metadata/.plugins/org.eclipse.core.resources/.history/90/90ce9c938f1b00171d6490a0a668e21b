@@ -100,8 +100,6 @@ public String getAllMeasuresCnt(String country, String service, String factrow, 
  		model.setMeasureAmt(rs.getInt("measure_amt"));
  		model.setDate(rs.getString("run_dttm"));
  		model.setQualityMetricType(rs.getString("quality_metric_type_name"));
- 		model.setValidationRuleComment(rs.getString("validation_rule_comment"));
- 	
  		//Date d1 = new Date(rs.getDate("date_time").getTime());
  		//String  name = rs.getString("measure_text");
  		//System.out.println(name);
