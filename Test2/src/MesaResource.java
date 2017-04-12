@@ -34,11 +34,7 @@ public class MesaResource {
 	     System.out.println(queryString);
 	 	ResultSet rs = stmt.executeQuery(queryString);
 	 	while(rs.next()) {
-	 	  //int numColumns = rs.getColumnCount();
-	 
-	 	 // for (int i=1; i<=numColumns; i++) {
-	 	   // String column_name = rsmd.getColumnName(i);
-	 	  
+	 	
 	 		QualityModel model=new QualityModel();
 	 		model.setMeasureAmt(rs.getInt("average_amt"));
 	 		model.setServiceMainGroupName(rs.getString("service_main_group_name"));
@@ -88,10 +84,7 @@ public class MesaResource {
     System.out.println(queryString);
  	ResultSet rs = stmt.executeQuery(queryString);
  	while(rs.next()) {
- 	  //int numColumns = rs.getColumnCount();
- 
- 	 // for (int i=1; i<=numColumns; i++) {
- 	   // String column_name = rsmd.getColumnName(i);
+ 	 
  	 	
  		QualityModel model=new QualityModel();
  		model.setMeasureAmt(rs.getInt("measure_cnt"));

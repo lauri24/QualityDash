@@ -58,10 +58,7 @@
 			}
 			function initialize()
 			{
-				heatMap();
-				barChart();
-				createGauges();
-				lineChart();
+			
 				setInterval(updateGauges, 5000);
 		
 				       
@@ -100,7 +97,7 @@
 			           var container;
 			           var childNode;
 			           
-			           
+			           <!--GET Päringud servletidele ja chartide loomine. Chartide confimine ja chartide mudimine toimub chart.js failis -->
 			           
 			           if(strUser=="Map"){
 			        	   
@@ -152,7 +149,7 @@
 			           }
 			           if(strUser=="Bar"){
 			        	   
-			        	   $.get('CompletnessController', {
+			        	   $.get('BarController', {
 				               option:'2',
 				               metric_categ:MetricType,
 				               service_group_name:serviceGroupName,
@@ -197,7 +194,7 @@
 			           }
 			           if(strUser=="Circle"){
 				        	   
-				        	 $.get('CompletnessController', {
+				        	 $.get('DonutController', {
 					               option:'1',
 					               metric_categ:MetricType,
 					               service_group_name:serviceGroupName,
