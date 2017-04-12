@@ -3,8 +3,12 @@ import java.sql.Date;
 public class CompletenessModel {
 		private int measure_amt;
 		private String run_sttd;
+		private String country;
 		private String qualityMetricTypeName;
 		private String validationQualityRuleComment;
+		
+		
+
 		
 		public void setDate(String value){
 			

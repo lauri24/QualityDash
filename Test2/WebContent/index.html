@@ -41,18 +41,19 @@
 			$( function() {
 			    $( "#date2" ).datepicker({ dateFormat: "yy-mm-dd",timeFormat:"hh:mm:ss"});
 			 } )
-			function mapChart(divTag){
+			function mapChart(divTag,country,measures,extrainfo){
 				
 			
 				var data = [{
 				    type: 'scattergeo',
-				    mode: 'markers',
-				    locations: ['EST', 'LVA', 'LTU','GRC'],
+				    mode: 'markers+text',
+				    locations: country,
 				    marker: {
 				        size: [10, 30, 15, 10],
 				        color: [10, 20, 40, 50],
 				        cmin: 0,
 				        cmax: 100,
+				        hoverinfo: 'label+percent',
 				        colorscale: 'Greens',
 				        colorbar: {
 				            title: 'Completeness',
@@ -62,12 +63,14 @@
 				        line: {
 				            color: 'black'
 				        }
+				      
 				    },
 				 
 				}];
 
 				var layout = {
-				    'geo': {
+				    	title:extrainfo,
+						'geo': {
 				        'scope': 'europe',
 				        'resolution': 1000
 				    }
@@ -83,29 +86,34 @@
 			
 			
 			
-			function circleChart(divTag,value,serviceName,country){
+			function circleChart(divTag,value,serviceName,country,dqName,info,categType){
 				
-				
+				 
 				var data = [{
 					  values: [100-value,value],
-					  labels: ['BAD','FORMAT CONFORMACY'],
+					  labels: ['UNCOMPLETENESS',dqName],
 					  marker:{  colors:['rgb(215, 56, 24)']},
 					  domain: {
 					    x: [0, .55]
 					  },
 					  name: 'KPI',
-					  hoverinfo: 'label+percent+name',
+					  hoverinfo: 'label+percent+name+text',
 					  hole: .4,
 					  type: 'pie'
 					}];
 
 					var layout = {
-					  title: serviceName+" "+country,
+					  title: serviceName+" "+country+"<br>"+info,
 					  height: 500,
 					  width: 500
+					
+					  
 					};
-
-					Plotly.newPlot(divTag, data, layout);
+					
+				
+						Plotly.newPlot(divTag, data, layout);
+					
+				
 				
 				
 			}
@@ -379,27 +387,67 @@
 			           
 			           var eserviceGroupName = document.getElementById("service_main_group_name");
 			           var serviceGroupName =eserviceGroupName.options[eserviceGroupName.selectedIndex].text;
-			          
-			     
+			       
+			           var qMetricType = document.getElementById("Quality_metric_type_name");
+			           var qualityMetricName=qMetricType.options[qMetricType.selectedIndex].text;
 			           
-			           var rowNo = document.getElementById("row_no").value;
-			           var colNo = document.getElementById("col_no").value;
+			       
 			           
 			           var container;
 			           var childNode;
-			           if(strUser=="Map"){
-			        	   var divTag = "divMap_" + new Date().getTime().toString();
-			        	   container =   angular.element(document.querySelector("#container"));
-				           childNode = $compile('<div class="box"  ng-draggable="dragOptions"  style = "float:left; width: 25%;"><div id="'+divTag+'""></div></div>')(container);
-				           container.append(childNode);
-			        	   mapChart(divTag);
-			        	   
 			           
+			           
+			           
+			           if(strUser=="Map"){
+			        	   
+			        	   $.get('CompletnessController', {
+				               option:'3',
+				               metric_categ:MetricType,
+				               service_group_name:serviceGroupName,
+				               country:country,
+				               metric_name:qualityMetricName,
+				               date1:date1,
+				               date2:date2
+				        }, function(responseText) {
+			        	   
+				        	 var country=[];
+			                 var measures=[];
+							 var extraInfo=[];
+				        	 var count=0;
+							 var json = jQuery.parseJSON(responseText);
+				        	 if (json.length>0) {
+				       		
+				        		  for(var i = 0; i < json.length; i++) {
+									    var obj = json[i];
+									    
+									    if(count===3){
+									    	 var divTag = "divMap_" + new Date().getTime().toString();
+								        	   container =   angular.element(document.querySelector("#container"));
+									           childNode = $compile('<div class="box"  ng-draggable="dragOptions"  style = "float:left; width: 25%;"><div id="'+divTag+'""></div></div>')(container);
+									           container.append(childNode);
+								        	   mapChart(divTag,country,measures,json[i-1].qualityMetricTypeComment);
+									    	  count=0;
+									    }
+									    measures.push(obj.measure_amt);
+										country.push(obj.country);
+										extraInfo.push(obj.qualityMetricTypeComment);
+									  	count++;
+										
+									   
+									 	  
+				        		  }
+				        		 
+				        	 }
+				        	
+			        	   
+				        });
+			        	   
+			        	   
 			           }
 			           if(strUser=="Bar"){
 			        	   
 			        	   $.get('CompletnessController', {
-				               option:'2',country:country,service:serviceGroupName,rowno:rowNo,parameter4:colNo,date1:date1,date2:date2
+				               option:'2',country:country,service:serviceGroupName,rowno:qualityMetricName,parameter4:MetricType,date1:date1,date2:date2
 				        }, function(responseText) {
 				        
 				                 //  var dd = JSON.parse(result);
@@ -412,9 +460,9 @@
 		              
 							               for(var i = 0; i < json.length; i++) {
 												    var obj = json[i];
-													dataX.push(obj.qualityMetricTypeName);
+													dataX.push(obj.measure_date);
 													dataY.push(obj.measure_amt);
-													extraInfo.push(obj.validationQualityRuleComment);
+													extraInfo.push(obj.service_main_group_name);
 													
 													
 										  }
@@ -436,21 +484,28 @@
 			           if(strUser=="Circle"){
 				        	   
 				        	 $.get('CompletnessController', {
-					               option:'1',parameter1:country,parameter2:MetricType,parameter3:rowNo,parameter4:colNo
-					        }, function(responseText) {
-					        	 var obj = jQuery.parseJSON(responseText);
+					               option:'1',
+					               metric_categ:MetricType,
+					               service_group_name:serviceGroupName,
+					               country:country,
+					               metric_name:qualityMetricName,
+					               date1:date1,
+					               date2:date2
+					    		 }, function(responseText) {
+					        	 var json = jQuery.parseJSON(responseText);
 					        	
 					                 //  var dd = JSON.parse(result);
-					                 
+					             
 									//	gauges[key].redraw(obj.completness);
-										
-									
+									 for(var i = 0; i < json.length; i++) {
+									   var obj = json[i];
+							
 					        		   var divTag = "divDonut_" + new Date().getTime().toString();
 						        	   container =   angular.element(document.querySelector("#container"));
 							           childNode = $compile('<div class="box"  ng-draggable="dragOptions" ><button onclick="removeChart("'+childNode+'")">X</button><div id="'+divTag+'"" ></div></div>')(container);
 							           container.append(childNode);
-							           circleChart(divTag,obj.kpi,obj.serviceName,country);   
-								
+							           circleChart(divTag,obj.measure_amt,obj.service_main_group_name,country,qualityMetricName,obj.qualityMetricTypeComment,MetricType);   
+									}
 					        });
 				        	   
 			        	   
@@ -504,11 +559,17 @@
 	
 		</select>
 	Service rule
-	    <select>
-			  <option value="Rule1">1</option>
-			  <option value="Rule2">2</option>
-			  <option value="Rule3">3</option>
-	
+	    <select id="Quality_metric_type_name">
+			  <option value="name">CLARITY</option>
+			  <option value="name">COMPLETENESS</option>
+			  <option value="name">FORMAT  CONFORMANCY</option>
+			  <option value="name">UNIQUE IDENTIFIABILITY</option>
+			  <option value="name">REFERENTIAL INTEGRITY</option>
+			  <option value="name">CONSISTENCY</option>
+			  <option value="name">ACCURACY TO SOURCE</option>
+			  <option value="name">TIMELINESS</option>
+			  <option value="name">UNKNOWN QUALITY METRIC</option>
+		
 	
 		</select>
    Service group name
@@ -528,19 +589,18 @@
 			  <option value="Service">Business Line / Product System</option>
 			  <option value="Service">Risk Management </option>
 			  <option value="Service">Data Warehouse Service</option>
-		
+
 	
 		</select>
 	Metric type
 	    <select id="MetricType">
 			  <option value="Rule1">DQKPI</option>
 			  <option value="Rule2">DQERR</option>
-			  <option value="Rule3">3</option>
+			  <option value="Rule2">NA</option>
 	
 	
 		</select>
-    Col no: <input type="text" name="col_no" value="5" id="col_no"><br>
-    Row no: <input type="text" name="row_no" value="10" id="row_no"><br>	
+	
     <button add-div>Click Me</button>
   	   <div ng-app="test" ng-controller="testCtrl">
         <div id="container"></div>
