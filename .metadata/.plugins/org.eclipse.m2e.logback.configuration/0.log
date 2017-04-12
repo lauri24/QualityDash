@@ -1924,3 +1924,11 @@ org.eclipse.core.runtime.CoreException: Variable references non-existent resourc
 2017-04-12 21:29:04,093 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/QualityDash/Test2/src/main/resources
 2017-04-12 21:29:04,095 [Worker-68] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 2017-04-12 21:29:04,096 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/QualityDash/Test2/src/test/resources
+2017-04-12 21:32:06,235 [Worker-63] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-12 21:32:06,236 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/QualityDash/Test2/src/main/resources
+2017-04-12 21:32:06,238 [Worker-63] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-12 21:32:06,238 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/QualityDash/Test2/src/test/resources
+2017-04-12 21:32:16,106 [Worker-63] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-12 21:32:16,109 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/QualityDash/Test2/src/main/resources
+2017-04-12 21:32:16,110 [Worker-63] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-12 21:32:16,111 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lauriroomere/Desktop/QualityDash/Test2/src/test/resources

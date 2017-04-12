@@ -449,3 +449,8 @@
 0:0:0:0:0:0:0:1 - - [12/Apr/2017:21:29:06 +0300] "GET /resources/demos/style.css HTTP/1.1" 404 1038
 0:0:0:0:0:0:0:1 - - [12/Apr/2017:21:29:24 +0300] "GET /Test2/CompletnessController?option=1&metric_categ=DQKPI&service_group_name=BB+Data+Warehouse&country=EE&metric_name=COMPLETENESS&date1=2016-11-01&date2=2017-04-29 HTTP/1.1" 200 899
 0:0:0:0:0:0:0:1 - - [12/Apr/2017:21:29:27 +0300] "GET /Test2/CompletnessController?option=1&metric_categ=DQERR&service_group_name=BB+Data+Warehouse&country=EE&metric_name=COMPLETENESS&date1=2016-11-01&date2=2017-04-29 HTTP/1.1" 200 873
+0:0:0:0:0:0:0:1 - - [12/Apr/2017:21:31:39 +0300] "GET /Test2/CompletnessController?option=3&metric_categ=DQERR&service_group_name=BB+Data+Warehouse&country=EE&metric_name=COMPLETENESS&date1=2016-11-01&date2=2017-04-29 HTTP/1.1" 200 2809
+0:0:0:0:0:0:0:1 - - [12/Apr/2017:21:32:19 +0300] "GET /Test2/index.html HTTP/1.1" 200 11638
+0:0:0:0:0:0:0:1 - - [12/Apr/2017:21:32:19 +0300] "GET /Test2/js/charts.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [12/Apr/2017:21:32:19 +0300] "GET /resources/demos/style.css HTTP/1.1" 404 1038
+0:0:0:0:0:0:0:1 - - [12/Apr/2017:21:32:20 +0300] "GET /resources/demos/style.css HTTP/1.1" 404 1038
